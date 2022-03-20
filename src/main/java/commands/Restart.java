@@ -27,7 +27,7 @@ public class Restart implements ICommand{
 
         new Thread();
         Thread.sleep(2000);
-        Runtime.getRuntime().exec("cmd /c start " + Config.get("BAT_PATH"));
+        Runtime.getRuntime().exec("cmd /c start " + Config.get("EXE_PATH"));
         System.exit(0);
     }
 

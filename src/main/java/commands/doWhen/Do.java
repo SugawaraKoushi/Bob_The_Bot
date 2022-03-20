@@ -3,6 +3,8 @@ package commands.doWhen;
 import commands.ICommand;
 import commands.Output;
 import commands.doWhen.actions.Action;
+import commands.doWhen.actions.Join;
+import commands.doWhen.actions.Leave;
 import commands.doWhen.actions.Play;
 import commands.doWhen.conditions.Condition;
 import commands.doWhen.conditions.JoinUser;
@@ -20,6 +22,8 @@ public class Do implements ICommand {
     private final HashMap<String, Condition> conditions = new HashMap<>();
 
     public Do() {
+        addAction(new Join());
+        addAction(new Leave());
         addAction(new Play());
 
         addCondition(new JoinUser());
@@ -53,6 +57,7 @@ public class Do implements ICommand {
 
         int actionsCount = 0;
         int conditionsCount = 0;
+
         for (OptionMapping option : event.getOptions()) {
             if (actions.containsKey(option.getName())) {
                 act = actions.get(option.getName());
