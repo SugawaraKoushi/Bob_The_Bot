@@ -4,7 +4,7 @@ import main.Main;
 import net.dv8tion.jda.api.entities.AudioChannel;
 import net.dv8tion.jda.api.entities.Member;
 
-public class JoinUser implements Condition{
+public class JoinUser implements Condition {
     private Member member;
 
     @Override
@@ -22,11 +22,15 @@ public class JoinUser implements Condition{
         AudioChannel botVoiceChannel = Main.getGuild().getSelfMember().getVoiceState().getChannel();
         AudioChannel memberVoiceChannel = member.getVoiceState().getChannel();
 
+        if (botVoiceChannel == null) {
+            return member.getVoiceState().inAudioChannel();
+        }
+
         return botVoiceChannel.compareTo(memberVoiceChannel) == 0;
     }
 
     @Override
     public String getName() {
-        return "join";
+        return "when-user-in-vc";
     }
 }

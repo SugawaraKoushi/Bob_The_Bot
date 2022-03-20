@@ -47,6 +47,6 @@ public class Time implements Condition {
 
     @Override
     public String getName() {
-        return "time";
+        return "when-time-is";
     }
 }

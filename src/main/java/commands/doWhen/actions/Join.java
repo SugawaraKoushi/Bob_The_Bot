@@ -74,15 +74,15 @@ public class Join implements Action {
                 setBusy(false);
                 break;
             }
-
-            message = String.format("**Joining:** %s", audioChannel.getName());
-            event.replyEmbeds(new Output(message).getME()).queue();
-            audioManager.openAudioConnection(audioChannel);
         }
+
+        message = String.format("**Joining:** %s", audioChannel.getName());
+        event.replyEmbeds(new Output(message).getME()).queue();
+        audioManager.openAudioConnection(audioChannel);
     }
 
     @Override
     public String getName() {
-        return null;
+        return "join-to";
     }
 }

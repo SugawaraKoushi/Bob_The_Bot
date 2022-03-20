@@ -36,13 +36,13 @@ public class Main {
 
 
         List<OptionData> actions = new ArrayList<>();
-        actions.add(new OptionData(OptionType.STRING, "join", "ACTION: you in voicechat is required", false));
+        actions.add(new OptionData(OptionType.STRING, "join-to", "ACTION: you in voicechat is required", false));
         actions.add(new OptionData(OptionType.STRING, "leave", "ACTION: you in voicechat is required", false));
         actions.add(new OptionData(OptionType.STRING, "play", "ACTION: URL is required", false));
 
         List<OptionData> conditions = new ArrayList<>();
-        conditions.add(new OptionData(OptionType.STRING, "join-user", "CONDITION: user name in next format: @{name} is required", false));
-        conditions.add(new OptionData(OptionType.STRING, "time", "CONDITION: time in next format: {hh:mm} is required", false));
+        conditions.add(new OptionData(OptionType.STRING, "when-user-in-vc", "CONDITION: user name in next format: @{name} is required", false));
+        conditions.add(new OptionData(OptionType.STRING, "when-time-is", "CONDITION: time in next format: {hh:mm} is required", false));
 
         guild.upsertCommand("do", "Executes {action} after {condition} is met")
                 .addOptions(actions)
