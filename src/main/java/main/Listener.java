@@ -62,7 +62,7 @@ public class Listener extends ListenerAdapter {
     @Override
     public void onSlashCommandInteraction(SlashCommandInteractionEvent event) {
         if (!event.getChannel().getId().equals(Config.get("CHANNEL_ID"))) {
-            event.replyEmbeds(new Output("**SIKE, THAT IS THE WRONG CHAT**\n" + event.getChannel().getId()).getME()).queue();
+            event.replyEmbeds(new Output("**SIKE, THAT IS THE WRONG CHAT**").getME()).queue();
             return;
         }
 
