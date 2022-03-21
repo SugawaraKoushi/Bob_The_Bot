@@ -31,6 +31,7 @@ public class Listener extends ListenerAdapter {
         addCommand(new NowPlaying());
         addCommand(new Pause());
         addCommand(new Play());
+        addCommand(new Playlist());
         addCommand(new PlayNext());
         addCommand(new Queue());
         addCommand(new Repeat());

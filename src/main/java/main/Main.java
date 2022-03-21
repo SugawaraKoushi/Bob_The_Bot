@@ -52,14 +52,17 @@ public class Main {
         guild.upsertCommand("clearqueue", "Clear the queue").queue();
 
         guild.upsertCommand("delete", "Delete track with given number")
-                .addOption(OptionType.STRING, "query", "put number of track here", true).queue();
+                .addOption(OptionType.STRING, "position", "put number of position of track here", true).queue();
 
-        guild.upsertCommand("nowplaying", "Return info of playing track").queue();
+        guild.upsertCommand("now playing", "Return info of playing track").queue();
 
         guild.upsertCommand("pause", "Pause the track").queue();
 
         guild.upsertCommand("play", "Play track")
                 .addOption(OptionType.STRING, "url", "play track").queue();
+
+        guild.upsertCommand("playlist", "Add playlist")
+                .addOption(OptionType.STRING, "add", "add playlist to playlist list", true).queue();
 
         guild.upsertCommand("playnext", "Play track the next")
                 .addOption(OptionType.STRING, "url", "play track", true).queue();
