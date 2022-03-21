@@ -64,13 +64,13 @@ public class Main {
         guild.upsertCommand("playlist", "Add playlist")
                 .addOption(OptionType.STRING, "add", "add playlist to playlist list", true).queue();
 
-        guild.upsertCommand("playnext", "Play track the next")
+        guild.upsertCommand("play next", "Play track the next")
                 .addOption(OptionType.STRING, "url", "play track", true).queue();
 
         guild.upsertCommand("queue", "Get the queue").queue();
 
         guild.upsertCommand("repeat", "Set repeat")
-                .addOption(OptionType.STRING, "query", "put number of repeats here", false).queue();
+                .addOption(OptionType.STRING, "times", "put number of repeats here", false).queue();
 
         guild.upsertCommand("resume", "Resume the track").queue();
 
@@ -81,7 +81,7 @@ public class Main {
         guild.upsertCommand("stop", "Stop playing").queue();
 
         guild.upsertCommand("volume", "Set volume")
-                        .addOption(OptionType.STRING, "query", "put number between 0 and 100 here").queue();
+                        .addOption(OptionType.STRING, "number", "put number between 0 and 100 here").queue();
 
 
         guild.upsertCommand("test", "test command").queue();
