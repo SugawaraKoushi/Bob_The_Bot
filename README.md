@@ -31,3 +31,26 @@
 * **/restart** - restarts bot;
 * **/shutdown** - turns off bot;
 ***
+# Setup
+Firstly, you should download the last version of .exe file. It locates [here](https://github.com/SugawaraKoushi/Bob_The_Bot/releases).  
+Secondly, you should create .env file in folder with the .exe file with next parameters and values:
+```dotenv
+TOKEN=
+SERVER_ID=
+CHANNEL_ID=
+EXE_PATH=
+MUSIC_FOLDER=
+SOUNDS_FOLDER=
+DOWNLOAD_FOLDER=
+PLAYLISTS_FOLDER=
+VOLUME=
+```
+* token can be obtained on [Discord Developer Portal](https://discord.com/developers/applications);
+* server id can be obtained in discord. Press RMB on server icon and choose "Copy ID". If you have no this option, turn it on somehow with Google tutorials;
+* channel id - it is the text channel bot will handle;
+* exe path should be absolute with only latin characters;
+* music folder is default folder where from bot can play music located on your PC;
+* sounds folder **in progress**;
+* download folder **in progress**;
+* playlists folder **in progress**;
+* volume level from 0 to 100;
