@@ -6,13 +6,13 @@
 ### handling music:
 * **/clearQueue** - clears the queue;
 * **/delete _position:_** *[position]* - deletes track from the queue with given position;
-  * **/do _action:_** *[action]* **_condition:_** *[condition]* - does some action when condition is met;
-    * Actions:
-      * **_join-to:_** *[@nickname]* - joins to someone if he in voice chat;
-      * **_play:_** *url* - plays music with given url;
-    * Conditions:
-      * **_when-user-in-vc:_** *[@nickname]* - does action when someone with given nickname joins voice chat;
-      * **_when-time-is_:** *[hh:mm]* - does action when current time will equal with given time;
+* **/do _action:_** *[action]* **_condition:_** *[condition]* - does some action when condition is met;
+  * Actions:
+    * **_join-to:_** *[@nickname]* - joins to someone if he in voice chat;
+    * **_play:_** *url* - plays music with given url;
+  * Conditions:
+    * **_when-user-in-vc:_** *[@nickname]* - does action when someone with given nickname joins voice chat;
+    * **_when-time-is_:** *[hh:mm]* - does action when current time will equal with given time;
 * **/now playing** - returns info of playing track. If nothing is playing return error message;
 * **/play _url_:** *url* - plays track with given url. Can be used without parameters;
 * **/playlist _add:_** *url* - adds given url to playlists file;
