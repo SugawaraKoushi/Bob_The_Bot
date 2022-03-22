@@ -23,7 +23,7 @@
 * **/shuffle** - shuffles the queue;
 * **/skip** - skips current track and plays next from the queue;
 * **/stop** - stops playing, clears the queue;
-  ***/volume _number:_** *[number]* - sets volume level to given number. Can be used without parameters to see what level is;
+* **/volume _number:_** *[number]* - sets volume level to given number. Can be used without parameters to see what level is;
 ### handling voice chat:
 * **/join** - joins in voice chat which user in;
 * **/leave** - leaves voice chat;
