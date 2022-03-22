@@ -28,6 +28,6 @@
 * **/join** - joins in voice chat which user in;
 * **/leave** - leaves voice chat;
 ### handling connection:
-* **restart** - restarts bot;
-* **shutdown** - turns off bot;
+* **/restart** - restarts bot;
+* **/shutdown** - turns off bot;
 ***
