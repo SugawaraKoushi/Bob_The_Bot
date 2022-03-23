@@ -6,7 +6,6 @@ import commands.Restart;
 import commands.Shutdown;
 import commands.doWhen.Do;
 import commands.music.*;
-import commands.test.Test;
 import commands.voicechat.Join;
 import commands.voicechat.Leave;
 import net.dv8tion.jda.api.events.ReadyEvent;
@@ -26,12 +25,13 @@ public class Listener extends ListenerAdapter {
 
     public Listener() {
         addCommand(new Do());
+
         addCommand(new ClearQueue());
         addCommand(new Delete());
+        addCommand(new FavouriteSongs());
         addCommand(new NowPlaying());
         addCommand(new Pause());
         addCommand(new Play());
-        addCommand(new Playlist());
         addCommand(new PlayNext());
         addCommand(new Queue());
         addCommand(new Repeat());
@@ -40,8 +40,6 @@ public class Listener extends ListenerAdapter {
         addCommand(new Skip());
         addCommand(new Stop());
         addCommand(new Volume());
-
-        addCommand(new Test());
 
         addCommand(new Join());
         addCommand(new Leave());

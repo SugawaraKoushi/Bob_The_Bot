@@ -49,22 +49,30 @@ public class Main {
                 .addOptions(conditions)
                 .queue();
 
-        guild.upsertCommand("clearqueue", "Clear the queue").queue();
+        guild.upsertCommand("clear-queue", "Clear the queue").queue();
 
         guild.upsertCommand("delete", "Delete track with given number")
                 .addOption(OptionType.STRING, "position", "put number of position of track here", true).queue();
 
-        guild.upsertCommand("now playing", "Return info of playing track").queue();
+        guild.upsertCommand("fav-playlist", "Favourite playlist")
+                .addOption(OptionType.STRING, "add", "add track or playlist into favourites", true).queue();
+
+        guild.upsertCommand("now-playing", "Return info of playing track").queue();
 
         guild.upsertCommand("pause", "Pause the track").queue();
 
+        List<OptionData> options = new ArrayList<>();
+        options.add(new OptionData(OptionType.STRING, "random-song", "play random song from default directory").addChoice("yes", "yes"));
+        options.add(new OptionData(OptionType.STRING, "all-songs", "play all songs from default directory").addChoice("yes", "yes"));
+        options.add(new OptionData(OptionType.STRING, "fav-songs", "play all favourite songs").addChoice("yes", "yes"));
+
         guild.upsertCommand("play", "Play track")
-                .addOption(OptionType.STRING, "url", "play track").queue();
+                .addOption(OptionType.STRING, "url", "play track")
+                .addOptions(options)
+                .queue();
 
-        guild.upsertCommand("playlist", "Add playlist")
-                .addOption(OptionType.STRING, "add", "add playlist to playlist list", true).queue();
 
-        guild.upsertCommand("play next", "Play track the next")
+        guild.upsertCommand("play-next", "Play track the next")
                 .addOption(OptionType.STRING, "url", "play track", true).queue();
 
         guild.upsertCommand("queue", "Get the queue").queue();
@@ -83,9 +91,6 @@ public class Main {
         guild.upsertCommand("volume", "Set volume")
                         .addOption(OptionType.STRING, "number", "put number between 0 and 100 here").queue();
 
-
-        guild.upsertCommand("test", "test command").queue();
-
         guild.upsertCommand("join", "Join the voicechat").queue();
 
         guild.upsertCommand("leave", "Leave the voicechat").queue();
@@ -93,5 +98,7 @@ public class Main {
         guild.upsertCommand("restart", "Restart Bob").queue();
 
         guild.upsertCommand("shutdown", "Turn off Bob").queue();
+
+        guild.updateCommands().queue();
     }
 }

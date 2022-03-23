@@ -9,8 +9,10 @@ import music.PlayerManager;
 import net.dv8tion.jda.api.entities.GuildVoiceState;
 import net.dv8tion.jda.api.entities.MessageEmbed;
 import net.dv8tion.jda.api.events.interaction.command.SlashCommandInteractionEvent;
+import net.dv8tion.jda.api.interactions.commands.OptionMapping;
 
 import java.io.File;
+import java.io.FileInputStream;
 import java.util.*;
 import java.util.concurrent.BlockingQueue;
 
@@ -26,7 +28,7 @@ public class Play implements ICommand {
         BlockingQueue<AudioTrack> queue = musicManager.scheduler.getQueue();
         List<AudioTrack> tracks = new ArrayList<>();
         AudioTrack end = null;
-        String[] songs = new File(Config.get("MUSIC_FOLDER")).list();
+        String[] songs;
         String content;
 
         if (!memberVoiceState.inAudioChannel()) {
@@ -36,49 +38,85 @@ public class Play implements ICommand {
         }
 
         try {
-            content = event.getOption("url").getAsString();
+            for (OptionMapping option : event.getOptions()) {
+                switch (option.getName()) {
+                    //Воспроизводит рандомный трек из папки
+                    case "random-song":
+                        songs = new File(Config.get("MUSIC_FOLDER")).list();
 
-            /* Воспроизведение всех треков из папки с музыкой по умолчанию */
-            if (content.equals("music")) {
-                if (songs == null) {
-                    message = "**Nothing to play**";
-                    event.replyEmbeds(getME()).queue();
-                    return;
+                        if (!event.getOption("random-song").getAsString().equals("yes")) {
+                            message = "**Something goes wrong**";
+                            event.replyEmbeds(getME()).queue();
+                        }
+
+                        if (songs == null) {
+                            message = "**Nothing to play**";
+                            event.replyEmbeds(getME()).queue();
+                            return;
+                        }
+
+                        message = "**URL:** ".concat(Config.get("MUSIC_FOLDER"));
+                        event.replyEmbeds(getME()).queue();
+                        playerManager.loadAndPlay(event.getTextChannel(), Config.get("MUSIC_FOLDER") + "\\" + songs[new Random().nextInt(songs.length - 1)]);
+                        break;
+
+                    // Воспроизводит все треки из папки
+                    case "all-songs":
+                        songs = new File(Config.get("MUSIC_FOLDER")).list();
+
+                        if (!event.getOption("all-songs").getAsString().equals("yes")) {
+                            message = "**Something goes wrong**";
+                            event.replyEmbeds(getME()).queue();
+                        }
+
+                        if (songs == null) {
+                            message = "**Nothing to play**";
+                            event.replyEmbeds(getME()).queue();
+                            return;
+                        }
+
+                        message = "**URL:** ".concat(Config.get("MUSIC_FOLDER"));
+                        event.replyEmbeds(getME()).queue();
+
+                        for (String song : songs)
+                            playerManager.loadAndPlay(event.getTextChannel(), Config.get("MUSIC_FOLDER") + "\\" + song);
+
+                        break;
+
+                    // Воспроизводит треки из файла с любимыми треками
+                    case "fav-songs":
+                        File favSongs = new File(Config.get("FAVOURITES_SONGS"));
+                        FileInputStream is = new FileInputStream(favSongs);
+                        songs = new String(is.readAllBytes()).trim().split("\n");
+
+                        message = "**URL: favourite songs**";
+                        event.replyEmbeds(getME()).queue();
+
+                        for (String song : songs)
+                            playerManager.loadAndPlay(event.getTextChannel(), song);
+
+                        break;
+
+                    // Воспроизводит трек по ссылке
+                    case "url":
+                        content = event.getOption("url").getAsString();
+                        message = "**URL:** ".concat(content);
+                        event.replyEmbeds(getME()).queue();
+                        playerManager.loadAndPlay(event.getTextChannel(), content);
+                        break;
                 }
 
-                message = "**URL:** ".concat(Config.get("MUSIC_FOLDER"));
-                event.replyEmbeds(getME()).queue();
-
-                for (String song : songs)
-                    playerManager.loadAndPlay(event.getTextChannel(), Config.get("MUSIC_FOLDER") + "\\" + song);
-
-                /* Воспроизведение трека по ссылке */
-            } else {
-                message = "**URL:** ".concat(content);
-                event.replyEmbeds(getME()).queue();
-                playerManager.loadAndPlay(event.getTextChannel(), content);
             }
-
         } catch (Exception e) {
-            /* Воспроизведение рандомного трека из стандартной директории */
-            if (songs == null) {
-                message = "**Nothing to play**";
-                event.replyEmbeds(getME()).queue();
-                return;
-            }
-
-            message = "**URL:** ".concat(Config.get("MUSIC_FOLDER"));
-            event.replyEmbeds(getME()).queue();
-            playerManager.loadAndPlay(event.getTextChannel(), Config.get("MUSIC_FOLDER") + "\\" + songs[new Random().nextInt(songs.length - 1)]);
-
-            ///////////////////////////////////////////////////////////////////////////////////////////////////////////
-
+            e.printStackTrace();
+        } finally {
             while (!queue.isEmpty())
                 tracks.add(queue.take());
 
             if (!tracks.isEmpty()) {
                 if (tracks.get(tracks.size() - 1).getIdentifier().equals(Config.get("SOUNDS_FOLDER") + "bob_dynamite.ogg")) {
                     end = tracks.get(tracks.size() - 1);
+
                     for (int i = 0; i < tracks.size() - 1; i++)
                         musicManager.scheduler.queue(tracks.get(i));
                 }
