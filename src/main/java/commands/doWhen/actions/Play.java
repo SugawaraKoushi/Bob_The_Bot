@@ -10,8 +10,6 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.concurrent.BlockingQueue;
 
-import static commands.doWhen.Do.setBusy;
-
 public class Play implements Action {
     private String url;
     private Condition condition;
@@ -42,10 +40,9 @@ public class Play implements Action {
             } catch (InterruptedException e) {
                 e.printStackTrace();
             }
-            if (condition.getTruth()) {
-                setBusy(false);
+
+            if (condition.getTruth())
                 break;
-            }
         }
 
 
