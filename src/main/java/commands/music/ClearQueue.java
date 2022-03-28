@@ -36,6 +36,6 @@ public class ClearQueue implements ICommand {
 
     @Override
     public String getName() {
-        return "clearqueue";
+        return "clear-queue";
     }
 }

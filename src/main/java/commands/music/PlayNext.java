@@ -35,8 +35,7 @@ public class PlayNext implements ICommand {
         try {
             content = event.getOption("url").getAsString();
         } catch (NullPointerException e) {
-            message = e.getMessage();
-            event.replyEmbeds(getME()).queue();
+            e.printStackTrace();
             return;
         }
 
@@ -56,7 +55,7 @@ public class PlayNext implements ICommand {
         for (AudioTrack track : tracks) {
             musicManager.scheduler.queue(track);
         }
-        message = "**Processing...**";
+        message = "**URL**: ".concat(content);
         event.replyEmbeds(getME()).queue();
     }
 
@@ -67,6 +66,6 @@ public class PlayNext implements ICommand {
 
     @Override
     public String getName() {
-        return "playnext";
+        return "play-next";
     }
 }

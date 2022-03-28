@@ -6,8 +6,6 @@ import net.dv8tion.jda.api.entities.GuildVoiceState;
 import net.dv8tion.jda.api.events.interaction.command.SlashCommandInteractionEvent;
 import net.dv8tion.jda.api.managers.AudioManager;
 
-import static commands.doWhen.Do.setBusy;
-
 public class Leave implements Action{
     private String message;
     private String query;
@@ -31,14 +29,12 @@ public class Leave implements Action{
         if(!memberVoiceState.inAudioChannel()){
             message = "**You are not in voice channel to do this**";
             event.replyEmbeds(new Output(message).getME()).queue();
-            setBusy(false);
             return;
         }
 
         if(!audioManager.isConnected()){
             message = "**Bob can't leave nothing**";
             event.replyEmbeds(new Output(message).getME()).queue();
-            setBusy(false);
             return;
         }
 
@@ -49,10 +45,8 @@ public class Leave implements Action{
                 e.printStackTrace();
             }
 
-            if (condition.getTruth()) {
-                setBusy(false);
+            if (condition.getTruth())
                 break;
-            }
         }
 
         audioManager.closeAudioConnection();

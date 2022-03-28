@@ -67,10 +67,22 @@ public class Listener extends ListenerAdapter {
 
         commands.forEach((key, value) -> {
             if (commands.get(key).getName().equals(event.getName())) {
-                try {
-                    commands.get(key).handle(event);
-                } catch (Exception e) {
-                    e.printStackTrace();
+
+                if  (commands.get(key).getName().equals("do")) {
+                    Thread thread = new Thread(() -> {
+                        try {
+                            commands.get(key).handle(event);
+                        } catch (Exception e) {
+                            e.printStackTrace();
+                        }
+                    });
+                    thread.start();
+                } else {
+                    try {
+                        commands.get(key).handle(event);
+                    } catch (Exception e) {
+                        e.printStackTrace();
+                    }
                 }
             }
         });

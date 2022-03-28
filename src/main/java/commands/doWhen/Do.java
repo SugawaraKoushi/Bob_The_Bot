@@ -16,7 +16,6 @@ import net.dv8tion.jda.api.interactions.commands.OptionMapping;
 import java.util.HashMap;
 
 public class Do implements ICommand {
-    private static boolean isBusy = false;
     private String message;
     private final HashMap<String, Action> actions = new HashMap<>();
     private final HashMap<String, Condition> conditions = new HashMap<>();
@@ -42,12 +41,6 @@ public class Do implements ICommand {
     public void handle(SlashCommandInteractionEvent event) throws Exception {
         Condition cndtn = null;
         Action act = null;
-
-        if (isBusy) {
-            message = "**Bob already awaits something to do**";
-            event.replyEmbeds(getME()).queue();
-            return;
-        }
 
         if (event.getOptions().size() > 3) {
             message = "**Only 2 options should be set**";
@@ -89,7 +82,6 @@ public class Do implements ICommand {
         );
         event.replyEmbeds(getME()).queue();
 
-        setBusy(true);
         Thread thread = new Thread(() -> finalAct.handle(event));
         thread.start();
     }
@@ -104,11 +96,4 @@ public class Do implements ICommand {
         return "do";
     }
 
-    public static void setBusy(boolean busy) {
-        isBusy = busy;
-    }
-
-    public static boolean getBusy() {
-        return isBusy;
-    }
 }

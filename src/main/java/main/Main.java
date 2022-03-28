@@ -89,7 +89,7 @@ public class Main {
         guild.upsertCommand("stop", "Stop playing").queue();
 
         guild.upsertCommand("volume", "Set volume")
-                        .addOption(OptionType.STRING, "number", "put number between 0 and 100 here").queue();
+                        .addOption(OptionType.STRING, "level", "put number between 0 and 100 here").queue();
 
         guild.upsertCommand("join", "Join the voicechat").queue();
 

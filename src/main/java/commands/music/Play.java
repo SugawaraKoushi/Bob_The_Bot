@@ -87,13 +87,15 @@ public class Play implements ICommand {
                     case "fav-songs":
                         File favSongs = new File(Config.get("FAVOURITES_SONGS"));
                         FileInputStream is = new FileInputStream(favSongs);
-                        songs = new String(is.readAllBytes()).trim().split("\n");
+                        String buf = new String(is.readAllBytes()).trim();
+                        songs = buf.split("\n");
 
                         message = "**URL: favourite songs**";
                         event.replyEmbeds(getME()).queue();
 
-                        for (String song : songs)
+                        for (String song : songs) {
                             playerManager.loadAndPlay(event.getTextChannel(), song);
+                        }
 
                         break;
 

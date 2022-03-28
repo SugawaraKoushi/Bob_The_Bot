@@ -18,7 +18,7 @@ public class Volume implements ICommand {
         final GuildMusicManager musicManager = playerManager.getGuildMusicManager(event.getGuild());
 
         String content = "";
-        int volume = 10;
+        int volume;
 
         if (!memberVoiceState.inAudioChannel()) {
             message = "**You are not in voice channel to do this**";
@@ -27,17 +27,16 @@ public class Volume implements ICommand {
         }
 
         try {
-            content = event.getOption("query").getAsString();
+            content = event.getOption("level").getAsString();
             volume = Integer.parseInt(content);
         } catch (Exception e) {
             if (content.isEmpty()) {
                 message = String.format("**Volume:** %d", musicManager.player.getVolume());
-                event.replyEmbeds(getME()).queue();
             } else {
                 message = "**Error**: given query is not integer";
-                event.replyEmbeds(getME()).queue();
             }
-
+            event.replyEmbeds(getME()).queue();
+            e.printStackTrace();
             return;
         }
 

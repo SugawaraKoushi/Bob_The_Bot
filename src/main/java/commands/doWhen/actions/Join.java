@@ -10,8 +10,6 @@ import net.dv8tion.jda.api.entities.Member;
 import net.dv8tion.jda.api.events.interaction.command.SlashCommandInteractionEvent;
 import net.dv8tion.jda.api.managers.AudioManager;
 
-import static commands.doWhen.Do.setBusy;
-
 public class Join implements Action {
     private String message;
     private Member member;
@@ -38,28 +36,24 @@ public class Join implements Action {
         if (member == null || !member.getVoiceState().inAudioChannel()) {
             message = "**Member is not in voicechat**";
             event.replyEmbeds(new Output(message).getME()).queue();
-            setBusy(false);
             return;
         }
 
         if (audioManager.isConnected()) {
             message = "**Bob is already connected**";
             event.replyEmbeds(new Output(message).getME()).queue();
-            setBusy(false);
             return;
         }
 
         if (!memberVoiceState.inAudioChannel()) {
             message = "**You are not in voice channel to do this**";
             event.replyEmbeds(new Output(message).getME()).queue();
-            setBusy(false);
             return;
         }
 
         if (!selfMember.hasPermission(audioChannel, Permission.VOICE_CONNECT)) {
             message = "**Bob has no permission to join in**";
             event.replyEmbeds(new Output(message).getME()).queue();
-            setBusy(false);
             return;
         }
 
@@ -71,7 +65,6 @@ public class Join implements Action {
             }
 
             if (condition.getTruth()) {
-                setBusy(false);
                 break;
             }
         }

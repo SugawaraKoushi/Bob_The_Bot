@@ -55,6 +55,6 @@ public class NowPlaying implements ICommand {
 
     @Override
     public String getName() {
-        return "nowplaying";
+        return "now-playing";
     }
 }

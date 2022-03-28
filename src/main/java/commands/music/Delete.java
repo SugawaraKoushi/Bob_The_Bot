@@ -30,7 +30,7 @@ public class Delete implements ICommand {
 
         event.deferReply().queue();
         try{
-            String content = event.getOption("query").getAsString();
+            String content = event.getOption("position").getAsString();
             final BlockingQueue<AudioTrack> queue = musicManager.scheduler.getQueue();
             List<AudioTrack> tracks = new ArrayList<>();
 
@@ -50,8 +50,7 @@ public class Delete implements ICommand {
             message = "**Bob has deleted the track**";
             event.replyEmbeds(getME()).queue();
         } catch (NullPointerException e){
-            message = "**" + e.getMessage() + "**";
-            event.replyEmbeds(getME()).queue();
+            e.printStackTrace();
         }
     }
 
