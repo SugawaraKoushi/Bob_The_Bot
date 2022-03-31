@@ -17,13 +17,15 @@ public class Shutdown implements ICommand {
 
         musicManager.scheduler.getQueue().clear();
         musicManager.player.stopTrack();
-        playerManager.loadAndPlay(event.getTextChannel(), Config.get("SHUTDOWN_TRACK"));
+
+        if(Config.get("USING_SOUNDS").equals("TRUE"))
+            playerManager.loadAndPlay(event.getTextChannel(), Config.get("SHUTDOWN_TRACK"));
 
         event.getHook().sendMessageEmbeds(getME()).queue();
 
         event.getGuild().getAudioManager().closeAudioConnection();
         new Thread();
-        Thread.sleep(1000);
+        Thread.sleep(2000);
 
         event.getJDA().shutdown();
         System.exit(0);

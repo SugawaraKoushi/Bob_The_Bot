@@ -43,6 +43,7 @@ MUSIC_FOLDER=
 DOWNLOAD_FOLDER=
 PLAYLISTS_FOLDER=
 VOLUME=
+USING_SOUNDS=
 JOIN_TRACK=
 SHUTDOWN_TRACK=
 END_OF_QUEUE_TRACK=
@@ -55,6 +56,7 @@ END_OF_QUEUE_TRACK=
 * download folder **in progress**;
 * playlists folder **in progress**;
 * default volume level from 0 to 100;
+* if you want to use sounds for the next three parameters set **TRUE** otherwise nothing would be played for join, end of queue and shutdown commands;
 * path to join track;
 * path to shutdown track;
 * path to end of queue track;

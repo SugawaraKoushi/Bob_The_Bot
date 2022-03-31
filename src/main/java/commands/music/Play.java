@@ -116,11 +116,13 @@ public class Play implements ICommand {
                 tracks.add(queue.take());
 
             if (!tracks.isEmpty()) {
-                if (tracks.get(tracks.size() - 1).getIdentifier().equals(Config.get("END_OF_QUEUE_TRACK"))) {
-                    end = tracks.get(tracks.size() - 1);
+                if (Config.get("USING_SOUNDS").equals("TRUE")) {
+                    if (tracks.get(tracks.size() - 1).getIdentifier().equals(Config.get("END_OF_QUEUE_TRACK"))) {
+                        end = tracks.get(tracks.size() - 1);
 
-                    for (int i = 0; i < tracks.size() - 1; i++)
-                        musicManager.scheduler.queue(tracks.get(i));
+                        for (int i = 0; i < tracks.size() - 1; i++)
+                            musicManager.scheduler.queue(tracks.get(i));
+                    }
                 }
             }
 
@@ -129,7 +131,8 @@ public class Play implements ICommand {
                 Thread.sleep(100);
                 musicManager.scheduler.queue(end);
             } else {
-                playerManager.loadAndPlay(event.getTextChannel(), Config.get("END_OF_QUEUE_TRACK"));
+                if(Config.get("USING_SOUNDS").equals("TRUE"))
+                    playerManager.loadAndPlay(event.getTextChannel(), Config.get("END_OF_QUEUE_TRACK"));
             }
         }
     }

@@ -38,7 +38,8 @@ public class Join implements ICommand {
             return;
         }
 
-        playerManager.loadAndPlay(event.getTextChannel(), Config.get("JOIN_TRACK"));
+        if(Config.get("USING_SOUNDS").equals("TRUE"))
+            playerManager.loadAndPlay(event.getTextChannel(), Config.get("JOIN_TRACK"));
 
         Thread.sleep(100);
 
