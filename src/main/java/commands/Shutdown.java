@@ -17,7 +17,7 @@ public class Shutdown implements ICommand {
 
         musicManager.scheduler.getQueue().clear();
         musicManager.player.stopTrack();
-        playerManager.loadAndPlay(event.getTextChannel(), Config.get("SOUNDS_FOLDER") + "bob_out.ogg");
+        playerManager.loadAndPlay(event.getTextChannel(), Config.get("SHUTDOWN_TRACK"));
 
         event.getHook().sendMessageEmbeds(getME()).queue();
 

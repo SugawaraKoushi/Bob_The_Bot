@@ -49,7 +49,6 @@ public class Repeat implements ICommand {
                 message = String.format("**Repeat:** %d **times**", count);
                 queue.addAll(tracks);
                 event.replyEmbeds(getME()).queue();
-                return;
             }
         } catch(NullPointerException e){
             musicManager.scheduler.repeat = repeat;

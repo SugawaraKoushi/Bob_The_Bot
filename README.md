@@ -40,17 +40,21 @@ SERVER_ID=
 CHANNEL_ID=
 EXE_PATH=
 MUSIC_FOLDER=
-SOUNDS_FOLDER=
 DOWNLOAD_FOLDER=
 PLAYLISTS_FOLDER=
 VOLUME=
+JOIN_TRACK=
+SHUTDOWN_TRACK=
+END_OF_QUEUE_TRACK=
 ```
 * token can be obtained on [Discord Developer Portal](https://discord.com/developers/applications);
 * server id can be obtained in discord. Press RMB on server icon and choose "Copy ID". If you have no this option, turn it on somehow with Google tutorials;
 * channel id - it is the text channel bot will handle;
 * exe path should be absolute with only latin characters;
 * music folder is default folder where from bot can play music located on your PC;
-* sounds folder **in progress**;
 * download folder **in progress**;
 * playlists folder **in progress**;
 * default volume level from 0 to 100;
+* path to join track;
+* path to shutdown track;
+* path to end of queue track;
