@@ -23,9 +23,9 @@ public class Shutdown implements ICommand {
 
         event.getHook().sendMessageEmbeds(getME()).queue();
 
-        event.getGuild().getAudioManager().closeAudioConnection();
         new Thread();
         Thread.sleep(2000);
+        event.getGuild().getAudioManager().closeAudioConnection();
 
         event.getJDA().shutdown();
         System.exit(0);

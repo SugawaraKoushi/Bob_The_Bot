@@ -98,7 +98,5 @@ public class Main {
         guild.upsertCommand("restart", "Restart Bob").queue();
 
         guild.upsertCommand("shutdown", "Turn off Bob").queue();
-
-        guild.updateCommands().queue();
     }
 }
