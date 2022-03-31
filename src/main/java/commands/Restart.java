@@ -17,7 +17,7 @@ public class Restart implements ICommand{
 
         musicManager.scheduler.getQueue().clear();
         musicManager.player.stopTrack();
-        playerManager.loadAndPlay(event.getTextChannel(), Config.get("SOUNDS_FOLDER") + "bob_out.ogg");
+        playerManager.loadAndPlay(event.getTextChannel(), Config.get("SHUTDOWN_TRACK"));
         event.getGuild().getAudioManager().closeAudioConnection();
 
         new Thread();
@@ -27,7 +27,7 @@ public class Restart implements ICommand{
 
         new Thread();
         Thread.sleep(2000);
-        Runtime.getRuntime().exec("cmd /c start " + Config.get("EXE_PATH"));
+        Runtime.getRuntime().exec(String.format("cmd /c start \"%s\"", Config.get("EXE_PATH")));
         System.exit(0);
     }
 
