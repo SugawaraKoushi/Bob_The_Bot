@@ -48,7 +48,7 @@ public class Shuffle implements ICommand {
             e.printStackTrace();
         }
 
-        end = tracks.get(tracks.size() - 1);
+        end = tracks.get(tracks.size() - 1).makeClone();
         tracks.remove(tracks.size() - 1);
         Collections.shuffle(tracks);
         tracks.add(end);
