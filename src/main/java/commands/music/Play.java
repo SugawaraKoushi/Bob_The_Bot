@@ -1,5 +1,6 @@
 package commands.music;
 
+import com.sedmelluq.discord.lavaplayer.track.AudioReference;
 import com.sedmelluq.discord.lavaplayer.track.AudioTrack;
 import commands.ICommand;
 import commands.Output;
@@ -27,7 +28,6 @@ public class Play implements ICommand {
 
         BlockingQueue<AudioTrack> queue = musicManager.scheduler.getQueue();
         List<AudioTrack> tracks = new ArrayList<>();
-        AudioTrack end = null;
         String[] songs;
         String content;
 
@@ -93,6 +93,8 @@ public class Play implements ICommand {
                         message = "**URL: favourite songs**";
                         event.replyEmbeds(getME()).queue();
 
+                        Arrays.asList(songs).forEach(System.out::println);
+
                         for (String song : songs) {
                             playerManager.loadAndPlay(event.getTextChannel(), song);
                         }
@@ -112,28 +114,23 @@ public class Play implements ICommand {
         } catch (Exception e) {
             e.printStackTrace();
         } finally {
+            if (!Config.get("USING_SOUNDS").equals("TRUE"))
+                return;
+
+            Thread.sleep(1000);
+
             while (!queue.isEmpty())
                 tracks.add(queue.take());
 
-            if (!tracks.isEmpty()) {
-                if (Config.get("USING_SOUNDS").equals("TRUE")) {
-                    if (tracks.get(tracks.size() - 1).getIdentifier().equals(Config.get("END_OF_QUEUE_TRACK"))) {
-                        end = tracks.get(tracks.size() - 1);
+            List<String> identifiers = new ArrayList<>();
+            tracks.forEach(track -> identifiers.add(track.getIdentifier()));
 
-                        for (int i = 0; i < tracks.size() - 1; i++)
-                            musicManager.scheduler.queue(tracks.get(i));
-                    }
-                }
+            if (identifiers.contains(Config.get("END_OF_QUEUE_TRACK"))) {
+                tracks.remove(identifiers.indexOf(Config.get("END_OF_QUEUE_TRACK")));
             }
 
-            if (end != null) {
-                new Thread();
-                Thread.sleep(100);
-                musicManager.scheduler.queue(end);
-            } else {
-                if(Config.get("USING_SOUNDS").equals("TRUE"))
-                    playerManager.loadAndPlay(event.getTextChannel(), Config.get("END_OF_QUEUE_TRACK"));
-            }
+            tracks.forEach(musicManager.scheduler::queue);
+            playerManager.loadAndPlay(event.getTextChannel(), Config.get("END_OF_QUEUE_TRACK"));
         }
     }
 

@@ -71,7 +71,6 @@ public class Main {
                 .addOptions(options)
                 .queue();
 
-
         guild.upsertCommand("play-next", "Play track the next")
                 .addOption(OptionType.STRING, "url", "play track", true).queue();
 
