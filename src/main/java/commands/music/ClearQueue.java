@@ -17,13 +17,14 @@ public class ClearQueue implements ICommand {
         final GuildVoiceState memberVoiceState = event.getMember().getVoiceState();
         final GuildMusicManager musicManager = playerManager.getGuildMusicManager(event.getGuild());
 
-        if(!memberVoiceState.inAudioChannel()){
-            message = "**You are not in voice channel to do this**";
-            event.replyEmbeds(getME()).queue();
-            return;
+        if(memberVoiceState != null) {
+            if(!memberVoiceState.inAudioChannel()){
+                message = "**You are not in voice channel to do this**";
+                event.replyEmbeds(getME()).queue();
+                return;
+            }
         }
 
-        event.deferReply().queue();
         musicManager.scheduler.getQueue().clear();
         message = "**Bob cleaned the queue**";
         event.replyEmbeds(getME()).queue();

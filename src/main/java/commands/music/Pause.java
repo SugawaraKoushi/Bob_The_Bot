@@ -17,10 +17,12 @@ public class Pause implements ICommand {
         final GuildVoiceState memberVoiceState = event.getMember().getVoiceState();
         final GuildMusicManager musicManager = playerManager.getGuildMusicManager(event.getGuild());
 
-        if(!memberVoiceState.inAudioChannel()){
-            message = "**You are not in voice channel to do this**";
-            event.replyEmbeds(getME()).queue();
-            return;
+        if(memberVoiceState != null) {
+            if(!memberVoiceState.inAudioChannel()){
+                message = "**You are not in voice channel to do this**";
+                event.replyEmbeds(getME()).queue();
+                return;
+            }
         }
 
         if(musicManager.player.getPlayingTrack() == null){

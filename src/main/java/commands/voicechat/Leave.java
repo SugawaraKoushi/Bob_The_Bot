@@ -15,10 +15,12 @@ public class Leave implements ICommand {
         final AudioManager audioManager = event.getGuild().getAudioManager();
         final GuildVoiceState memberVoiceState = event.getMember().getVoiceState();
 
-        if(!memberVoiceState.inAudioChannel()){
-            message = "**You are not in voice channel to do this**";
-            event.replyEmbeds(getME()).queue();
-            return;
+        if(memberVoiceState != null) {
+            if(!memberVoiceState.inAudioChannel()){
+                message = "**You are not in voice channel to do this**";
+                event.replyEmbeds(getME()).queue();
+                return;
+            }
         }
 
         if(!audioManager.isConnected()){

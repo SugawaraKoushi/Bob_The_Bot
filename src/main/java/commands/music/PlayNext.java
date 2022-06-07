@@ -12,6 +12,7 @@ import net.dv8tion.jda.api.events.interaction.command.SlashCommandInteractionEve
 import java.util.ArrayList;
 import java.util.List;
 import java.util.concurrent.BlockingQueue;
+import java.util.concurrent.TimeUnit;
 
 public class PlayNext implements ICommand {
     private String message;
@@ -22,14 +23,16 @@ public class PlayNext implements ICommand {
         final GuildVoiceState memberVoiceState = event.getMember().getVoiceState();
         final GuildMusicManager musicManager = playerManager.getGuildMusicManager(event.getGuild());
         final BlockingQueue<AudioTrack> queue = musicManager.scheduler.getQueue();
+
         String content;
         List<AudioTrack> tracks = new ArrayList<>();
-        event.deferReply().queue();
 
-        if (!memberVoiceState.inAudioChannel()) {
-            message = "**You are not in voice channel to do this**";
-            event.replyEmbeds(getME()).queue();
-            return;
+        if(memberVoiceState != null) {
+            if(!memberVoiceState.inAudioChannel()){
+                message = "**You are not in voice channel to do this**";
+                event.replyEmbeds(getME()).queue();
+                return;
+            }
         }
 
         try {
@@ -49,8 +52,7 @@ public class PlayNext implements ICommand {
 
         playerManager.loadAndPlay(event.getTextChannel(), content);
 
-        new Thread();
-        Thread.sleep(1000);
+        TimeUnit.SECONDS.sleep(1);
 
         for (AudioTrack track : tracks) {
             musicManager.scheduler.queue(track);

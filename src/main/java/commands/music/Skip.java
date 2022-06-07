@@ -15,11 +15,14 @@ public class Skip implements ICommand {
         final PlayerManager playerManager = PlayerManager.getInstance();
         final GuildVoiceState memberVoiceState = event.getMember().getVoiceState();
 
-        if(!memberVoiceState.inAudioChannel()){
-            message = "**You are not in voice channel to do this**";
-            event.replyEmbeds(getME()).queue();
-            return;
+        if(memberVoiceState != null) {
+            if(!memberVoiceState.inAudioChannel()){
+                message = "**You are not in voice channel to do this**";
+                event.replyEmbeds(getME()).queue();
+                return;
+            }
         }
+
         if(playerManager.getGuildMusicManager(event.getGuild()).scheduler == null){
             message = "**Bob can't skip nothing**";
             event.replyEmbeds(getME()).queue();

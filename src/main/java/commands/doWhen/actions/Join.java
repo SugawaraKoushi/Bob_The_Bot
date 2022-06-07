@@ -10,6 +10,8 @@ import net.dv8tion.jda.api.entities.Member;
 import net.dv8tion.jda.api.events.interaction.command.SlashCommandInteractionEvent;
 import net.dv8tion.jda.api.managers.AudioManager;
 
+import java.util.concurrent.TimeUnit;
+
 public class Join implements Action {
     private String message;
     private Member member;
@@ -59,7 +61,7 @@ public class Join implements Action {
 
         while (true) {
             try {
-                Thread.sleep(1000);
+                TimeUnit.SECONDS.sleep(1);
             } catch (Exception e) {
                 e.printStackTrace();
             }

@@ -6,6 +6,8 @@ import music.PlayerManager;
 import net.dv8tion.jda.api.entities.MessageEmbed;
 import net.dv8tion.jda.api.events.interaction.command.SlashCommandInteractionEvent;
 
+import java.util.concurrent.TimeUnit;
+
 public class Shutdown implements ICommand {
     String message = "**Shutting down**";
 
@@ -23,8 +25,7 @@ public class Shutdown implements ICommand {
 
         event.getHook().sendMessageEmbeds(getME()).queue();
 
-        new Thread();
-        Thread.sleep(2000);
+        TimeUnit.SECONDS.sleep(2);
         event.getGuild().getAudioManager().closeAudioConnection();
 
         event.getJDA().shutdown();

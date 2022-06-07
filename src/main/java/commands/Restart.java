@@ -6,6 +6,7 @@ import music.PlayerManager;
 import net.dv8tion.jda.api.entities.MessageEmbed;
 import net.dv8tion.jda.api.events.interaction.command.SlashCommandInteractionEvent;
 
+import java.util.concurrent.TimeUnit;
 
 public class Restart implements ICommand{
     private String message = "**Restarting...**";
@@ -20,13 +21,11 @@ public class Restart implements ICommand{
         playerManager.loadAndPlay(event.getTextChannel(), Config.get("SHUTDOWN_TRACK"));
         event.getGuild().getAudioManager().closeAudioConnection();
 
-        new Thread();
-        Thread.sleep(500);
+        TimeUnit.MILLISECONDS.sleep(500);
         event.replyEmbeds(getME()).queue();
         event.getJDA().shutdown();
 
-        new Thread();
-        Thread.sleep(2000);
+        TimeUnit.SECONDS.sleep(2);
 
         if (System.getProperty("os.name").toLowerCase().contains("windows")) {
             System.out.println("Restarting...");

@@ -29,10 +29,12 @@ public class Shuffle implements ICommand {
         List<AudioTrack> tracks = new ArrayList<>();
         AudioTrack end;
 
-        if (!memberVoiceState.inAudioChannel()) {
-            message = "**You are not in voice channel to do this**";
-            event.replyEmbeds(getME()).queue();
-            return;
+        if(memberVoiceState != null) {
+            if(!memberVoiceState.inAudioChannel()){
+                message = "**You are not in voice channel to do this**";
+                event.replyEmbeds(getME()).queue();
+                return;
+            }
         }
 
         if (queue.isEmpty()) {

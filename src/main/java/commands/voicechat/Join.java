@@ -26,10 +26,12 @@ public class Join implements ICommand {
             return;
         }
 
-        if(!memberVoiceState.inAudioChannel()){
-            message = "**You are not in voice channel to do this**";
-            event.replyEmbeds(getME()).queue();
-            return;
+        if(memberVoiceState != null) {
+            if(!memberVoiceState.inAudioChannel()){
+                message = "**You are not in voice channel to do this**";
+                event.replyEmbeds(getME()).queue();
+                return;
+            }
         }
 
         if(!selfMember.hasPermission(voiceChannel, Permission.VOICE_CONNECT)){

@@ -16,6 +16,7 @@ import java.io.File;
 import java.io.FileInputStream;
 import java.util.*;
 import java.util.concurrent.BlockingQueue;
+import java.util.concurrent.TimeUnit;
 
 public class Play implements ICommand {
     private String message = "";
@@ -117,7 +118,7 @@ public class Play implements ICommand {
             if (!Config.get("USING_SOUNDS").equals("TRUE"))
                 return;
 
-            Thread.sleep(1000);
+            TimeUnit.SECONDS.sleep(1);
 
             while (!queue.isEmpty())
                 tracks.add(queue.take());

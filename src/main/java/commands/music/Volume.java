@@ -20,10 +20,12 @@ public class Volume implements ICommand {
         String content = "";
         int volume;
 
-        if (!memberVoiceState.inAudioChannel()) {
-            message = "**You are not in voice channel to do this**";
-            event.replyEmbeds(getME()).queue();
-            return;
+        if(memberVoiceState != null) {
+            if(!memberVoiceState.inAudioChannel()){
+                message = "**You are not in voice channel to do this**";
+                event.replyEmbeds(getME()).queue();
+                return;
+            }
         }
 
         try {

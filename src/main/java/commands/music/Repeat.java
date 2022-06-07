@@ -21,10 +21,12 @@ public class Repeat implements ICommand {
         final GuildMusicManager musicManager = PlayerManager.getInstance().getGuildMusicManager(event.getGuild());
         final GuildVoiceState memberVoiceState = event.getMember().getVoiceState();
 
-        if (!memberVoiceState.inAudioChannel()) {
-            message = "**You are not in voice channel to do this**";
-            event.replyEmbeds(getME()).queue();
-            return;
+        if(memberVoiceState != null) {
+            if(!memberVoiceState.inAudioChannel()){
+                message = "**You are not in voice channel to do this**";
+                event.replyEmbeds(getME()).queue();
+                return;
+            }
         }
 
         String content;
