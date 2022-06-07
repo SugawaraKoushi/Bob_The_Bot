@@ -54,7 +54,6 @@ public class TrackScheduler extends AudioEventAdapter {
             String message = String.format("%s - %s", info.author, info.title);
             Main.getJDA().getPresence().setActivity(Activity.listening(message));
         }
-
     }
 
     @Override
@@ -66,8 +65,11 @@ public class TrackScheduler extends AudioEventAdapter {
                 return;
             }
 
+            Main.getJDA().getPresence().setActivity(null);
             nextTrack();
         }
+
+        Main.getJDA().getPresence().setActivity(null);
     }
 
     public BlockingQueue<AudioTrack> getQueue(){

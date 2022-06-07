@@ -27,8 +27,16 @@ public class Restart implements ICommand{
 
         new Thread();
         Thread.sleep(2000);
-        Runtime.getRuntime().exec("cmd /c start cmd.exe /C\"" + Config.get("EXE_PATH") + "\"");
-        System.exit(0);
+
+        if (System.getProperty("os.name").toLowerCase().contains("windows")) {
+            System.out.println("Restarting...");
+            Runtime.getRuntime().exec("cmd /c start cmd.exe /C\"" + Config.get("EXE_PATH") + "\"");
+            System.exit(0);
+        } else if (System.getProperty("os.name").toLowerCase().contains("linux")) {
+            System.out.println("Restarting...");
+            System.exit(0);
+            Runtime.getRuntime().exec("java -jar \"" + Config.get("EXE_PATH") + "\"");
+        }
     }
 
     @Override
