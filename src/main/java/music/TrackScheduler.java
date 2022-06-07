@@ -38,6 +38,12 @@ public class TrackScheduler extends AudioEventAdapter {
         // track goes to the queue instead.
         if (!player.startTrack(track, true)) {
             queue.offer(track);
+
+            if(player.getPlayingTrack() != null) {
+                AudioTrackInfo info = player.getPlayingTrack().getInfo();
+                String message = String.format("%s - %s", info.author, info.title);
+                Main.getJDA().getPresence().setActivity(Activity.listening(message));
+            }
         }
     }
 
@@ -53,6 +59,8 @@ public class TrackScheduler extends AudioEventAdapter {
             AudioTrackInfo info = player.getPlayingTrack().getInfo();
             String message = String.format("%s - %s", info.author, info.title);
             Main.getJDA().getPresence().setActivity(Activity.listening(message));
+        } else {
+            Main.getJDA().getPresence().setActivity(null);
         }
     }
 
@@ -65,11 +73,8 @@ public class TrackScheduler extends AudioEventAdapter {
                 return;
             }
 
-            Main.getJDA().getPresence().setActivity(null);
             nextTrack();
         }
-
-        Main.getJDA().getPresence().setActivity(null);
     }
 
     public BlockingQueue<AudioTrack> getQueue(){
