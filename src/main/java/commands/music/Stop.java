@@ -2,6 +2,7 @@ package commands.music;
 
 import commands.ICommand;
 import commands.Output;
+import main.Main;
 import music.GuildMusicManager;
 import music.PlayerManager;
 import net.dv8tion.jda.api.entities.GuildVoiceState;
@@ -29,6 +30,8 @@ public class Stop implements ICommand {
         musicManager.player.stopTrack();
         musicManager.player.setPaused(false);
         message = "**Music is stopped**";
+
+        Main.getJDA().getPresence().setActivity(null);
 
         event.replyEmbeds(getME()).queue();
     }

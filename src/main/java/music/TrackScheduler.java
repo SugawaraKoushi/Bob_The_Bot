@@ -8,6 +8,7 @@ import com.sedmelluq.discord.lavaplayer.track.AudioTrackInfo;
 import main.Main;
 import net.dv8tion.jda.api.entities.Activity;
 
+import java.util.Arrays;
 import java.util.concurrent.BlockingQueue;
 import java.util.concurrent.LinkedBlockingQueue;
 
@@ -41,8 +42,7 @@ public class TrackScheduler extends AudioEventAdapter {
 
             if(player.getPlayingTrack() != null) {
                 AudioTrackInfo info = player.getPlayingTrack().getInfo();
-                String message = String.format("%s - %s", info.author, info.title);
-                Main.getJDA().getPresence().setActivity(Activity.listening(message));
+                Main.getJDA().getPresence().setActivity(Activity.listening(info.title));
             }
         }
     }
@@ -57,8 +57,7 @@ public class TrackScheduler extends AudioEventAdapter {
 
         if(player.getPlayingTrack() != null) {
             AudioTrackInfo info = player.getPlayingTrack().getInfo();
-            String message = String.format("%s - %s", info.author, info.title);
-            Main.getJDA().getPresence().setActivity(Activity.listening(message));
+            Main.getJDA().getPresence().setActivity(Activity.listening(info.title));
         } else {
             Main.getJDA().getPresence().setActivity(null);
         }

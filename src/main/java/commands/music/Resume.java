@@ -1,9 +1,12 @@
 package commands.music;
 
+import com.sedmelluq.discord.lavaplayer.track.AudioTrackInfo;
 import commands.ICommand;
 import commands.Output;
+import main.Main;
 import music.GuildMusicManager;
 import music.PlayerManager;
+import net.dv8tion.jda.api.entities.Activity;
 import net.dv8tion.jda.api.entities.GuildVoiceState;
 import net.dv8tion.jda.api.entities.MessageEmbed;
 import net.dv8tion.jda.api.events.interaction.command.SlashCommandInteractionEvent;
@@ -31,7 +34,12 @@ public class Resume implements ICommand {
             return;
         }
 
-        playerManager.getGuildMusicManager(event.getGuild()).player.setPaused(false);
+        musicManager.player.setPaused(false);
+
+        AudioTrackInfo info = musicManager.player.getPlayingTrack().getInfo();
+        String activityContent = info.title;
+        Main.getJDA().getPresence().setActivity(Activity.listening(activityContent));
+
         message = "**Pause:** off";
         event.replyEmbeds(getME()).queue();
     }

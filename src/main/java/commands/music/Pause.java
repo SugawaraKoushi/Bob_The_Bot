@@ -2,8 +2,10 @@ package commands.music;
 
 import commands.ICommand;
 import commands.Output;
+import main.Main;
 import music.GuildMusicManager;
 import music.PlayerManager;
+import net.dv8tion.jda.api.entities.Activity;
 import net.dv8tion.jda.api.entities.GuildVoiceState;
 import net.dv8tion.jda.api.entities.MessageEmbed;
 import net.dv8tion.jda.api.events.interaction.command.SlashCommandInteractionEvent;
@@ -33,6 +35,7 @@ public class Pause implements ICommand {
 
         playerManager.getGuildMusicManager(event.getGuild()).player.setPaused(true);
         message = "**Pause:** on";
+        Main.getJDA().getPresence().setActivity(Activity.listening("Pause: on"));
         event.replyEmbeds(getME()).queue();
     }
 

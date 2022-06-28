@@ -105,8 +105,8 @@ public class Play implements ICommand {
                     // Воспроизводит трек по ссылке
                     case "url":
                         content = event.getOption("url").getAsString();
-                        message = "**URL:** ".concat(content);
-                        event.replyEmbeds(getME()).queue();
+                        message = content;
+                        event.reply(message).queue();
                         playerManager.loadAndPlay(event.getTextChannel(), content);
                         break;
                 }

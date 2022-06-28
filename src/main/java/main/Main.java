@@ -34,7 +34,6 @@ public class Main {
             return;
         }
 
-
         List<OptionData> actions = new ArrayList<>();
         actions.add(new OptionData(OptionType.STRING, "join-to", "ACTION: you in voicechat is required", false));
         actions.add(new OptionData(OptionType.STRING, "leave", "ACTION: you in voicechat is required", false));

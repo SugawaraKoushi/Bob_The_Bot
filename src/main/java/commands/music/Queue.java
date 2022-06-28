@@ -42,14 +42,14 @@ public class Queue implements ICommand {
             message = String.format("**List of %d / %d**\n", size, size);
 
         AudioTrack np_track = musicManager.player.getPlayingTrack();
-        message += String.format(":arrow_forward: %s - %s\n", np_track.getInfo().author, np_track.getInfo().title);
+        message += String.format(":arrow_forward: %s\n", np_track.getInfo().title);
 
         for (AudioTrack track : queue) {
             if (queue.size() > 19)
                 if (count > 19)
                     break;
 
-            message += "**" + (count + 1) + "**" + ". " + String.format("%s - %s\n", track.getInfo().author, track.getInfo().title);
+            message += "**" + (count + 1) + "**" + ".\t" + String.format("%s\n", track.getInfo().title);
             count++;
         }
 

@@ -57,8 +57,8 @@ public class PlayNext implements ICommand {
         for (AudioTrack track : tracks) {
             musicManager.scheduler.queue(track);
         }
-        message = "**URL**: ".concat(content);
-        event.replyEmbeds(getME()).queue();
+        message = content;
+        event.reply(message).queue();
     }
 
     @Override
