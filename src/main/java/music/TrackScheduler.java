@@ -7,8 +7,6 @@ import com.sedmelluq.discord.lavaplayer.track.AudioTrackEndReason;
 import com.sedmelluq.discord.lavaplayer.track.AudioTrackInfo;
 import main.Main;
 import net.dv8tion.jda.api.entities.Activity;
-
-import java.util.Arrays;
 import java.util.concurrent.BlockingQueue;
 import java.util.concurrent.LinkedBlockingQueue;
 
@@ -74,6 +72,18 @@ public class TrackScheduler extends AudioEventAdapter {
 
             nextTrack();
         }
+    }
+
+    @Override
+    public void onPlayerPause(AudioPlayer player) {
+        Main.getJDA().getPresence().setActivity(Activity.listening("Pause: on"));
+    }
+
+    @Override
+    public void onPlayerResume(AudioPlayer player) {
+        AudioTrackInfo info = player.getPlayingTrack().getInfo();
+        String activityContent = info.title;
+        Main.getJDA().getPresence().setActivity(Activity.listening(activityContent));
     }
 
     public BlockingQueue<AudioTrack> getQueue(){

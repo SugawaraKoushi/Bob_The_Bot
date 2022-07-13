@@ -1,6 +1,5 @@
 package commands.music;
 
-import com.sedmelluq.discord.lavaplayer.track.AudioReference;
 import com.sedmelluq.discord.lavaplayer.track.AudioTrack;
 import commands.ICommand;
 import commands.Output;
@@ -11,6 +10,10 @@ import net.dv8tion.jda.api.entities.GuildVoiceState;
 import net.dv8tion.jda.api.entities.MessageEmbed;
 import net.dv8tion.jda.api.events.interaction.command.SlashCommandInteractionEvent;
 import net.dv8tion.jda.api.interactions.commands.OptionMapping;
+import org.jsoup.Jsoup;
+import org.jsoup.nodes.Document;
+import org.jsoup.nodes.Element;
+import org.jsoup.select.Elements;
 
 import java.io.File;
 import java.io.FileInputStream;
@@ -20,6 +23,27 @@ import java.util.concurrent.TimeUnit;
 
 public class Play implements ICommand {
     private String message = "";
+
+    private static String findTrack(String track) {
+        try {
+            track = track.replace(" ", "+");
+            Document document = Jsoup.connect("https://www.google.com/search?q=" + track + "&biw=1920&bih=979&tbm=vid").get();
+            Elements elements = document.select("a");
+
+            for (Element element : elements) {
+                String url = element.attr("abs:href");
+                if (url.contains("https://www.youtube.com/watch?v=")) {
+                    return url;
+                }
+            }
+
+            return "";
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+
+        return "";
+    }
 
     @Override
     public void handle(SlashCommandInteractionEvent event) throws InterruptedException {
@@ -31,6 +55,7 @@ public class Play implements ICommand {
         List<AudioTrack> tracks = new ArrayList<>();
         String[] songs;
         String content;
+        boolean trackWasFound = true;
 
         if (!memberVoiceState.inAudioChannel()) {
             message = "**You are not in voice channel to do this**";
@@ -100,6 +125,30 @@ public class Play implements ICommand {
                             playerManager.loadAndPlay(event.getTextChannel(), song);
                         }
 
+                        is.close();
+                        break;
+
+                    // Находит трек на ютубе
+                    case "youtube":
+                        content = event.getOption("youtube").getAsString();
+                        long start = System.currentTimeMillis();
+                        content = findTrack(content);
+
+                        if (content.isEmpty()) {
+                            message = "**Track was not found**";
+
+                            if (System.currentTimeMillis() - start > 2000) {
+                                event.deferReply().queue();
+                            }
+
+                            event.replyEmbeds(getME()).queue();
+                            trackWasFound = false;
+                            break;
+                        }
+
+                        message = content;
+                        event.reply(message).queue();
+                        playerManager.loadAndPlay(event.getTextChannel(), content);
                         break;
 
                     // Воспроизводит трек по ссылке
@@ -111,13 +160,15 @@ public class Play implements ICommand {
                         break;
                 }
 
+
+            }
+
+            if (!Config.get("USING_SOUNDS").equals("TRUE") || !trackWasFound) {
+                return;
             }
         } catch (Exception e) {
             e.printStackTrace();
         } finally {
-            if (!Config.get("USING_SOUNDS").equals("TRUE"))
-                return;
-
             TimeUnit.SECONDS.sleep(1);
 
             while (!queue.isEmpty())

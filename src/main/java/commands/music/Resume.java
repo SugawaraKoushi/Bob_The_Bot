@@ -36,10 +36,6 @@ public class Resume implements ICommand {
 
         musicManager.player.setPaused(false);
 
-        AudioTrackInfo info = musicManager.player.getPlayingTrack().getInfo();
-        String activityContent = info.title;
-        Main.getJDA().getPresence().setActivity(Activity.listening(activityContent));
-
         message = "**Pause:** off";
         event.replyEmbeds(getME()).queue();
     }

@@ -35,7 +35,6 @@ public class Pause implements ICommand {
 
         playerManager.getGuildMusicManager(event.getGuild()).player.setPaused(true);
         message = "**Pause:** on";
-        Main.getJDA().getPresence().setActivity(Activity.listening("Pause: on"));
         event.replyEmbeds(getME()).queue();
     }
 

@@ -35,13 +35,35 @@ public class Main {
         }
 
         List<OptionData> actions = new ArrayList<>();
-        actions.add(new OptionData(OptionType.STRING, "join-to", "ACTION: you in voicechat is required", false));
-        actions.add(new OptionData(OptionType.STRING, "leave", "ACTION: you in voicechat is required", false));
-        actions.add(new OptionData(OptionType.STRING, "play", "ACTION: URL is required", false));
+        actions.add(new OptionData(
+                OptionType.STRING,
+                "join-to",
+                "ACTION: you in voicechat is required",
+                false)
+        );
+        actions.add(new OptionData(OptionType.STRING,
+                "leave",
+                "ACTION: you in voicechat is required",
+                false)
+        );
+        actions.add(new OptionData(OptionType.STRING,
+                "play",
+                "ACTION: URL is required",
+                false)
+        );
 
         List<OptionData> conditions = new ArrayList<>();
-        conditions.add(new OptionData(OptionType.STRING, "when-user-in-vc", "CONDITION: user name in next format: @{name} is required", false));
-        conditions.add(new OptionData(OptionType.STRING, "when-time-is", "CONDITION: time in next format: {hh:mm} is required", false));
+        conditions.add(new OptionData(
+                OptionType.STRING,
+                "when-user-in-vc",
+                "CONDITION: user name in next format: @{name} is required",
+                false)
+        );
+        conditions.add(new OptionData(OptionType.STRING,
+                "when-time-is",
+                "CONDITION: time in next format: {hh:mm} is required",
+                false)
+        );
 
         guild.upsertCommand("do", "Executes {action} after {condition} is met")
                 .addOptions(actions)
@@ -51,22 +73,36 @@ public class Main {
         guild.upsertCommand("clear-queue", "Clear the queue").queue();
 
         guild.upsertCommand("delete", "Delete track with given number")
-                .addOption(OptionType.STRING, "position", "put number of position of track here", true).queue();
+                .addOption(
+                        OptionType.STRING,
+                        "position",
+                        "put number of position of track here",
+                        true)
+                .queue();
 
         guild.upsertCommand("fav-playlist", "Favourite playlist")
-                .addOption(OptionType.STRING, "add", "add track or playlist into favourites", true).queue();
+                .addOption(
+                        OptionType.STRING,
+                        "add",
+                        "add track or playlist into favourites",
+                        true)
+                .queue();
 
         guild.upsertCommand("now-playing", "Return info of playing track").queue();
 
         guild.upsertCommand("pause", "Pause the track").queue();
 
         List<OptionData> options = new ArrayList<>();
-        options.add(new OptionData(OptionType.STRING, "random-song", "play random song from default directory").addChoice("yes", "yes"));
-        options.add(new OptionData(OptionType.STRING, "all-songs", "play all songs from default directory").addChoice("yes", "yes"));
-        options.add(new OptionData(OptionType.STRING, "fav-songs", "play all favourite songs").addChoice("yes", "yes"));
+        options.add(new OptionData(OptionType.STRING, "url", "play track"));
+        options.add(new OptionData(OptionType.STRING, "youtube", "find and play track from youtube"));
+        options.add(new OptionData(OptionType.STRING, "random-song",
+                "play random song from default directory").addChoice("yes", "yes"));
+        options.add(new OptionData(OptionType.STRING, "all-songs",
+                "play all songs from default directory").addChoice("yes", "yes"));
+        options.add(new OptionData(OptionType.STRING, "fav-songs",
+                "play all favourite songs").addChoice("yes", "yes"));
 
         guild.upsertCommand("play", "Play track")
-                .addOption(OptionType.STRING, "url", "play track")
                 .addOptions(options)
                 .queue();
 
@@ -76,7 +112,8 @@ public class Main {
         guild.upsertCommand("queue", "Get the queue").queue();
 
         guild.upsertCommand("repeat", "Set repeat")
-                .addOption(OptionType.STRING, "times", "put number of repeats here", false).queue();
+                .addOption(OptionType.STRING, "times", "put number of repeats here", false)
+                .queue();
 
         guild.upsertCommand("resume", "Resume the track").queue();
 
@@ -87,7 +124,8 @@ public class Main {
         guild.upsertCommand("stop", "Stop playing").queue();
 
         guild.upsertCommand("volume", "Set volume")
-                        .addOption(OptionType.STRING, "level", "put number between 0 and 100 here").queue();
+                .addOption(OptionType.STRING, "level", "put number between 0 and 100 here")
+                .queue();
 
         guild.upsertCommand("join", "Join the voicechat").queue();
 
