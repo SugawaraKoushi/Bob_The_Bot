@@ -9,6 +9,7 @@ import net.dv8tion.jda.api.entities.MessageEmbed;
 import net.dv8tion.jda.api.events.interaction.command.SlashCommandInteractionEvent;
 
 import java.util.concurrent.BlockingQueue;
+import java.util.concurrent.TimeUnit;
 
 public class Queue implements ICommand {
     private String message;
@@ -18,8 +19,9 @@ public class Queue implements ICommand {
         final GuildMusicManager musicManager = PlayerManager.getInstance().getGuildMusicManager(event.getGuild());
         final GuildVoiceState memberVoiceState = event.getMember().getVoiceState();
         final BlockingQueue<AudioTrack> queue = musicManager.scheduler.getQueue();
+        StringBuilder builder = new StringBuilder();
 
-        int count = 0;
+        int count = 1;
         int size = queue.size();
 
         if(memberVoiceState != null) {
@@ -41,18 +43,22 @@ public class Queue implements ICommand {
         else
             message = String.format("**List of %d / %d**\n", size, size);
 
-        AudioTrack np_track = musicManager.player.getPlayingTrack();
-        message += String.format(":arrow_forward: %s\n", np_track.getInfo().title);
+        AudioTrack npTrack = musicManager.player.getPlayingTrack();
+        builder.append(String.format(":arrow_forward: %s\n", npTrack.getInfo().title));
 
         for (AudioTrack track : queue) {
             if (queue.size() > 19)
                 if (count > 19)
                     break;
 
-            message += "**" + (count + 1) + "**" + ".\t" + String.format("%s\n", track.getInfo().title);
+            builder.append("**").append(count).append("**").append(".\t")
+                    .append(String.format("%s", track.getInfo().title))
+                    .append(formatTime(track.getDuration()))
+                    .append("\n");
             count++;
         }
 
+        message = builder.toString();
         event.replyEmbeds(getME()).queue();
     }
 
@@ -64,5 +70,13 @@ public class Queue implements ICommand {
     @Override
     public String getName() {
         return "queue";
+    }
+
+    private String formatTime(long timeInMillis){
+        final long hours = TimeUnit.MILLISECONDS.toHours(timeInMillis) % 24;
+        final long minutes = TimeUnit.MILLISECONDS.toMinutes(timeInMillis) % 60;
+        final long seconds = TimeUnit.MILLISECONDS.toSeconds(timeInMillis) % 60;
+
+        return String.format("%02d:%02d:%02d", hours, minutes, seconds);
     }
 }

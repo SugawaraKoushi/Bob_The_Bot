@@ -1,0 +1,741 @@
+11:24:29.577 [JDA RateLimit-Worker 1] DEBUG n.d.jda.internal.requests.Requester - Received response with following cf-rays: [72fb427f4b223768-HEL]
+11:24:29.775 [main] INFO  net.dv8tion.jda.api.JDA - Login Successful!
+11:24:29.798 [main] DEBUG n.d.j.a.u.SessionControllerAdapter - Creating new worker handle for shard pool 0
+11:24:29.798 [main] DEBUG n.d.j.a.u.SessionControllerAdapter - Running worker
+11:24:29.799 [ConcurrentSessionController-Worker-0] DEBUG n.d.j.a.u.SessionControllerAdapter - Running connect node for shard Shard [0 / 1]
+11:24:30.104 [JDA MainWS-ReadThread] INFO  n.d.j.i.requests.WebSocketClient - Connected to WebSocket
+11:24:30.104 [JDA MainWS-ReadThread] DEBUG n.d.j.i.requests.WebSocketClient - Connected with gateway intents: 11011011001101
+11:24:30.105 [JDA MainWS-ReadThread] DEBUG n.d.j.i.requests.WebSocketClient - Sending Identify-packet...
+11:24:30.151 [JDA MainWS-ReadThread] DEBUG n.d.j.i.requests.WebSocketClient - Got HELLO packet (OP 10). Initializing keep-alive.
+11:24:30.450 [JDA MainWS-ReadThread] DEBUG n.d.j.i.handle.GuildSetupController - Setting incomplete count to 1
+11:24:30.450 [JDA MainWS-ReadThread] DEBUG n.d.j.i.handle.GuildSetupController - Starting 75 second timeout for 1 guilds
+11:24:30.510 [JDA MainWS-ReadThread] DEBUG n.d.j.i.entities.EntityBuilder - Finished setup for guild with a null owner. GuildId: 224848534669754368 OwnerId: 190168860261875712
+11:24:30.515 [JDA MainWS-ReadThread] INFO  net.dv8tion.jda.api.JDA - Finished Loading!
+11:24:30.516 [JDA MainWS-ReadThread] INFO  main.Listener - Bob the Bot#6068 is ready 
+
+11:24:30.516 [JDA MainWS-ReadThread] DEBUG n.d.j.i.handle.GuildSetupController - Finished setup for guild 224848534669754368 firing cached events 0
+11:24:30.807 [JDA RateLimit-Worker 2] DEBUG n.d.j.internal.requests.RateLimiter - Caching bucket hash POST/applications/{application_id}/guilds/{guild_id}/commands -> db18a1c09af2e1661654351fbf0faf15
+11:24:30.807 [JDA RateLimit-Worker 2] DEBUG n.d.jda.internal.requests.Requester - Received response with following cf-rays: [72fb4286c96f3768-HEL]
+11:24:31.135 [JDA RateLimit-Worker 1] DEBUG n.d.jda.internal.requests.Requester - Received response with following cf-rays: [72fb42886c333768-HEL]
+11:24:31.340 [JDA RateLimit-Worker 1] DEBUG n.d.jda.internal.requests.Requester - Received response with following cf-rays: [72fb428a7fb63768-HEL]
+11:24:31.543 [JDA RateLimit-Worker 1] DEBUG n.d.jda.internal.requests.Requester - Received response with following cf-rays: [72fb428bba573768-HEL]
+11:24:31.757 [JDA RateLimit-Worker 1] DEBUG n.d.jda.internal.requests.Requester - Received response with following cf-rays: [72fb428cfced3768-HEL]
+11:24:31.759 [JDA RateLimit-Worker 1] DEBUG n.d.j.internal.requests.RateLimiter - Backing off 19005 ms for bucket db18a1c09af2e1661654351fbf0faf15:guild_id=224848534669754368 on route POST/applications/{application_id}/guilds/{guild_id}/commands
+11:24:51.116 [JDA RateLimit-Worker 3] DEBUG n.d.jda.internal.requests.Requester - Received response with following cf-rays: [72fb4305c870fe30-HEL]
+11:24:51.330 [JDA RateLimit-Worker 3] DEBUG n.d.jda.internal.requests.Requester - Received response with following cf-rays: [72fb43075a7bfe30-HEL]
+11:24:51.552 [JDA RateLimit-Worker 3] DEBUG n.d.jda.internal.requests.Requester - Received response with following cf-rays: [72fb4308abeefe30-HEL]
+11:24:51.761 [JDA RateLimit-Worker 3] DEBUG n.d.jda.internal.requests.Requester - Received response with following cf-rays: [72fb430a0d7ffe30-HEL]
+11:24:51.972 [JDA RateLimit-Worker 3] DEBUG n.d.jda.internal.requests.Requester - Received response with following cf-rays: [72fb430b5efafe30-HEL]
+11:24:51.973 [JDA RateLimit-Worker 3] DEBUG n.d.j.internal.requests.RateLimiter - Backing off 19139 ms for bucket db18a1c09af2e1661654351fbf0faf15:guild_id=224848534669754368 on route POST/applications/{application_id}/guilds/{guild_id}/commands
+11:24:59.114 [JDA RateLimit-Worker 4] DEBUG n.d.j.internal.requests.RateLimiter - Removed 2 expired buckets
+11:25:11.455 [JDA RateLimit-Worker 2] DEBUG n.d.jda.internal.requests.Requester - Received response with following cf-rays: [72fb4384fda8fe3c-HEL]
+11:25:11.686 [JDA RateLimit-Worker 2] DEBUG n.d.jda.internal.requests.Requester - Received response with following cf-rays: [72fb43867fc5fe3c-HEL]
+11:25:11.902 [JDA RateLimit-Worker 2] DEBUG n.d.jda.internal.requests.Requester - Received response with following cf-rays: [72fb4387e9ebfe3c-HEL]
+11:25:12.103 [JDA RateLimit-Worker 2] DEBUG n.d.jda.internal.requests.Requester - Received response with following cf-rays: [72fb43893becfe3c-HEL]
+11:25:12.338 [JDA RateLimit-Worker 2] DEBUG n.d.jda.internal.requests.Requester - Received response with following cf-rays: [72fb438a7e32fe3c-HEL]
+11:25:12.338 [JDA RateLimit-Worker 2] DEBUG n.d.j.internal.requests.RateLimiter - Backing off 19116 ms for bucket db18a1c09af2e1661654351fbf0faf15:guild_id=224848534669754368 on route POST/applications/{application_id}/guilds/{guild_id}/commands
+11:25:31.792 [JDA RateLimit-Worker 5] DEBUG n.d.jda.internal.requests.Requester - Received response with following cf-rays: [72fb44040ed6fe3c-HEL]
+11:25:32.001 [JDA RateLimit-Worker 5] DEBUG n.d.jda.internal.requests.Requester - Received response with following cf-rays: [72fb440588befe3c-HEL]
+11:25:32.255 [JDA RateLimit-Worker 5] DEBUG n.d.jda.internal.requests.Requester - Received response with following cf-rays: [72fb4406da2ffe3c-HEL]
+11:25:32.486 [JDA RateLimit-Worker 5] DEBUG n.d.jda.internal.requests.Requester - Received response with following cf-rays: [72fb44087c3bfe3c-HEL]
+11:25:59.125 [JDA RateLimit-Worker 3] DEBUG n.d.j.internal.requests.RateLimiter - Removed 1 expired buckets
+11:26:31.283 [JDA MainWS-ReadThread] DEBUG c.s.d.l.tools.io.TrustManagerBuilder - Certificate list /certificates/extended.txt not present in classpath.
+11:26:31.347 [lava-daemon-pool-info-loader-2-thread-1] DEBUG c.s.d.l.c.ogg.OggContainerProbe - Track D:\\Programs\\Bob\Sounds\\bob_shutdown.ogg is an OGG stream.
+11:26:31.357 [lava-daemon-pool-info-loader-2-thread-1] DEBUG c.s.d.l.p.DefaultAudioPlayerManager - Loaded a track with identifier D:\\Programs\\Bob\Sounds\\bob_shutdown.ogg using LocalAudioSourceManager.
+11:26:31.365 [lava-daemon-pool-info-loader-2-thread-1] DEBUG c.s.d.lavaplayer.player.AudioPlayer - Firing an event with class TrackStartEvent
+11:26:31.368 [lava-daemon-pool-playback-1-thread-1] DEBUG c.s.d.l.t.p.LocalAudioTrackExecutor - Starting to play track D:\\Programs\\Bob\Sounds\\bob_shutdown.ogg locally with listener com.sedmelluq.discord.lavaplayer.player.DefaultAudioPlayer@71f2feb3
+11:26:31.369 [lava-daemon-pool-playback-1-thread-1] DEBUG c.s.d.l.container.ogg.OggAudioTrack - Starting to play an OGG stream track D:\\Programs\\Bob\Sounds\\bob_shutdown.ogg
+11:26:31.377 [lava-daemon-pool-playback-1-thread-1] INFO  c.s.l.c.natives.NativeLibraryLoader - Native library libmpg123-0: loading with filter com.sedmelluq.discord.lavaplayer.natives.ConnectorNativeLibLoader$$Lambda$297/0x0000000800e92358@7b58d872
+11:26:31.378 [lava-daemon-pool-playback-1-thread-1] DEBUG c.s.l.c.n.ResourceNativeLibraryBinaryProvider - Native library libmpg123-0: trying to find from resources at /natives/win-x86-64/libmpg123-0.dll with com.sedmelluq.discord.lavaplayer.natives.ConnectorNativeLibLoader as classloader reference
+11:26:31.379 [lava-daemon-pool-playback-1-thread-1] DEBUG c.s.l.c.natives.NativeLibraryLoader - Native library libmpg123-0: detected C:\Users\senio\AppData\Local\Temp\lava-jni-natives as base directory for extraction.
+11:26:31.379 [lava-daemon-pool-playback-1-thread-1] DEBUG c.s.l.c.natives.NativeLibraryLoader - Native library libmpg123-0: extraction directory C:\Users\senio\AppData\Local\Temp\lava-jni-natives\1658651191379 does not exist, creating.
+11:26:31.385 [lava-daemon-pool-playback-1-thread-1] DEBUG c.s.l.c.natives.NativeLibraryLoader - Native library libmpg123-0: attempting to load library at C:\Users\senio\AppData\Local\Temp\lava-jni-natives\1658651191379\libmpg123-0.dll
+11:26:31.408 [lava-daemon-pool-playback-1-thread-1] INFO  c.s.l.c.natives.NativeLibraryLoader - Native library libmpg123-0: successfully loaded.
+11:26:31.409 [lava-daemon-pool-playback-1-thread-1] INFO  c.s.l.c.natives.NativeLibraryLoader - Native library connector: loading with filter null
+11:26:31.409 [lava-daemon-pool-playback-1-thread-1] DEBUG c.s.l.c.n.ResourceNativeLibraryBinaryProvider - Native library connector: trying to find from resources at /natives/win-x86-64/connector.dll with com.sedmelluq.discord.lavaplayer.natives.ConnectorNativeLibLoader as classloader reference
+11:26:31.409 [lava-daemon-pool-playback-1-thread-1] DEBUG c.s.l.c.natives.NativeLibraryLoader - Native library connector: detected C:\Users\senio\AppData\Local\Temp\lava-jni-natives as base directory for extraction.
+11:26:31.410 [lava-daemon-pool-playback-1-thread-1] DEBUG c.s.l.c.natives.NativeLibraryLoader - Native library connector: extraction directory C:\Users\senio\AppData\Local\Temp\lava-jni-natives\1658651191409 does not exist, creating.
+11:26:31.432 [lava-daemon-pool-playback-1-thread-1] DEBUG c.s.l.c.natives.NativeLibraryLoader - Native library connector: attempting to load library at C:\Users\senio\AppData\Local\Temp\lava-jni-natives\1658651191409\connector.dll
+11:26:31.475 [lava-daemon-pool-playback-1-thread-1] INFO  c.s.l.c.natives.NativeLibraryLoader - Native library connector: successfully loaded.
+11:26:31.677 [JDA RateLimit-Worker 4] DEBUG n.d.j.internal.requests.RateLimiter - Caching bucket hash POST/channels/{channel_id}/messages -> a06de0de4a08126315431cc0c55ee3dc
+11:26:31.677 [JDA RateLimit-Worker 4] DEBUG n.d.jda.internal.requests.Requester - Received response with following cf-rays: [72fb457a5dc3fe3c-HEL]
+11:26:31.754 [JDA RateLimit-Worker 1] DEBUG n.d.jda.internal.requests.Requester - Received response with following cf-rays: [72fb457a5dc1fe3c-HEL]
+11:26:32.006 [JDA RateLimit-Worker 2] DEBUG n.d.j.internal.requests.RateLimiter - Caching bucket hash POST/webhooks/{application_id}/{interaction_token} -> 3cd1f278bd0ecaf11e0d2391374c011d
+11:26:32.006 [JDA RateLimit-Worker 2] DEBUG n.d.jda.internal.requests.Requester - Received response with following cf-rays: [72fb457c4857fe3c-HEL]
+11:26:33.374 [JDA MainWS-ReadThread] DEBUG n.d.j.internal.requests.RateLimiter - Removed 3 expired buckets
+11:26:33.378 [JDA MainWS-ReadThread] INFO  n.d.j.internal.requests.RateLimiter - Waiting for 2 bucket(s) to finish. Average queue size of 0 requests
+11:05:59.395 [JDA RateLimit-Worker 1] DEBUG n.d.jda.internal.requests.Requester - Received response with following cf-rays: [7829c0c48dbd758f-DME]
+11:05:59.543 [main] INFO  net.dv8tion.jda.api.JDA - Login Successful!
+11:05:59.567 [main] DEBUG n.d.j.a.u.SessionControllerAdapter - Creating new worker handle for shard pool 0
+11:05:59.568 [main] DEBUG n.d.j.a.u.SessionControllerAdapter - Running worker
+11:05:59.569 [ConcurrentSessionController-Worker-0] DEBUG n.d.j.a.u.SessionControllerAdapter - Running connect node for shard Shard [0 / 1]
+11:05:59.952 [JDA MainWS-ReadThread] INFO  n.d.j.i.requests.WebSocketClient - Connected to WebSocket
+11:05:59.953 [JDA MainWS-ReadThread] DEBUG n.d.j.i.requests.WebSocketClient - Connected with gateway intents: 11011011001101
+11:05:59.953 [JDA MainWS-ReadThread] DEBUG n.d.j.i.requests.WebSocketClient - Sending Identify-packet...
+11:05:59.993 [JDA MainWS-ReadThread] DEBUG n.d.j.i.requests.WebSocketClient - Got HELLO packet (OP 10). Initializing keep-alive.
+11:06:00.247 [JDA MainWS-ReadThread] DEBUG n.d.j.i.handle.GuildSetupController - Setting incomplete count to 1
+11:06:00.248 [JDA MainWS-ReadThread] DEBUG n.d.j.i.handle.GuildSetupController - Starting 75 second timeout for 1 guilds
+11:06:00.313 [JDA MainWS-ReadThread] DEBUG n.d.j.i.entities.EntityBuilder - Finished setup for guild with a null owner. GuildId: 224848534669754368 OwnerId: 190168860261875712
+11:06:00.319 [JDA MainWS-ReadThread] INFO  net.dv8tion.jda.api.JDA - Finished Loading!
+11:06:00.320 [JDA MainWS-ReadThread] INFO  main.Listener - Bob the Bot#6068 is ready 
+
+11:06:00.320 [JDA MainWS-ReadThread] DEBUG n.d.j.i.handle.GuildSetupController - Finished setup for guild 224848534669754368 firing cached events 0
+11:06:00.634 [JDA RateLimit-Worker 2] DEBUG n.d.j.internal.requests.RateLimiter - Caching bucket hash POST/applications/{application_id}/guilds/{guild_id}/commands -> db18a1c09af2e1661654351fbf0faf15
+11:06:00.634 [JDA RateLimit-Worker 2] DEBUG n.d.jda.internal.requests.Requester - Received response with following cf-rays: [7829c0cc3d68758f-DME]
+11:06:00.863 [JDA RateLimit-Worker 1] DEBUG n.d.jda.internal.requests.Requester - Received response with following cf-rays: [7829c0cdcec6758f-DME]
+11:06:01.114 [JDA RateLimit-Worker 1] DEBUG n.d.jda.internal.requests.Requester - Received response with following cf-rays: [7829c0cf3839758f-DME]
+11:06:01.394 [JDA RateLimit-Worker 1] DEBUG n.d.jda.internal.requests.Requester - Received response with following cf-rays: [7829c0d0c9df758f-DME]
+11:06:01.635 [JDA RateLimit-Worker 1] DEBUG n.d.jda.internal.requests.Requester - Received response with following cf-rays: [7829c0d28b8a758f-DME]
+11:06:01.636 [JDA RateLimit-Worker 1] DEBUG n.d.j.internal.requests.RateLimiter - Backing off 18978 ms for bucket db18a1c09af2e1661654351fbf0faf15:guild_id=224848534669754368 on route POST/applications/{application_id}/guilds/{guild_id}/commands
+11:06:21.161 [JDA RateLimit-Worker 3] DEBUG n.d.jda.internal.requests.Requester - Received response with following cf-rays: [7829c14b0a9816d3-DME]
+11:06:21.406 [JDA RateLimit-Worker 3] DEBUG n.d.jda.internal.requests.Requester - Received response with following cf-rays: [7829c14e0e1716d3-DME]
+11:06:21.632 [JDA RateLimit-Worker 3] DEBUG n.d.jda.internal.requests.Requester - Received response with following cf-rays: [7829c14f9ff016d3-DME]
+11:06:21.871 [JDA RateLimit-Worker 3] DEBUG n.d.jda.internal.requests.Requester - Received response with following cf-rays: [7829c150f9ed16d3-DME]
+11:06:22.121 [JDA RateLimit-Worker 3] DEBUG n.d.jda.internal.requests.Requester - Received response with following cf-rays: [7829c1527b4c16d3-DME]
+11:06:22.122 [JDA RateLimit-Worker 3] DEBUG n.d.j.internal.requests.RateLimiter - Backing off 19057 ms for bucket db18a1c09af2e1661654351fbf0faf15:guild_id=224848534669754368 on route POST/applications/{application_id}/guilds/{guild_id}/commands
+11:06:23.342 [JDA RateLimit-Worker 2] DEBUG n.d.jda.internal.requests.Requester - Received response with following cf-rays: [7829c1560f2216d3-DME]
+11:06:28.684 [JDA MainWS-ReadThread] DEBUG c.s.d.l.tools.io.TrustManagerBuilder - Certificate list /certificates/extended.txt not present in classpath.
+11:06:28.759 [lava-daemon-pool-info-loader-2-thread-1] DEBUG c.s.d.l.c.ogg.OggContainerProbe - Track D:\\Programs\\Bob\Sounds\\bob_join.ogg is an OGG stream.
+11:06:28.768 [lava-daemon-pool-info-loader-2-thread-1] DEBUG c.s.d.l.p.DefaultAudioPlayerManager - Loaded a track with identifier D:\\Programs\\Bob\Sounds\\bob_join.ogg using LocalAudioSourceManager.
+11:06:28.772 [lava-daemon-pool-info-loader-2-thread-1] DEBUG c.s.d.lavaplayer.player.AudioPlayer - Firing an event with class TrackStartEvent
+11:06:28.776 [lava-daemon-pool-playback-1-thread-1] DEBUG c.s.d.l.t.p.LocalAudioTrackExecutor - Starting to play track D:\\Programs\\Bob\Sounds\\bob_join.ogg locally with listener com.sedmelluq.discord.lavaplayer.player.DefaultAudioPlayer@45d6a02f
+11:06:28.776 [lava-daemon-pool-playback-1-thread-1] DEBUG c.s.d.l.container.ogg.OggAudioTrack - Starting to play an OGG stream track D:\\Programs\\Bob\Sounds\\bob_join.ogg
+11:06:28.782 [lava-daemon-pool-playback-1-thread-1] INFO  c.s.l.c.natives.NativeLibraryLoader - Native library libmpg123-0: loading with filter com.sedmelluq.discord.lavaplayer.natives.ConnectorNativeLibLoader$$Lambda$304/0x0000000800e95b68@7a74df44
+11:06:28.783 [lava-daemon-pool-playback-1-thread-1] DEBUG c.s.l.c.n.ResourceNativeLibraryBinaryProvider - Native library libmpg123-0: trying to find from resources at /natives/win-x86-64/libmpg123-0.dll with com.sedmelluq.discord.lavaplayer.natives.ConnectorNativeLibLoader as classloader reference
+11:06:28.783 [lava-daemon-pool-playback-1-thread-1] DEBUG c.s.l.c.natives.NativeLibraryLoader - Native library libmpg123-0: detected C:\Users\senio\AppData\Local\Temp\lava-jni-natives as base directory for extraction.
+11:06:28.784 [lava-daemon-pool-playback-1-thread-1] DEBUG c.s.l.c.natives.NativeLibraryLoader - Native library libmpg123-0: extraction directory C:\Users\senio\AppData\Local\Temp\lava-jni-natives\1672560388784 does not exist, creating.
+11:06:28.787 [lava-daemon-pool-playback-1-thread-1] DEBUG c.s.l.c.natives.NativeLibraryLoader - Native library libmpg123-0: attempting to load library at C:\Users\senio\AppData\Local\Temp\lava-jni-natives\1672560388784\libmpg123-0.dll
+11:06:28.805 [lava-daemon-pool-playback-1-thread-1] INFO  c.s.l.c.natives.NativeLibraryLoader - Native library libmpg123-0: successfully loaded.
+11:06:28.806 [lava-daemon-pool-playback-1-thread-1] INFO  c.s.l.c.natives.NativeLibraryLoader - Native library connector: loading with filter null
+11:06:28.806 [lava-daemon-pool-playback-1-thread-1] DEBUG c.s.l.c.n.ResourceNativeLibraryBinaryProvider - Native library connector: trying to find from resources at /natives/win-x86-64/connector.dll with com.sedmelluq.discord.lavaplayer.natives.ConnectorNativeLibLoader as classloader reference
+11:06:28.807 [lava-daemon-pool-playback-1-thread-1] DEBUG c.s.l.c.natives.NativeLibraryLoader - Native library connector: detected C:\Users\senio\AppData\Local\Temp\lava-jni-natives as base directory for extraction.
+11:06:28.807 [lava-daemon-pool-playback-1-thread-1] DEBUG c.s.l.c.natives.NativeLibraryLoader - Native library connector: extraction directory C:\Users\senio\AppData\Local\Temp\lava-jni-natives\1672560388807 does not exist, creating.
+11:06:28.827 [lava-daemon-pool-playback-1-thread-1] DEBUG c.s.l.c.natives.NativeLibraryLoader - Native library connector: attempting to load library at C:\Users\senio\AppData\Local\Temp\lava-jni-natives\1672560388807\connector.dll
+11:06:28.872 [lava-daemon-pool-playback-1-thread-1] INFO  c.s.l.c.natives.NativeLibraryLoader - Native library connector: successfully loaded.
+11:06:28.885 [JDA RateLimit-Worker 4] DEBUG n.d.j.internal.requests.RateLimiter - Removed 5 expired buckets
+11:06:29.044 [JDA RateLimit-Worker 5] DEBUG n.d.j.internal.requests.RateLimiter - Caching bucket hash POST/channels/{channel_id}/messages -> 1d3c67957bcdccc6709861c232df8529
+11:06:29.044 [JDA RateLimit-Worker 5] DEBUG n.d.jda.internal.requests.Requester - Received response with following cf-rays: [7829c17d9d7c16d3-DME]
+11:06:29.119 [JDA Gateway-Worker 1] DEBUG n.d.j.i.requests.WebSocketClient - Sending voice request {"op":4,"d":{"self_deaf":false,"guild_id":224848534669754368,"channel_id":224848534669754370,"self_mute":false}}
+11:06:29.133 [JDA RateLimit-Worker 3] DEBUG n.d.jda.internal.requests.Requester - Received response with following cf-rays: [7829c17e0de716d3-DME]
+11:06:29.719 [JDA AudioWS-ReadThread (guildId: 224848534669754368)] DEBUG n.d.j.internal.audio.AudioWebSocket - Using encryption mode xsalsa20_poly1305_lite
+11:06:29.761 [JDA AudioWS-ReadThread (guildId: 224848534669754368)] DEBUG n.d.j.internal.audio.AudioWebSocket - Audio connection has finished connecting!
+11:06:31.991 [lava-daemon-pool-playback-1-thread-1] DEBUG c.s.d.l.t.p.LocalAudioTrackExecutor - Playing track D:\\Programs\\Bob\Sounds\\bob_join.ogg finished or was stopped.
+11:06:31.992 [JDA AudioConnection Guild: 224848534669754368 Sending Thread] DEBUG c.s.d.lavaplayer.player.AudioPlayer - Firing an event with class TrackEndEvent
+11:06:32.182 [JDA Gateway-Worker 1] DEBUG n.d.j.i.requests.WebSocketClient - Sending normal message {"op":3,"d":{"activities":[],"afk":false,"since":1672560391993,"status":"online"}}
+11:06:41.452 [JDA RateLimit-Worker 1] DEBUG n.d.jda.internal.requests.Requester - Received response with following cf-rays: [7829c1cb8b947b3f-DME]
+11:06:41.704 [JDA RateLimit-Worker 1] DEBUG n.d.jda.internal.requests.Requester - Received response with following cf-rays: [7829c1ccecb17b3f-DME]
+11:06:41.909 [JDA RateLimit-Worker 1] DEBUG n.d.jda.internal.requests.Requester - Received response with following cf-rays: [7829c1ce6e277b3f-DME]
+11:06:42.153 [JDA RateLimit-Worker 1] DEBUG n.d.jda.internal.requests.Requester - Received response with following cf-rays: [7829c1cfbf627b3f-DME]
+11:06:42.407 [JDA RateLimit-Worker 1] DEBUG n.d.jda.internal.requests.Requester - Received response with following cf-rays: [7829c1d139457b3f-DME]
+11:06:42.407 [JDA RateLimit-Worker 1] DEBUG n.d.j.internal.requests.RateLimiter - Backing off 19088 ms for bucket db18a1c09af2e1661654351fbf0faf15:guild_id=224848534669754368 on route POST/applications/{application_id}/guilds/{guild_id}/commands
+11:06:47.672 [lava-daemon-pool-info-loader-2-thread-1] DEBUG c.s.d.l.c.mp3.Mp3ContainerProbe - Track D:\\Programs\\Bob\\Music\\\Жирные Пердят - Перекати-поле EP - 04 Вашингтонское Родео Со Свиньями (Live).mp3 is an MP3 file.
+11:06:47.677 [lava-daemon-pool-info-loader-2-thread-1] DEBUG c.s.d.l.p.DefaultAudioPlayerManager - Loaded a track with identifier D:\\Programs\\Bob\\Music\\\Жирные Пердят - Перекати-поле EP - 04 Вашингтонское Родео Со Свиньями (Live).mp3 using LocalAudioSourceManager.
+11:06:47.678 [lava-daemon-pool-info-loader-2-thread-1] DEBUG c.s.d.lavaplayer.player.AudioPlayer - Firing an event with class TrackStartEvent
+11:06:47.678 [lava-daemon-pool-playback-1-thread-1] DEBUG c.s.d.l.t.p.LocalAudioTrackExecutor - Starting to play track D:\\Programs\\Bob\\Music\\\Жирные Пердят - Перекати-поле EP - 04 Вашингтонское Родео Со Свиньями (Live).mp3 locally with listener com.sedmelluq.discord.lavaplayer.player.DefaultAudioPlayer@45d6a02f
+11:06:47.682 [lava-daemon-pool-playback-1-thread-1] DEBUG c.s.d.l.container.mp3.Mp3AudioTrack - Starting to play MP3 track D:\\Programs\\Bob\\Music\\\Жирные Пердят - Перекати-поле EP - 04 Вашингтонское Родео Со Свиньями (Live).mp3
+11:06:48.007 [JDA RateLimit-Worker 3] DEBUG n.d.jda.internal.requests.Requester - Received response with following cf-rays: [7829c1f3c9b87b3f-DME]
+11:06:48.085 [JDA RateLimit-Worker 4] DEBUG n.d.jda.internal.requests.Requester - Received response with following cf-rays: [7829c1f3998c7b3f-DME]
+11:06:48.667 [lava-daemon-pool-info-loader-2-thread-1] DEBUG c.s.d.l.c.ogg.OggContainerProbe - Track D:\\Programs\\Bob\Sounds\\bob_dynamite.ogg is an OGG stream.
+11:06:48.667 [lava-daemon-pool-info-loader-2-thread-1] DEBUG c.s.d.l.p.DefaultAudioPlayerManager - Loaded a track with identifier D:\\Programs\\Bob\Sounds\\bob_dynamite.ogg using LocalAudioSourceManager.
+11:06:48.851 [JDA Gateway-Worker 1] DEBUG n.d.j.i.requests.WebSocketClient - Sending normal message {"op":3,"d":{"activities":[{"name":"Unknown title","type":2}],"afk":false,"since":1672560408669,"status":"online"}}
+11:06:48.928 [JDA RateLimit-Worker 1] DEBUG n.d.jda.internal.requests.Requester - Received response with following cf-rays: [7829c1f9ffcb7b3f-DME]
+11:06:58.872 [JDA RateLimit-Worker 5] DEBUG n.d.j.internal.requests.RateLimiter - Removed 4 expired buckets
+11:07:01.769 [JDA RateLimit-Worker 2] DEBUG n.d.jda.internal.requests.Requester - Received response with following cf-rays: [7829c24a7f4a13ba-DME]
+11:07:02.006 [JDA RateLimit-Worker 2] DEBUG n.d.jda.internal.requests.Requester - Received response with following cf-rays: [7829c24bd8ac13ba-DME]
+11:07:02.215 [JDA RateLimit-Worker 2] DEBUG n.d.jda.internal.requests.Requester - Received response with following cf-rays: [7829c24d5a6113ba-DME]
+11:07:02.437 [JDA RateLimit-Worker 2] DEBUG n.d.jda.internal.requests.Requester - Received response with following cf-rays: [7829c24eab8b13ba-DME]
+11:07:07.570 [JDA MainWS-ReadThread] DEBUG c.s.d.l.t.p.LocalAudioTrackExecutor - Requesting stop for track D:\\Programs\\Bob\\Music\\\Жирные Пердят - Перекати-поле EP - 04 Вашингтонское Родео Со Свиньями (Live).mp3
+11:07:07.570 [JDA MainWS-ReadThread] DEBUG c.s.d.lavaplayer.player.AudioPlayer - Firing an event with class TrackEndEvent
+11:07:07.570 [lava-daemon-pool-playback-1-thread-1] DEBUG c.s.d.l.t.p.LocalAudioTrackExecutor - Playing track D:\\Programs\\Bob\\Music\\\Жирные Пердят - Перекати-поле EP - 04 Вашингтонское Родео Со Свиньями (Live).mp3 finished or was stopped.
+11:07:07.986 [JDA RateLimit-Worker 4] DEBUG n.d.jda.internal.requests.Requester - Received response with following cf-rays: [7829c2701dd113ba-DME]
+11:07:08.065 [JDA Gateway-Worker 1] DEBUG n.d.j.i.requests.WebSocketClient - Sending normal message {"op":3,"d":{"activities":[],"afk":false,"since":1672560427570,"status":"online"}}
+11:07:10.701 [lava-daemon-pool-info-loader-2-thread-1] DEBUG c.s.d.l.c.ogg.OggContainerProbe - Track D:\\Programs\\Bob\Sounds\\bob_shutdown.ogg is an OGG stream.
+11:07:10.701 [lava-daemon-pool-info-loader-2-thread-1] DEBUG c.s.d.l.p.DefaultAudioPlayerManager - Loaded a track with identifier D:\\Programs\\Bob\Sounds\\bob_shutdown.ogg using LocalAudioSourceManager.
+11:07:10.702 [lava-daemon-pool-info-loader-2-thread-1] DEBUG c.s.d.lavaplayer.player.AudioPlayer - Firing an event with class TrackStartEvent
+11:07:10.702 [lava-daemon-pool-playback-1-thread-1] DEBUG c.s.d.l.t.p.LocalAudioTrackExecutor - Starting to play track D:\\Programs\\Bob\Sounds\\bob_shutdown.ogg locally with listener com.sedmelluq.discord.lavaplayer.player.DefaultAudioPlayer@45d6a02f
+11:07:10.702 [lava-daemon-pool-playback-1-thread-1] DEBUG c.s.d.l.container.ogg.OggAudioTrack - Starting to play an OGG stream track D:\\Programs\\Bob\Sounds\\bob_shutdown.ogg
+11:07:10.972 [JDA RateLimit-Worker 2] DEBUG n.d.jda.internal.requests.Requester - Received response with following cf-rays: [7829c283aa3c13ba-DME]
+11:07:10.972 [JDA RateLimit-Worker 5] DEBUG n.d.jda.internal.requests.Requester - Received response with following cf-rays: [7829c2839a1513ba-DME]
+11:07:11.330 [JDA RateLimit-Worker 4] DEBUG n.d.j.internal.requests.RateLimiter - Caching bucket hash POST/webhooks/{application_id}/{interaction_token} -> 3d2712a9e4fe17cc9d3fed4a8e672e5f
+11:07:11.330 [JDA RateLimit-Worker 4] DEBUG n.d.jda.internal.requests.Requester - Received response with following cf-rays: [7829c2855c2313ba-DME]
+11:07:12.696 [JDA MainWS-ReadThread] DEBUG n.d.j.internal.requests.RateLimiter - Removed 5 expired buckets
+11:07:12.700 [JDA MainWS-ReadThread] INFO  n.d.j.internal.requests.RateLimiter - Waiting for 1 bucket(s) to finish. Average queue size of 0 requests
+11:07:25.136 [JDA RateLimit-Worker 1] DEBUG n.d.jda.internal.requests.Requester - Received response with following cf-rays: [7829c2dc8f724985-DME]
+11:07:25.329 [main] INFO  net.dv8tion.jda.api.JDA - Login Successful!
+11:07:25.356 [main] DEBUG n.d.j.a.u.SessionControllerAdapter - Creating new worker handle for shard pool 0
+11:07:25.357 [main] DEBUG n.d.j.a.u.SessionControllerAdapter - Running worker
+11:07:25.357 [ConcurrentSessionController-Worker-0] DEBUG n.d.j.a.u.SessionControllerAdapter - Running connect node for shard Shard [0 / 1]
+11:07:25.737 [JDA MainWS-ReadThread] INFO  n.d.j.i.requests.WebSocketClient - Connected to WebSocket
+11:07:25.737 [JDA MainWS-ReadThread] DEBUG n.d.j.i.requests.WebSocketClient - Connected with gateway intents: 11011011001101
+11:07:25.737 [JDA MainWS-ReadThread] DEBUG n.d.j.i.requests.WebSocketClient - Sending Identify-packet...
+11:07:25.796 [JDA MainWS-ReadThread] DEBUG n.d.j.i.requests.WebSocketClient - Got HELLO packet (OP 10). Initializing keep-alive.
+11:07:26.101 [JDA MainWS-ReadThread] DEBUG n.d.j.i.handle.GuildSetupController - Setting incomplete count to 1
+11:07:26.101 [JDA MainWS-ReadThread] DEBUG n.d.j.i.handle.GuildSetupController - Starting 75 second timeout for 1 guilds
+11:07:26.186 [JDA MainWS-ReadThread] DEBUG n.d.j.i.entities.EntityBuilder - Finished setup for guild with a null owner. GuildId: 224848534669754368 OwnerId: 190168860261875712
+11:07:26.193 [JDA MainWS-ReadThread] INFO  net.dv8tion.jda.api.JDA - Finished Loading!
+11:07:26.194 [JDA MainWS-ReadThread] INFO  main.Listener - Bob the Bot#6068 is ready 
+
+11:07:26.194 [JDA MainWS-ReadThread] DEBUG n.d.j.i.handle.GuildSetupController - Finished setup for guild 224848534669754368 firing cached events 0
+11:07:26.487 [JDA RateLimit-Worker 2] DEBUG n.d.j.internal.requests.RateLimiter - Caching bucket hash POST/applications/{application_id}/guilds/{guild_id}/commands -> db18a1c09af2e1661654351fbf0faf15
+11:07:26.487 [JDA RateLimit-Worker 2] DEBUG n.d.jda.internal.requests.Requester - Received response with following cf-rays: [7829c2e4cfed4985-DME]
+11:07:26.750 [JDA RateLimit-Worker 1] DEBUG n.d.jda.internal.requests.Requester - Received response with following cf-rays: [7829c2e659b04985-DME]
+11:07:26.997 [JDA RateLimit-Worker 1] DEBUG n.d.jda.internal.requests.Requester - Received response with following cf-rays: [7829c2e7fb524985-DME]
+11:07:27.252 [JDA RateLimit-Worker 1] DEBUG n.d.jda.internal.requests.Requester - Received response with following cf-rays: [7829c2e98d0d4985-DME]
+11:07:27.461 [JDA RateLimit-Worker 1] DEBUG n.d.jda.internal.requests.Requester - Received response with following cf-rays: [7829c2eb1ed74985-DME]
+11:07:27.462 [JDA RateLimit-Worker 1] DEBUG n.d.j.internal.requests.RateLimiter - Backing off 19022 ms for bucket db18a1c09af2e1661654351fbf0faf15:guild_id=224848534669754368 on route POST/applications/{application_id}/guilds/{guild_id}/commands
+11:07:32.058 [JDA MainWS-ReadThread] DEBUG c.s.d.l.tools.io.TrustManagerBuilder - Certificate list /certificates/extended.txt not present in classpath.
+11:07:32.338 [lava-daemon-pool-info-loader-2-thread-1] DEBUG c.s.d.l.c.ogg.OggContainerProbe - Track D:\\Programs\\Bob\Sounds\\bob_join.ogg is an OGG stream.
+11:07:32.366 [lava-daemon-pool-info-loader-2-thread-1] DEBUG c.s.d.l.p.DefaultAudioPlayerManager - Loaded a track with identifier D:\\Programs\\Bob\Sounds\\bob_join.ogg using LocalAudioSourceManager.
+11:07:35.912 [JDA RateLimit-Worker 4] DEBUG n.d.j.internal.requests.RateLimiter - Caching bucket hash POST/channels/{channel_id}/messages -> 1d3c67957bcdccc6709861c232df8529
+11:07:35.913 [JDA RateLimit-Worker 4] DEBUG n.d.jda.internal.requests.Requester - Received response with following cf-rays: [7829c30b6f044985-DME]
+11:07:35.914 [lava-daemon-pool-info-loader-2-thread-1] DEBUG c.s.d.lavaplayer.player.AudioPlayer - Firing an event with class TrackStartEvent
+11:07:35.933 [lava-daemon-pool-playback-1-thread-1] DEBUG c.s.d.l.t.p.LocalAudioTrackExecutor - Starting to play track D:\\Programs\\Bob\Sounds\\bob_join.ogg locally with listener com.sedmelluq.discord.lavaplayer.player.DefaultAudioPlayer@5b3532da
+11:07:46.500 [lava-daemon-pool-playback-1-thread-1] DEBUG c.s.d.l.container.ogg.OggAudioTrack - Starting to play an OGG stream track D:\\Programs\\Bob\Sounds\\bob_join.ogg
+11:07:49.744 [JDA Gateway-Worker 1] DEBUG n.d.j.i.requests.WebSocketClient - Sending voice request {"op":4,"d":{"self_deaf":false,"guild_id":224848534669754368,"channel_id":224848534669754370,"self_mute":false}}
+11:08:07.853 [JDA RateLimit-Worker 1] DEBUG n.d.j.internal.requests.RateLimiter - Removed 5 expired buckets
+11:08:07.853 [JDA Gateway-Worker 1] DEBUG n.d.j.i.requests.WebSocketClient - Sending voice request {"op":4,"d":{"self_deaf":false,"guild_id":224848534669754368,"channel_id":224848534669754370,"self_mute":false}}
+11:08:07.854 [JDA RateLimit-Worker 2] DEBUG n.d.jda.internal.requests.Requester - Received response with following cf-rays: [7829c3915ae24985-DME]
+11:08:08.333 [JDA RateLimit-Worker 3] DEBUG n.d.jda.internal.requests.Requester - Received response with following cf-rays: [7829c3dfddf14985-DME]
+11:08:12.562 [JDA RateLimit-Worker 2] DEBUG n.d.jda.internal.requests.Requester - Received response with following cf-rays: [7829c3feaa6f4985-DME]
+11:08:19.469 [JDA Gateway-Worker 1] DEBUG n.d.j.i.requests.WebSocketClient - Sending voice request {"op":4,"d":{"self_deaf":false,"guild_id":224848534669754368,"channel_id":224848534669754370,"self_mute":false}}
+11:08:19.481 [lava-daemon-pool-playback-1-thread-1] INFO  c.s.l.c.natives.NativeLibraryLoader - Native library libmpg123-0: loading with filter com.sedmelluq.discord.lavaplayer.natives.ConnectorNativeLibLoader$$Lambda$309/0x0000000800e93540@14b16f49
+11:08:19.481 [ForkJoinPool.commonPool-worker-1] ERROR n.d.jda.api.requests.RestAction - RestAction queue returned failure
+net.dv8tion.jda.api.exceptions.ErrorResponseException: 10062: Unknown interaction
+	at net.dv8tion.jda.api.exceptions.ErrorResponseException.create(ErrorResponseException.java:185)
+	at net.dv8tion.jda.api.requests.Request.onFailure(Request.java:117)
+	at net.dv8tion.jda.internal.requests.RestActionImpl.handleResponse(RestActionImpl.java:270)
+	at net.dv8tion.jda.internal.requests.restaction.interactions.DeferrableCallbackActionImpl.handleResponse(DeferrableCallbackActionImpl.java:50)
+	at net.dv8tion.jda.api.requests.Request.handleResponse(Request.java:259)
+	at net.dv8tion.jda.internal.requests.Requester.execute(Requester.java:237)
+	at net.dv8tion.jda.internal.requests.Requester.execute(Requester.java:252)
+	at net.dv8tion.jda.internal.requests.Requester.execute(Requester.java:141)
+	at net.dv8tion.jda.internal.requests.Requester.execute(Requester.java:124)
+	at net.dv8tion.jda.internal.requests.ratelimit.BotRateLimiter$Bucket.run(BotRateLimiter.java:478)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:539)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:304)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+Caused by: net.dv8tion.jda.api.exceptions.ContextException: null
+	at net.dv8tion.jda.api.exceptions.ContextException.here(ContextException.java:54)
+	at net.dv8tion.jda.api.requests.Request.<init>(Request.java:71)
+	at net.dv8tion.jda.internal.requests.RestActionImpl.queue(RestActionImpl.java:197)
+	at net.dv8tion.jda.internal.requests.restaction.interactions.InteractionCallbackImpl.queue(InteractionCallbackImpl.java:94)
+	at net.dv8tion.jda.api.requests.RestAction.queue(RestAction.java:573)
+	at net.dv8tion.jda.api.requests.RestAction.queue(RestAction.java:539)
+	at commands.voicechat.Join.handle(Join.java:49)
+	at main.Listener.lambda$onSlashCommandInteraction$1(Listener.java:83)
+	at java.base/java.util.HashMap.forEach(HashMap.java:1421)
+	at main.Listener.onSlashCommandInteraction(Listener.java:69)
+	at net.dv8tion.jda.api.hooks.ListenerAdapter.onEvent(ListenerAdapter.java:359)
+	at net.dv8tion.jda.api.hooks.InterfacedEventManager.handle(InterfacedEventManager.java:96)
+	at net.dv8tion.jda.internal.hooks.EventManagerProxy.handleInternally(EventManagerProxy.java:88)
+	at net.dv8tion.jda.internal.hooks.EventManagerProxy.handle(EventManagerProxy.java:70)
+	at net.dv8tion.jda.internal.JDAImpl.handleEvent(JDAImpl.java:164)
+	at net.dv8tion.jda.internal.handle.InteractionCreateHandler.handleCommand(InteractionCreateHandler.java:90)
+	at net.dv8tion.jda.internal.handle.InteractionCreateHandler.handleInternally(InteractionCreateHandler.java:66)
+	at net.dv8tion.jda.internal.handle.SocketHandler.handle(SocketHandler.java:36)
+	at net.dv8tion.jda.internal.requests.WebSocketClient.onDispatch(WebSocketClient.java:952)
+	at net.dv8tion.jda.internal.requests.WebSocketClient.onEvent(WebSocketClient.java:839)
+	at net.dv8tion.jda.internal.requests.WebSocketClient.handleEvent(WebSocketClient.java:817)
+	at net.dv8tion.jda.internal.requests.WebSocketClient.onBinaryMessage(WebSocketClient.java:991)
+	at com.neovisionaries.ws.client.ListenerManager.callOnBinaryMessage(ListenerManager.java:385)
+	at com.neovisionaries.ws.client.ReadingThread.callOnBinaryMessage(ReadingThread.java:276)
+	at com.neovisionaries.ws.client.ReadingThread.handleBinaryFrame(ReadingThread.java:996)
+	at com.neovisionaries.ws.client.ReadingThread.handleFrame(ReadingThread.java:755)
+	at com.neovisionaries.ws.client.ReadingThread.main(ReadingThread.java:108)
+	at com.neovisionaries.ws.client.ReadingThread.runMain(ReadingThread.java:64)
+	at com.neovisionaries.ws.client.WebSocketThread.run(WebSocketThread.java:45)
+11:08:19.491 [lava-daemon-pool-playback-1-thread-1] DEBUG c.s.l.c.n.ResourceNativeLibraryBinaryProvider - Native library libmpg123-0: trying to find from resources at /natives/win-x86-64/libmpg123-0.dll with com.sedmelluq.discord.lavaplayer.natives.ConnectorNativeLibLoader as classloader reference
+11:08:19.494 [lava-daemon-pool-playback-1-thread-1] DEBUG c.s.l.c.natives.NativeLibraryLoader - Native library libmpg123-0: detected C:\Users\senio\AppData\Local\Temp\lava-jni-natives as base directory for extraction.
+11:08:19.497 [lava-daemon-pool-playback-1-thread-1] DEBUG c.s.l.c.natives.NativeLibraryLoader - Native library libmpg123-0: extraction directory C:\Users\senio\AppData\Local\Temp\lava-jni-natives\1672560499494 does not exist, creating.
+11:08:19.504 [lava-daemon-pool-playback-1-thread-1] DEBUG c.s.l.c.natives.NativeLibraryLoader - Native library libmpg123-0: attempting to load library at C:\Users\senio\AppData\Local\Temp\lava-jni-natives\1672560499494\libmpg123-0.dll
+11:08:19.518 [lava-daemon-pool-playback-1-thread-1] INFO  c.s.l.c.natives.NativeLibraryLoader - Native library libmpg123-0: successfully loaded.
+11:08:19.519 [lava-daemon-pool-playback-1-thread-1] INFO  c.s.l.c.natives.NativeLibraryLoader - Native library connector: loading with filter null
+11:08:19.520 [lava-daemon-pool-playback-1-thread-1] DEBUG c.s.l.c.n.ResourceNativeLibraryBinaryProvider - Native library connector: trying to find from resources at /natives/win-x86-64/connector.dll with com.sedmelluq.discord.lavaplayer.natives.ConnectorNativeLibLoader as classloader reference
+11:08:19.520 [lava-daemon-pool-playback-1-thread-1] DEBUG c.s.l.c.natives.NativeLibraryLoader - Native library connector: detected C:\Users\senio\AppData\Local\Temp\lava-jni-natives as base directory for extraction.
+11:08:19.521 [lava-daemon-pool-playback-1-thread-1] DEBUG c.s.l.c.natives.NativeLibraryLoader - Native library connector: extraction directory C:\Users\senio\AppData\Local\Temp\lava-jni-natives\1672560499520 does not exist, creating.
+11:08:19.551 [lava-daemon-pool-playback-1-thread-1] DEBUG c.s.l.c.natives.NativeLibraryLoader - Native library connector: attempting to load library at C:\Users\senio\AppData\Local\Temp\lava-jni-natives\1672560499520\connector.dll
+11:08:19.595 [lava-daemon-pool-playback-1-thread-1] INFO  c.s.l.c.natives.NativeLibraryLoader - Native library connector: successfully loaded.
+11:08:19.705 [JDA RateLimit-Worker 2] DEBUG n.d.jda.internal.requests.Requester - Received response with following cf-rays: [7829c43179f84985-DME]
+11:08:19.742 [JDA AudioWS-ReadThread (guildId: 224848534669754368)] DEBUG n.d.j.internal.audio.AudioWebSocket - Using encryption mode xsalsa20_poly1305_lite
+11:08:19.808 [JDA AudioWS-ReadThread (guildId: 224848534669754368)] DEBUG n.d.j.internal.audio.AudioWebSocket - Audio connection has finished connecting!
+11:08:19.964 [JDA RateLimit-Worker 2] DEBUG n.d.jda.internal.requests.Requester - Received response with following cf-rays: [7829c432eb9a4985-DME]
+11:08:20.180 [JDA RateLimit-Worker 2] DEBUG n.d.jda.internal.requests.Requester - Received response with following cf-rays: [7829c4348d2c4985-DME]
+11:08:20.380 [JDA RateLimit-Worker 2] DEBUG n.d.jda.internal.requests.Requester - Received response with following cf-rays: [7829c435ee794985-DME]
+11:08:20.592 [JDA RateLimit-Worker 2] DEBUG n.d.jda.internal.requests.Requester - Received response with following cf-rays: [7829c4372fda4985-DME]
+11:08:20.592 [JDA RateLimit-Worker 2] DEBUG n.d.j.internal.requests.RateLimiter - Backing off 19099 ms for bucket db18a1c09af2e1661654351fbf0faf15:guild_id=224848534669754368 on route POST/applications/{application_id}/guilds/{guild_id}/commands
+11:08:22.041 [lava-daemon-pool-playback-1-thread-1] DEBUG c.s.d.l.t.p.LocalAudioTrackExecutor - Playing track D:\\Programs\\Bob\Sounds\\bob_join.ogg finished or was stopped.
+11:08:22.047 [JDA AudioConnection Guild: 224848534669754368 Sending Thread] DEBUG c.s.d.lavaplayer.player.AudioPlayer - Firing an event with class TrackEndEvent
+11:08:22.488 [JDA Gateway-Worker 1] DEBUG n.d.j.i.requests.WebSocketClient - Sending normal message {"op":3,"d":{"activities":[],"afk":false,"since":1672560502047,"status":"online"}}
+11:08:24.641 [JDA RateLimit-Worker 1] DEBUG n.d.j.internal.requests.RateLimiter - Removed 1 expired buckets
+11:08:40.011 [JDA RateLimit-Worker 5] DEBUG n.d.jda.internal.requests.Requester - Received response with following cf-rays: [7829c4b05c6b9d63-DME]
+11:08:40.219 [JDA RateLimit-Worker 5] DEBUG n.d.jda.internal.requests.Requester - Received response with following cf-rays: [7829c4b1df239d63-DME]
+11:08:40.489 [JDA RateLimit-Worker 5] DEBUG n.d.jda.internal.requests.Requester - Received response with following cf-rays: [7829c4b329529d63-DME]
+11:08:40.731 [JDA RateLimit-Worker 5] DEBUG n.d.jda.internal.requests.Requester - Received response with following cf-rays: [7829c4b4dc339d63-DME]
+11:08:41.050 [JDA RateLimit-Worker 5] DEBUG n.d.jda.internal.requests.Requester - Received response with following cf-rays: [7829c4b65ec09d63-DME]
+11:08:41.051 [JDA RateLimit-Worker 5] DEBUG n.d.j.internal.requests.RateLimiter - Backing off 18992 ms for bucket db18a1c09af2e1661654351fbf0faf15:guild_id=224848534669754368 on route POST/applications/{application_id}/guilds/{guild_id}/commands
+11:08:44.262 [lava-daemon-pool-info-loader-2-thread-1] DEBUG c.s.d.l.c.mp3.Mp3ContainerProbe - Track D:\\Programs\\Bob\\Music\\\Жирные Пердят - Перекати-поле EP - 04 Вашингтонское Родео Со Свиньями (Live).mp3 is an MP3 file.
+11:08:44.284 [lava-daemon-pool-info-loader-2-thread-1] DEBUG c.s.d.l.p.DefaultAudioPlayerManager - Loaded a track with identifier D:\\Programs\\Bob\\Music\\\Жирные Пердят - Перекати-поле EP - 04 Вашингтонское Родео Со Свиньями (Live).mp3 using LocalAudioSourceManager.
+11:08:58.198 [JDA RateLimit-Worker 3] DEBUG n.d.j.internal.requests.RateLimiter - Removed 2 expired buckets
+11:09:10.930 [JDA RateLimit-Worker 2] DEBUG n.d.jda.internal.requests.Requester - Received response with following cf-rays: [7829c568ad5c9d63-DME]
+11:09:10.932 [JDA RateLimit-Worker 1] DEBUG n.d.jda.internal.requests.Requester - Received response with following cf-rays: [7829c568ad569d63-DME]
+11:09:10.933 [JDA RateLimit-Worker 4] DEBUG n.d.jda.internal.requests.Requester - Received response with following cf-rays: [7829c568ad599d63-DME]
+11:09:11.350 [ForkJoinPool.commonPool-worker-2] ERROR n.d.jda.api.requests.RestAction - RestAction queue returned failure
+net.dv8tion.jda.api.exceptions.ErrorResponseException: 40060: Interaction has already been acknowledged.
+	at net.dv8tion.jda.api.exceptions.ErrorResponseException.create(ErrorResponseException.java:185)
+	at net.dv8tion.jda.api.requests.Request.onFailure(Request.java:117)
+	at net.dv8tion.jda.internal.requests.RestActionImpl.handleResponse(RestActionImpl.java:270)
+	at net.dv8tion.jda.internal.requests.restaction.interactions.DeferrableCallbackActionImpl.handleResponse(DeferrableCallbackActionImpl.java:50)
+	at net.dv8tion.jda.api.requests.Request.handleResponse(Request.java:259)
+	at net.dv8tion.jda.internal.requests.Requester.execute(Requester.java:237)
+	at net.dv8tion.jda.internal.requests.Requester.execute(Requester.java:252)
+	at net.dv8tion.jda.internal.requests.Requester.execute(Requester.java:141)
+	at net.dv8tion.jda.internal.requests.Requester.execute(Requester.java:124)
+	at net.dv8tion.jda.internal.requests.ratelimit.BotRateLimiter$Bucket.run(BotRateLimiter.java:478)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:539)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:304)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+Caused by: net.dv8tion.jda.api.exceptions.ContextException: null
+	at net.dv8tion.jda.api.exceptions.ContextException.here(ContextException.java:54)
+	at net.dv8tion.jda.api.requests.Request.<init>(Request.java:71)
+	at net.dv8tion.jda.internal.requests.RestActionImpl.queue(RestActionImpl.java:197)
+	at net.dv8tion.jda.internal.requests.restaction.interactions.InteractionCallbackImpl.queue(InteractionCallbackImpl.java:94)
+	at net.dv8tion.jda.api.requests.RestAction.queue(RestAction.java:573)
+	at net.dv8tion.jda.api.requests.RestAction.queue(RestAction.java:539)
+	at commands.music.Play.handle(Play.java:85)
+	at main.Listener.lambda$onSlashCommandInteraction$1(Listener.java:83)
+	at java.base/java.util.HashMap.forEach(HashMap.java:1421)
+	at main.Listener.onSlashCommandInteraction(Listener.java:69)
+	at net.dv8tion.jda.api.hooks.ListenerAdapter.onEvent(ListenerAdapter.java:359)
+	at net.dv8tion.jda.api.hooks.InterfacedEventManager.handle(InterfacedEventManager.java:96)
+	at net.dv8tion.jda.internal.hooks.EventManagerProxy.handleInternally(EventManagerProxy.java:88)
+	at net.dv8tion.jda.internal.hooks.EventManagerProxy.handle(EventManagerProxy.java:70)
+	at net.dv8tion.jda.internal.JDAImpl.handleEvent(JDAImpl.java:164)
+	at net.dv8tion.jda.internal.handle.InteractionCreateHandler.handleCommand(InteractionCreateHandler.java:90)
+	at net.dv8tion.jda.internal.handle.InteractionCreateHandler.handleInternally(InteractionCreateHandler.java:66)
+	at net.dv8tion.jda.internal.handle.SocketHandler.handle(SocketHandler.java:36)
+	at net.dv8tion.jda.internal.requests.WebSocketClient.onDispatch(WebSocketClient.java:952)
+	at net.dv8tion.jda.internal.requests.WebSocketClient.onEvent(WebSocketClient.java:839)
+	at net.dv8tion.jda.internal.requests.WebSocketClient.handleEvent(WebSocketClient.java:817)
+	at net.dv8tion.jda.internal.requests.WebSocketClient.onBinaryMessage(WebSocketClient.java:991)
+	at com.neovisionaries.ws.client.ListenerManager.callOnBinaryMessage(ListenerManager.java:385)
+	at com.neovisionaries.ws.client.ReadingThread.callOnBinaryMessage(ReadingThread.java:276)
+	at com.neovisionaries.ws.client.ReadingThread.handleBinaryFrame(ReadingThread.java:996)
+	at com.neovisionaries.ws.client.ReadingThread.handleFrame(ReadingThread.java:755)
+	at com.neovisionaries.ws.client.ReadingThread.main(ReadingThread.java:108)
+	at com.neovisionaries.ws.client.ReadingThread.runMain(ReadingThread.java:64)
+	at com.neovisionaries.ws.client.WebSocketThread.run(WebSocketThread.java:45)
+11:09:12.337 [JDA AudioConnection Guild: 224848534669754368 Sending Thread] DEBUG c.s.d.lavaplayer.player.AudioPlayer - Firing an event with class TrackStuckEvent
+11:09:13.967 [JDA RateLimit-Worker 2] DEBUG n.d.jda.internal.requests.Requester - Received response with following cf-rays: [7829c57bdc279d63-DME]
+11:09:16.629 [lava-daemon-pool-info-loader-2-thread-1] DEBUG c.s.d.lavaplayer.player.AudioPlayer - Firing an event with class TrackStartEvent
+11:09:17.048 [lava-daemon-pool-playback-1-thread-1] DEBUG c.s.d.l.t.p.LocalAudioTrackExecutor - Starting to play track D:\\Programs\\Bob\\Music\\\Жирные Пердят - Перекати-поле EP - 04 Вашингтонское Родео Со Свиньями (Live).mp3 locally with listener com.sedmelluq.discord.lavaplayer.player.DefaultAudioPlayer@5b3532da
+11:09:37.023 [JDA RateLimit-Worker 5] DEBUG n.d.j.internal.requests.RateLimiter - Removed 3 expired buckets
+11:09:37.030 [JDA AudioConnection Guild: 224848534669754368 Sending Thread] DEBUG c.s.d.lavaplayer.player.AudioPlayer - Firing an event with class TrackStuckEvent
+11:09:41.137 [JDA AudioWS-ReadThread (guildId: 224848534669754368)] DEBUG n.d.j.internal.audio.AudioWebSocket - The Audio connection was closed!
+By remote? false
+11:09:41.139 [JDA AudioWS-ReadThread (guildId: 224848534669754368)] DEBUG n.d.j.internal.audio.AudioWebSocket - Reason: null
+Close code: 1008
+11:10:08.376 [JDA RateLimit-Worker 1] DEBUG n.d.jda.internal.requests.Requester - Received response with following cf-rays: [7829c6d8ce289d96-DME]
+11:10:08.552 [main] INFO  net.dv8tion.jda.api.JDA - Login Successful!
+11:10:08.581 [main] DEBUG n.d.j.a.u.SessionControllerAdapter - Creating new worker handle for shard pool 0
+11:10:08.582 [main] DEBUG n.d.j.a.u.SessionControllerAdapter - Running worker
+11:10:08.582 [ConcurrentSessionController-Worker-0] DEBUG n.d.j.a.u.SessionControllerAdapter - Running connect node for shard Shard [0 / 1]
+11:10:08.943 [JDA MainWS-ReadThread] INFO  n.d.j.i.requests.WebSocketClient - Connected to WebSocket
+11:10:08.944 [JDA MainWS-ReadThread] DEBUG n.d.j.i.requests.WebSocketClient - Connected with gateway intents: 11011011001101
+11:10:08.945 [JDA MainWS-ReadThread] DEBUG n.d.j.i.requests.WebSocketClient - Sending Identify-packet...
+11:10:09.008 [JDA MainWS-ReadThread] DEBUG n.d.j.i.requests.WebSocketClient - Got HELLO packet (OP 10). Initializing keep-alive.
+11:10:09.289 [JDA MainWS-ReadThread] DEBUG n.d.j.i.handle.GuildSetupController - Setting incomplete count to 1
+11:10:09.290 [JDA MainWS-ReadThread] DEBUG n.d.j.i.handle.GuildSetupController - Starting 75 second timeout for 1 guilds
+11:10:09.380 [JDA MainWS-ReadThread] DEBUG n.d.j.i.entities.EntityBuilder - Finished setup for guild with a null owner. GuildId: 224848534669754368 OwnerId: 190168860261875712
+11:10:09.385 [JDA MainWS-ReadThread] INFO  net.dv8tion.jda.api.JDA - Finished Loading!
+11:10:09.386 [JDA MainWS-ReadThread] INFO  main.Listener - Bob the Bot#6068 is ready 
+
+11:10:09.386 [JDA MainWS-ReadThread] DEBUG n.d.j.i.handle.GuildSetupController - Finished setup for guild 224848534669754368 firing cached events 0
+11:10:09.625 [JDA RateLimit-Worker 2] DEBUG n.d.j.internal.requests.RateLimiter - Caching bucket hash POST/applications/{application_id}/guilds/{guild_id}/commands -> db18a1c09af2e1661654351fbf0faf15
+11:10:09.625 [JDA RateLimit-Worker 2] DEBUG n.d.jda.internal.requests.Requester - Received response with following cf-rays: [7829c6e089f49d96-DME]
+11:10:09.881 [JDA RateLimit-Worker 1] DEBUG n.d.jda.internal.requests.Requester - Received response with following cf-rays: [7829c6e1fc689d96-DME]
+11:10:10.092 [JDA RateLimit-Worker 1] DEBUG n.d.jda.internal.requests.Requester - Received response with following cf-rays: [7829c6e38f019d96-DME]
+11:10:10.329 [JDA RateLimit-Worker 1] DEBUG n.d.jda.internal.requests.Requester - Received response with following cf-rays: [7829c6e4d95a9d96-DME]
+11:10:10.544 [JDA RateLimit-Worker 1] DEBUG n.d.jda.internal.requests.Requester - Received response with following cf-rays: [7829c6e65c069d96-DME]
+11:10:10.545 [JDA RateLimit-Worker 1] DEBUG n.d.j.internal.requests.RateLimiter - Backing off 19068 ms for bucket db18a1c09af2e1661654351fbf0faf15:guild_id=224848534669754368 on route POST/applications/{application_id}/guilds/{guild_id}/commands
+11:10:30.035 [JDA RateLimit-Worker 3] DEBUG n.d.jda.internal.requests.Requester - Received response with following cf-rays: [7829c75f8c6a5aae-DME]
+11:10:30.267 [JDA RateLimit-Worker 3] DEBUG n.d.jda.internal.requests.Requester - Received response with following cf-rays: [7829c7617e475aae-DME]
+11:10:30.485 [JDA RateLimit-Worker 3] DEBUG n.d.jda.internal.requests.Requester - Received response with following cf-rays: [7829c762ff6d5aae-DME]
+11:10:30.578 [JDA MainWS-ReadThread] DEBUG c.s.d.l.tools.io.TrustManagerBuilder - Certificate list /certificates/extended.txt not present in classpath.
+11:10:30.639 [lava-daemon-pool-info-loader-2-thread-1] DEBUG c.s.d.l.c.ogg.OggContainerProbe - Track D:\\Programs\\Bob\Sounds\\bob_join.ogg is an OGG stream.
+11:10:30.648 [lava-daemon-pool-info-loader-2-thread-1] DEBUG c.s.d.l.p.DefaultAudioPlayerManager - Loaded a track with identifier D:\\Programs\\Bob\Sounds\\bob_join.ogg using LocalAudioSourceManager.
+11:10:30.669 [lava-daemon-pool-info-loader-2-thread-1] DEBUG c.s.d.lavaplayer.player.AudioPlayer - Firing an event with class TrackStartEvent
+11:10:30.672 [lava-daemon-pool-playback-1-thread-1] DEBUG c.s.d.l.t.p.LocalAudioTrackExecutor - Starting to play track D:\\Programs\\Bob\Sounds\\bob_join.ogg locally with listener com.sedmelluq.discord.lavaplayer.player.DefaultAudioPlayer@62f504c4
+11:10:30.673 [lava-daemon-pool-playback-1-thread-1] DEBUG c.s.d.l.container.ogg.OggAudioTrack - Starting to play an OGG stream track D:\\Programs\\Bob\Sounds\\bob_join.ogg
+11:10:30.678 [lava-daemon-pool-playback-1-thread-1] INFO  c.s.l.c.natives.NativeLibraryLoader - Native library libmpg123-0: loading with filter com.sedmelluq.discord.lavaplayer.natives.ConnectorNativeLibLoader$$Lambda$289/0x0000000800e8aeb0@a02deb0
+11:10:30.680 [lava-daemon-pool-playback-1-thread-1] DEBUG c.s.l.c.n.ResourceNativeLibraryBinaryProvider - Native library libmpg123-0: trying to find from resources at /natives/win-x86-64/libmpg123-0.dll with com.sedmelluq.discord.lavaplayer.natives.ConnectorNativeLibLoader as classloader reference
+11:10:30.681 [lava-daemon-pool-playback-1-thread-1] DEBUG c.s.l.c.natives.NativeLibraryLoader - Native library libmpg123-0: detected C:\Users\senio\AppData\Local\Temp\lava-jni-natives as base directory for extraction.
+11:10:30.682 [lava-daemon-pool-playback-1-thread-1] DEBUG c.s.l.c.natives.NativeLibraryLoader - Native library libmpg123-0: extraction directory C:\Users\senio\AppData\Local\Temp\lava-jni-natives\1672560630681 does not exist, creating.
+11:10:30.687 [lava-daemon-pool-playback-1-thread-1] DEBUG c.s.l.c.natives.NativeLibraryLoader - Native library libmpg123-0: attempting to load library at C:\Users\senio\AppData\Local\Temp\lava-jni-natives\1672560630681\libmpg123-0.dll
+11:10:30.702 [lava-daemon-pool-playback-1-thread-1] INFO  c.s.l.c.natives.NativeLibraryLoader - Native library libmpg123-0: successfully loaded.
+11:10:30.703 [lava-daemon-pool-playback-1-thread-1] INFO  c.s.l.c.natives.NativeLibraryLoader - Native library connector: loading with filter null
+11:10:30.703 [lava-daemon-pool-playback-1-thread-1] DEBUG c.s.l.c.n.ResourceNativeLibraryBinaryProvider - Native library connector: trying to find from resources at /natives/win-x86-64/connector.dll with com.sedmelluq.discord.lavaplayer.natives.ConnectorNativeLibLoader as classloader reference
+11:10:30.704 [lava-daemon-pool-playback-1-thread-1] DEBUG c.s.l.c.natives.NativeLibraryLoader - Native library connector: detected C:\Users\senio\AppData\Local\Temp\lava-jni-natives as base directory for extraction.
+11:10:30.704 [lava-daemon-pool-playback-1-thread-1] DEBUG c.s.l.c.natives.NativeLibraryLoader - Native library connector: extraction directory C:\Users\senio\AppData\Local\Temp\lava-jni-natives\1672560630704 does not exist, creating.
+11:10:30.723 [lava-daemon-pool-playback-1-thread-1] DEBUG c.s.l.c.natives.NativeLibraryLoader - Native library connector: attempting to load library at C:\Users\senio\AppData\Local\Temp\lava-jni-natives\1672560630704\connector.dll
+11:10:30.736 [JDA RateLimit-Worker 3] DEBUG n.d.jda.internal.requests.Requester - Received response with following cf-rays: [7829c76448925aae-DME]
+11:10:30.762 [lava-daemon-pool-playback-1-thread-1] INFO  c.s.l.c.natives.NativeLibraryLoader - Native library connector: successfully loaded.
+11:10:30.948 [JDA RateLimit-Worker 2] DEBUG n.d.j.internal.requests.RateLimiter - Caching bucket hash POST/channels/{channel_id}/messages -> 1d3c67957bcdccc6709861c232df8529
+11:10:30.948 [JDA RateLimit-Worker 2] DEBUG n.d.jda.internal.requests.Requester - Received response with following cf-rays: [7829c765799c5aae-DME]
+11:10:30.961 [JDA RateLimit-Worker 3] DEBUG n.d.jda.internal.requests.Requester - Received response with following cf-rays: [7829c765d9f15aae-DME]
+11:10:30.962 [JDA RateLimit-Worker 3] DEBUG n.d.j.internal.requests.RateLimiter - Backing off 19069 ms for bucket db18a1c09af2e1661654351fbf0faf15:guild_id=224848534669754368 on route POST/applications/{application_id}/guilds/{guild_id}/commands
+11:10:30.998 [JDA Gateway-Worker 1] DEBUG n.d.j.i.requests.WebSocketClient - Sending voice request {"op":4,"d":{"self_deaf":false,"guild_id":224848534669754368,"channel_id":224848534669754370,"self_mute":false}}
+11:10:31.077 [JDA RateLimit-Worker 5] DEBUG n.d.jda.internal.requests.Requester - Received response with following cf-rays: [7829c765f9fd5aae-DME]
+11:10:31.532 [JDA AudioWS-ReadThread (guildId: 224848534669754368)] DEBUG n.d.j.internal.audio.AudioWebSocket - Using encryption mode xsalsa20_poly1305_lite
+11:10:31.574 [JDA AudioWS-ReadThread (guildId: 224848534669754368)] DEBUG n.d.j.internal.audio.AudioWebSocket - Audio connection has finished connecting!
+11:10:33.813 [lava-daemon-pool-playback-1-thread-1] DEBUG c.s.d.l.t.p.LocalAudioTrackExecutor - Playing track D:\\Programs\\Bob\Sounds\\bob_join.ogg finished or was stopped.
+11:10:33.814 [JDA AudioConnection Guild: 224848534669754368 Sending Thread] DEBUG c.s.d.lavaplayer.player.AudioPlayer - Firing an event with class TrackEndEvent
+11:10:34.063 [JDA Gateway-Worker 1] DEBUG n.d.j.i.requests.WebSocketClient - Sending normal message {"op":3,"d":{"activities":[],"afk":false,"since":1672560633815,"status":"online"}}
+11:10:37.904 [JDA RateLimit-Worker 4] DEBUG n.d.j.internal.requests.RateLimiter - Removed 5 expired buckets
+11:10:41.715 [lava-daemon-pool-info-loader-2-thread-1] DEBUG c.s.d.l.c.ogg.OggContainerProbe - Track D:\\Programs\\Bob\Sounds\\bob_shutdown.ogg is an OGG stream.
+11:10:41.716 [lava-daemon-pool-info-loader-2-thread-1] DEBUG c.s.d.l.p.DefaultAudioPlayerManager - Loaded a track with identifier D:\\Programs\\Bob\Sounds\\bob_shutdown.ogg using LocalAudioSourceManager.
+11:10:41.717 [lava-daemon-pool-info-loader-2-thread-1] DEBUG c.s.d.lavaplayer.player.AudioPlayer - Firing an event with class TrackStartEvent
+11:10:41.718 [lava-daemon-pool-playback-1-thread-1] DEBUG c.s.d.l.t.p.LocalAudioTrackExecutor - Starting to play track D:\\Programs\\Bob\Sounds\\bob_shutdown.ogg locally with listener com.sedmelluq.discord.lavaplayer.player.DefaultAudioPlayer@62f504c4
+11:10:41.718 [lava-daemon-pool-playback-1-thread-1] DEBUG c.s.d.l.container.ogg.OggAudioTrack - Starting to play an OGG stream track D:\\Programs\\Bob\Sounds\\bob_shutdown.ogg
+11:10:42.090 [JDA RateLimit-Worker 1] DEBUG n.d.jda.internal.requests.Requester - Received response with following cf-rays: [7829c7ab0a4b7a75-DME]
+11:10:42.368 [JDA RateLimit-Worker 3] DEBUG n.d.jda.internal.requests.Requester - Received response with following cf-rays: [7829c7aaea317a75-DME]
+11:10:42.601 [JDA RateLimit-Worker 4] DEBUG n.d.j.internal.requests.RateLimiter - Caching bucket hash POST/webhooks/{application_id}/{interaction_token} -> 3d2712a9e4fe17cc9d3fed4a8e672e5f
+11:10:42.601 [JDA RateLimit-Worker 4] DEBUG n.d.jda.internal.requests.Requester - Received response with following cf-rays: [7829c7ae9c887a75-DME]
+11:10:43.725 [JDA MainWS-ReadThread] DEBUG n.d.j.internal.requests.RateLimiter - Removed 4 expired buckets
+11:10:43.729 [JDA MainWS-ReadThread] INFO  n.d.j.internal.requests.RateLimiter - Waiting for 1 bucket(s) to finish. Average queue size of 9 requests
+11:10:53.668 [JDA RateLimit-Worker 1] DEBUG n.d.jda.internal.requests.Requester - Received response with following cf-rays: [7829c7f3cbf23a8f-DME]
+11:10:53.825 [main] INFO  net.dv8tion.jda.api.JDA - Login Successful!
+11:10:53.854 [main] DEBUG n.d.j.a.u.SessionControllerAdapter - Creating new worker handle for shard pool 0
+11:10:53.854 [main] DEBUG n.d.j.a.u.SessionControllerAdapter - Running worker
+11:10:53.855 [ConcurrentSessionController-Worker-0] DEBUG n.d.j.a.u.SessionControllerAdapter - Running connect node for shard Shard [0 / 1]
+11:10:54.221 [JDA MainWS-WriteThread] INFO  n.d.j.i.requests.WebSocketClient - Connected to WebSocket
+11:10:54.221 [JDA MainWS-WriteThread] DEBUG n.d.j.i.requests.WebSocketClient - Connected with gateway intents: 11011011001101
+11:10:54.221 [JDA MainWS-WriteThread] DEBUG n.d.j.i.requests.WebSocketClient - Sending Identify-packet...
+11:10:54.229 [JDA MainWS-ReadThread] DEBUG n.d.j.i.requests.WebSocketClient - Got HELLO packet (OP 10). Initializing keep-alive.
+11:10:54.529 [JDA MainWS-ReadThread] DEBUG n.d.j.i.handle.GuildSetupController - Setting incomplete count to 1
+11:10:54.530 [JDA MainWS-ReadThread] DEBUG n.d.j.i.handle.GuildSetupController - Starting 75 second timeout for 1 guilds
+11:10:54.615 [JDA MainWS-ReadThread] DEBUG n.d.j.i.entities.EntityBuilder - Finished setup for guild with a null owner. GuildId: 224848534669754368 OwnerId: 190168860261875712
+11:10:54.622 [JDA MainWS-ReadThread] INFO  net.dv8tion.jda.api.JDA - Finished Loading!
+11:10:54.623 [JDA MainWS-ReadThread] INFO  main.Listener - Bob the Bot#6068 is ready 
+
+11:10:54.624 [JDA MainWS-ReadThread] DEBUG n.d.j.i.handle.GuildSetupController - Finished setup for guild 224848534669754368 firing cached events 0
+11:10:54.905 [JDA RateLimit-Worker 2] DEBUG n.d.j.internal.requests.RateLimiter - Caching bucket hash POST/applications/{application_id}/guilds/{guild_id}/commands -> db18a1c09af2e1661654351fbf0faf15
+11:10:54.905 [JDA RateLimit-Worker 2] DEBUG n.d.jda.internal.requests.Requester - Received response with following cf-rays: [7829c7fb7da93a8f-DME]
+11:10:55.133 [JDA RateLimit-Worker 1] DEBUG n.d.jda.internal.requests.Requester - Received response with following cf-rays: [7829c7fcffe33a8f-DME]
+11:10:55.358 [JDA RateLimit-Worker 1] DEBUG n.d.jda.internal.requests.Requester - Received response with following cf-rays: [7829c7fe598c3a8f-DME]
+11:10:55.584 [JDA RateLimit-Worker 1] DEBUG n.d.jda.internal.requests.Requester - Received response with following cf-rays: [7829c7ffcb693a8f-DME]
+11:10:55.804 [JDA RateLimit-Worker 1] DEBUG n.d.jda.internal.requests.Requester - Received response with following cf-rays: [7829c8012d6f3a8f-DME]
+11:10:55.804 [JDA RateLimit-Worker 1] DEBUG n.d.j.internal.requests.RateLimiter - Backing off 19092 ms for bucket db18a1c09af2e1661654351fbf0faf15:guild_id=224848534669754368 on route POST/applications/{application_id}/guilds/{guild_id}/commands
+11:10:59.815 [JDA MainWS-ReadThread] DEBUG c.s.d.l.tools.io.TrustManagerBuilder - Certificate list /certificates/extended.txt not present in classpath.
+11:10:59.883 [lava-daemon-pool-info-loader-2-thread-1] DEBUG c.s.d.l.c.ogg.OggContainerProbe - Track D:\\Programs\\Bob\Sounds\\bob_join.ogg is an OGG stream.
+11:10:59.894 [lava-daemon-pool-info-loader-2-thread-1] DEBUG c.s.d.l.p.DefaultAudioPlayerManager - Loaded a track with identifier D:\\Programs\\Bob\Sounds\\bob_join.ogg using LocalAudioSourceManager.
+11:10:59.916 [lava-daemon-pool-info-loader-2-thread-1] DEBUG c.s.d.lavaplayer.player.AudioPlayer - Firing an event with class TrackStartEvent
+11:10:59.918 [lava-daemon-pool-playback-1-thread-1] DEBUG c.s.d.l.t.p.LocalAudioTrackExecutor - Starting to play track D:\\Programs\\Bob\Sounds\\bob_join.ogg locally with listener com.sedmelluq.discord.lavaplayer.player.DefaultAudioPlayer@4aa10237
+11:10:59.919 [lava-daemon-pool-playback-1-thread-1] DEBUG c.s.d.l.container.ogg.OggAudioTrack - Starting to play an OGG stream track D:\\Programs\\Bob\Sounds\\bob_join.ogg
+11:10:59.925 [lava-daemon-pool-playback-1-thread-1] INFO  c.s.l.c.natives.NativeLibraryLoader - Native library libmpg123-0: loading with filter com.sedmelluq.discord.lavaplayer.natives.ConnectorNativeLibLoader$$Lambda$287/0x0000000800e8aa48@7ab48262
+11:10:59.926 [lava-daemon-pool-playback-1-thread-1] DEBUG c.s.l.c.n.ResourceNativeLibraryBinaryProvider - Native library libmpg123-0: trying to find from resources at /natives/win-x86-64/libmpg123-0.dll with com.sedmelluq.discord.lavaplayer.natives.ConnectorNativeLibLoader as classloader reference
+11:10:59.927 [lava-daemon-pool-playback-1-thread-1] DEBUG c.s.l.c.natives.NativeLibraryLoader - Native library libmpg123-0: detected C:\Users\senio\AppData\Local\Temp\lava-jni-natives as base directory for extraction.
+11:10:59.928 [lava-daemon-pool-playback-1-thread-1] DEBUG c.s.l.c.natives.NativeLibraryLoader - Native library libmpg123-0: extraction directory C:\Users\senio\AppData\Local\Temp\lava-jni-natives\1672560659927 does not exist, creating.
+11:10:59.931 [lava-daemon-pool-playback-1-thread-1] DEBUG c.s.l.c.natives.NativeLibraryLoader - Native library libmpg123-0: attempting to load library at C:\Users\senio\AppData\Local\Temp\lava-jni-natives\1672560659927\libmpg123-0.dll
+11:10:59.946 [lava-daemon-pool-playback-1-thread-1] INFO  c.s.l.c.natives.NativeLibraryLoader - Native library libmpg123-0: successfully loaded.
+11:10:59.947 [lava-daemon-pool-playback-1-thread-1] INFO  c.s.l.c.natives.NativeLibraryLoader - Native library connector: loading with filter null
+11:10:59.947 [lava-daemon-pool-playback-1-thread-1] DEBUG c.s.l.c.n.ResourceNativeLibraryBinaryProvider - Native library connector: trying to find from resources at /natives/win-x86-64/connector.dll with com.sedmelluq.discord.lavaplayer.natives.ConnectorNativeLibLoader as classloader reference
+11:10:59.948 [lava-daemon-pool-playback-1-thread-1] DEBUG c.s.l.c.natives.NativeLibraryLoader - Native library connector: detected C:\Users\senio\AppData\Local\Temp\lava-jni-natives as base directory for extraction.
+11:10:59.949 [lava-daemon-pool-playback-1-thread-1] DEBUG c.s.l.c.natives.NativeLibraryLoader - Native library connector: extraction directory C:\Users\senio\AppData\Local\Temp\lava-jni-natives\1672560659948 does not exist, creating.
+11:10:59.978 [lava-daemon-pool-playback-1-thread-1] DEBUG c.s.l.c.natives.NativeLibraryLoader - Native library connector: attempting to load library at C:\Users\senio\AppData\Local\Temp\lava-jni-natives\1672560659948\connector.dll
+11:11:00.029 [lava-daemon-pool-playback-1-thread-1] INFO  c.s.l.c.natives.NativeLibraryLoader - Native library connector: successfully loaded.
+11:11:00.163 [JDA RateLimit-Worker 4] DEBUG n.d.j.internal.requests.RateLimiter - Caching bucket hash POST/channels/{channel_id}/messages -> 1d3c67957bcdccc6709861c232df8529
+11:11:00.163 [JDA RateLimit-Worker 4] DEBUG n.d.jda.internal.requests.Requester - Received response with following cf-rays: [7829c81c38ad3a8f-DME]
+11:11:00.316 [JDA RateLimit-Worker 3] DEBUG n.d.jda.internal.requests.Requester - Received response with following cf-rays: [7829c81cb94e3a8f-DME]
+11:11:00.470 [JDA Gateway-Worker 1] DEBUG n.d.j.i.requests.WebSocketClient - Sending voice request {"op":4,"d":{"self_deaf":false,"guild_id":224848534669754368,"channel_id":224848534669754370,"self_mute":false}}
+11:11:00.978 [JDA AudioWS-ReadThread (guildId: 224848534669754368)] DEBUG n.d.j.internal.audio.AudioWebSocket - Using encryption mode xsalsa20_poly1305_lite
+11:11:01.024 [JDA AudioWS-ReadThread (guildId: 224848534669754368)] DEBUG n.d.j.internal.audio.AudioWebSocket - Audio connection has finished connecting!
+11:11:03.259 [lava-daemon-pool-playback-1-thread-1] DEBUG c.s.d.l.t.p.LocalAudioTrackExecutor - Playing track D:\\Programs\\Bob\Sounds\\bob_join.ogg finished or was stopped.
+11:11:03.260 [JDA AudioConnection Guild: 224848534669754368 Sending Thread] DEBUG c.s.d.lavaplayer.player.AudioPlayer - Firing an event with class TrackEndEvent
+11:11:03.514 [JDA Gateway-Worker 1] DEBUG n.d.j.i.requests.WebSocketClient - Sending normal message {"op":3,"d":{"activities":[],"afk":false,"since":1672560663261,"status":"online"}}
+11:11:15.197 [JDA RateLimit-Worker 1] DEBUG n.d.jda.internal.requests.Requester - Received response with following cf-rays: [7829c87a481d9d73-DME]
+11:11:15.408 [JDA RateLimit-Worker 1] DEBUG n.d.jda.internal.requests.Requester - Received response with following cf-rays: [7829c87bbaa89d73-DME]
+11:11:15.675 [JDA RateLimit-Worker 1] DEBUG n.d.jda.internal.requests.Requester - Received response with following cf-rays: [7829c87d1d429d73-DME]
+11:11:15.881 [JDA RateLimit-Worker 1] DEBUG n.d.jda.internal.requests.Requester - Received response with following cf-rays: [7829c87ebfce9d73-DME]
+11:11:16.099 [JDA RateLimit-Worker 1] DEBUG n.d.jda.internal.requests.Requester - Received response with following cf-rays: [7829c88009dd9d73-DME]
+11:11:16.100 [JDA RateLimit-Worker 1] DEBUG n.d.j.internal.requests.RateLimiter - Backing off 19089 ms for bucket db18a1c09af2e1661654351fbf0faf15:guild_id=224848534669754368 on route POST/applications/{application_id}/guilds/{guild_id}/commands
+11:11:23.173 [JDA RateLimit-Worker 2] DEBUG n.d.j.internal.requests.RateLimiter - Removed 5 expired buckets
+11:11:35.538 [JDA RateLimit-Worker 4] DEBUG n.d.jda.internal.requests.Requester - Received response with following cf-rays: [7829c8f938cc9d52-DME]
+11:11:35.760 [JDA RateLimit-Worker 4] DEBUG n.d.jda.internal.requests.Requester - Received response with following cf-rays: [7829c8faec159d52-DME]
+11:11:36.022 [JDA RateLimit-Worker 4] DEBUG n.d.jda.internal.requests.Requester - Received response with following cf-rays: [7829c8fc4ecf9d52-DME]
+11:11:36.308 [JDA RateLimit-Worker 4] DEBUG n.d.jda.internal.requests.Requester - Received response with following cf-rays: [7829c8fde9ae9d52-DME]
+11:11:36.520 [JDA RateLimit-Worker 4] DEBUG n.d.jda.internal.requests.Requester - Received response with following cf-rays: [7829c8ffad369d52-DME]
+11:11:36.521 [JDA RateLimit-Worker 4] DEBUG n.d.j.internal.requests.RateLimiter - Backing off 18988 ms for bucket db18a1c09af2e1661654351fbf0faf15:guild_id=224848534669754368 on route POST/applications/{application_id}/guilds/{guild_id}/commands
+11:11:46.595 [lava-daemon-pool-info-loader-2-thread-1] DEBUG c.s.d.l.c.ogg.OggContainerProbe - Track D:\\Programs\\Bob\Sounds\\bob_shutdown.ogg is an OGG stream.
+11:11:46.596 [lava-daemon-pool-info-loader-2-thread-1] DEBUG c.s.d.l.p.DefaultAudioPlayerManager - Loaded a track with identifier D:\\Programs\\Bob\Sounds\\bob_shutdown.ogg using LocalAudioSourceManager.
+11:11:46.597 [lava-daemon-pool-info-loader-2-thread-1] DEBUG c.s.d.lavaplayer.player.AudioPlayer - Firing an event with class TrackStartEvent
+11:11:46.597 [lava-daemon-pool-playback-1-thread-1] DEBUG c.s.d.l.t.p.LocalAudioTrackExecutor - Starting to play track D:\\Programs\\Bob\Sounds\\bob_shutdown.ogg locally with listener com.sedmelluq.discord.lavaplayer.player.DefaultAudioPlayer@4aa10237
+11:11:46.597 [lava-daemon-pool-playback-1-thread-1] DEBUG c.s.d.l.container.ogg.OggAudioTrack - Starting to play an OGG stream track D:\\Programs\\Bob\Sounds\\bob_shutdown.ogg
+11:11:46.951 [JDA RateLimit-Worker 2] DEBUG n.d.jda.internal.requests.Requester - Received response with following cf-rays: [7829c94089369d9e-DME]
+11:11:46.964 [JDA RateLimit-Worker 5] DEBUG n.d.jda.internal.requests.Requester - Received response with following cf-rays: [7829c940690a9d9e-DME]
+11:11:47.214 [JDA RateLimit-Worker 4] DEBUG n.d.j.internal.requests.RateLimiter - Caching bucket hash POST/webhooks/{application_id}/{interaction_token} -> 3d2712a9e4fe17cc9d3fed4a8e672e5f
+11:11:47.214 [JDA RateLimit-Worker 4] DEBUG n.d.jda.internal.requests.Requester - Received response with following cf-rays: [7829c9424c369d9e-DME]
+11:11:48.603 [JDA MainWS-ReadThread] DEBUG n.d.j.internal.requests.RateLimiter - Removed 4 expired buckets
+11:11:48.606 [JDA MainWS-ReadThread] INFO  n.d.j.internal.requests.RateLimiter - Waiting for 1 bucket(s) to finish. Average queue size of 4 requests
+11:12:09.370 [JDA RateLimit-Worker 1] DEBUG n.d.jda.internal.requests.Requester - Received response with following cf-rays: [7829c9ccedf17b23-DME]
+11:12:09.527 [main] INFO  net.dv8tion.jda.api.JDA - Login Successful!
+11:12:09.556 [main] DEBUG n.d.j.a.u.SessionControllerAdapter - Creating new worker handle for shard pool 0
+11:12:09.556 [main] DEBUG n.d.j.a.u.SessionControllerAdapter - Running worker
+11:12:09.557 [ConcurrentSessionController-Worker-0] DEBUG n.d.j.a.u.SessionControllerAdapter - Running connect node for shard Shard [0 / 1]
+11:12:09.930 [JDA MainWS-ReadThread] INFO  n.d.j.i.requests.WebSocketClient - Connected to WebSocket
+11:12:09.930 [JDA MainWS-ReadThread] DEBUG n.d.j.i.requests.WebSocketClient - Connected with gateway intents: 11011011001101
+11:12:09.932 [JDA MainWS-ReadThread] DEBUG n.d.j.i.requests.WebSocketClient - Sending Identify-packet...
+11:12:09.992 [JDA MainWS-ReadThread] DEBUG n.d.j.i.requests.WebSocketClient - Got HELLO packet (OP 10). Initializing keep-alive.
+11:12:10.237 [JDA MainWS-ReadThread] DEBUG n.d.j.i.handle.GuildSetupController - Setting incomplete count to 1
+11:12:10.237 [JDA MainWS-ReadThread] DEBUG n.d.j.i.handle.GuildSetupController - Starting 75 second timeout for 1 guilds
+11:12:10.313 [JDA MainWS-ReadThread] DEBUG n.d.j.i.entities.EntityBuilder - Finished setup for guild with a null owner. GuildId: 224848534669754368 OwnerId: 190168860261875712
+11:12:10.321 [JDA MainWS-ReadThread] INFO  net.dv8tion.jda.api.JDA - Finished Loading!
+11:12:10.322 [JDA MainWS-ReadThread] INFO  main.Listener - Bob the Bot#6068 is ready 
+
+11:12:10.323 [JDA MainWS-ReadThread] DEBUG n.d.j.i.handle.GuildSetupController - Finished setup for guild 224848534669754368 firing cached events 0
+11:12:10.593 [JDA RateLimit-Worker 2] DEBUG n.d.j.internal.requests.RateLimiter - Caching bucket hash POST/applications/{application_id}/guilds/{guild_id}/commands -> db18a1c09af2e1661654351fbf0faf15
+11:12:10.593 [JDA RateLimit-Worker 2] DEBUG n.d.jda.internal.requests.Requester - Received response with following cf-rays: [7829c9d48c2c7b23-DME]
+11:12:10.828 [JDA RateLimit-Worker 1] DEBUG n.d.jda.internal.requests.Requester - Received response with following cf-rays: [7829c9d61d987b23-DME]
+11:12:11.051 [JDA RateLimit-Worker 1] DEBUG n.d.jda.internal.requests.Requester - Received response with following cf-rays: [7829c9d76eac7b23-DME]
+11:12:11.318 [JDA RateLimit-Worker 1] DEBUG n.d.jda.internal.requests.Requester - Received response with following cf-rays: [7829c9d8d80a7b23-DME]
+11:12:11.549 [JDA RateLimit-Worker 1] DEBUG n.d.jda.internal.requests.Requester - Received response with following cf-rays: [7829c9da79a37b23-DME]
+11:12:11.550 [JDA RateLimit-Worker 1] DEBUG n.d.j.internal.requests.RateLimiter - Backing off 19039 ms for bucket db18a1c09af2e1661654351fbf0faf15:guild_id=224848534669754368 on route POST/applications/{application_id}/guilds/{guild_id}/commands
+11:12:18.877 [JDA MainWS-ReadThread] DEBUG c.s.d.l.tools.io.TrustManagerBuilder - Certificate list /certificates/extended.txt not present in classpath.
+11:12:18.937 [lava-daemon-pool-info-loader-2-thread-1] DEBUG c.s.d.l.c.ogg.OggContainerProbe - Track D:\\Programs\\Bob\Sounds\\bob_join.ogg is an OGG stream.
+11:12:18.946 [lava-daemon-pool-info-loader-2-thread-1] DEBUG c.s.d.l.p.DefaultAudioPlayerManager - Loaded a track with identifier D:\\Programs\\Bob\Sounds\\bob_join.ogg using LocalAudioSourceManager.
+11:12:18.968 [lava-daemon-pool-info-loader-2-thread-1] DEBUG c.s.d.lavaplayer.player.AudioPlayer - Firing an event with class TrackStartEvent
+11:12:18.971 [lava-daemon-pool-playback-1-thread-1] DEBUG c.s.d.l.t.p.LocalAudioTrackExecutor - Starting to play track D:\\Programs\\Bob\Sounds\\bob_join.ogg locally with listener com.sedmelluq.discord.lavaplayer.player.DefaultAudioPlayer@5b3532da
+11:12:18.972 [lava-daemon-pool-playback-1-thread-1] DEBUG c.s.d.l.container.ogg.OggAudioTrack - Starting to play an OGG stream track D:\\Programs\\Bob\Sounds\\bob_join.ogg
+11:12:18.977 [lava-daemon-pool-playback-1-thread-1] INFO  c.s.l.c.natives.NativeLibraryLoader - Native library libmpg123-0: loading with filter com.sedmelluq.discord.lavaplayer.natives.ConnectorNativeLibLoader$$Lambda$287/0x0000000800e8aa48@279aa388
+11:12:18.979 [lava-daemon-pool-playback-1-thread-1] DEBUG c.s.l.c.n.ResourceNativeLibraryBinaryProvider - Native library libmpg123-0: trying to find from resources at /natives/win-x86-64/libmpg123-0.dll with com.sedmelluq.discord.lavaplayer.natives.ConnectorNativeLibLoader as classloader reference
+11:12:18.980 [lava-daemon-pool-playback-1-thread-1] DEBUG c.s.l.c.natives.NativeLibraryLoader - Native library libmpg123-0: detected C:\Users\senio\AppData\Local\Temp\lava-jni-natives as base directory for extraction.
+11:12:18.981 [lava-daemon-pool-playback-1-thread-1] DEBUG c.s.l.c.natives.NativeLibraryLoader - Native library libmpg123-0: extraction directory C:\Users\senio\AppData\Local\Temp\lava-jni-natives\1672560738980 does not exist, creating.
+11:12:18.985 [lava-daemon-pool-playback-1-thread-1] DEBUG c.s.l.c.natives.NativeLibraryLoader - Native library libmpg123-0: attempting to load library at C:\Users\senio\AppData\Local\Temp\lava-jni-natives\1672560738980\libmpg123-0.dll
+11:12:19.000 [lava-daemon-pool-playback-1-thread-1] INFO  c.s.l.c.natives.NativeLibraryLoader - Native library libmpg123-0: successfully loaded.
+11:12:19.000 [lava-daemon-pool-playback-1-thread-1] INFO  c.s.l.c.natives.NativeLibraryLoader - Native library connector: loading with filter null
+11:12:19.001 [lava-daemon-pool-playback-1-thread-1] DEBUG c.s.l.c.n.ResourceNativeLibraryBinaryProvider - Native library connector: trying to find from resources at /natives/win-x86-64/connector.dll with com.sedmelluq.discord.lavaplayer.natives.ConnectorNativeLibLoader as classloader reference
+11:12:19.001 [lava-daemon-pool-playback-1-thread-1] DEBUG c.s.l.c.natives.NativeLibraryLoader - Native library connector: detected C:\Users\senio\AppData\Local\Temp\lava-jni-natives as base directory for extraction.
+11:12:19.002 [lava-daemon-pool-playback-1-thread-1] DEBUG c.s.l.c.natives.NativeLibraryLoader - Native library connector: extraction directory C:\Users\senio\AppData\Local\Temp\lava-jni-natives\1672560739001 does not exist, creating.
+11:12:19.022 [lava-daemon-pool-playback-1-thread-1] DEBUG c.s.l.c.natives.NativeLibraryLoader - Native library connector: attempting to load library at C:\Users\senio\AppData\Local\Temp\lava-jni-natives\1672560739001\connector.dll
+11:12:19.067 [lava-daemon-pool-playback-1-thread-1] INFO  c.s.l.c.natives.NativeLibraryLoader - Native library connector: successfully loaded.
+11:12:19.266 [JDA Gateway-Worker 1] DEBUG n.d.j.i.requests.WebSocketClient - Sending voice request {"op":4,"d":{"self_deaf":false,"guild_id":224848534669754368,"channel_id":224848534669754370,"self_mute":false}}
+11:12:19.292 [JDA RateLimit-Worker 4] DEBUG n.d.j.internal.requests.RateLimiter - Caching bucket hash POST/channels/{channel_id}/messages -> 1d3c67957bcdccc6709861c232df8529
+11:12:19.292 [JDA RateLimit-Worker 4] DEBUG n.d.jda.internal.requests.Requester - Received response with following cf-rays: [7829ca0a4f247b23-DME]
+11:12:19.319 [JDA RateLimit-Worker 3] DEBUG n.d.jda.internal.requests.Requester - Received response with following cf-rays: [7829ca0acf9b7b23-DME]
+11:12:19.793 [JDA AudioWS-ReadThread (guildId: 224848534669754368)] DEBUG n.d.j.internal.audio.AudioWebSocket - Using encryption mode xsalsa20_poly1305_lite
+11:12:19.833 [JDA AudioWS-ReadThread (guildId: 224848534669754368)] DEBUG n.d.j.internal.audio.AudioWebSocket - Audio connection has finished connecting!
+11:12:22.063 [lava-daemon-pool-playback-1-thread-1] DEBUG c.s.d.l.t.p.LocalAudioTrackExecutor - Playing track D:\\Programs\\Bob\Sounds\\bob_join.ogg finished or was stopped.
+11:12:22.064 [JDA AudioConnection Guild: 224848534669754368 Sending Thread] DEBUG c.s.d.lavaplayer.player.AudioPlayer - Firing an event with class TrackEndEvent
+11:12:47.124 [JDA Gateway-Worker 1] DEBUG n.d.j.i.requests.WebSocketClient - Sending normal message {"op":3,"d":{"activities":[],"afk":false,"since":1672560742064,"status":"online"}}
+11:12:47.131 [JDA RateLimit-Worker 2] DEBUG n.d.j.internal.requests.RateLimiter - Removed 5 expired buckets
+11:14:09.544 [JDA RateLimit-Worker 4] DEBUG n.d.j.internal.requests.RateLimiter - Removed 1 expired buckets
+11:14:10.000 [lava-daemon-pool-info-loader-2-thread-1] DEBUG c.s.d.l.c.wav.WavContainerProbe - Track D:\\Programs\\Bob\\Music\\\baraban.wav is a WAV file.
+11:14:11.513 [lava-daemon-pool-info-loader-2-thread-1] DEBUG c.s.d.l.p.DefaultAudioPlayerManager - Loaded a track with identifier D:\\Programs\\Bob\\Music\\\baraban.wav using LocalAudioSourceManager.
+11:16:04.961 [JDA RateLimit-Worker 1] DEBUG n.d.jda.internal.requests.Requester - Received response with following cf-rays: [7829cf8d2b7f7903-DME]
+11:16:05.135 [main] INFO  net.dv8tion.jda.api.JDA - Login Successful!
+11:16:05.160 [main] DEBUG n.d.j.a.u.SessionControllerAdapter - Creating new worker handle for shard pool 0
+11:16:05.160 [main] DEBUG n.d.j.a.u.SessionControllerAdapter - Running worker
+11:16:05.161 [ConcurrentSessionController-Worker-0] DEBUG n.d.j.a.u.SessionControllerAdapter - Running connect node for shard Shard [0 / 1]
+11:16:05.530 [JDA MainWS-WriteThread] INFO  n.d.j.i.requests.WebSocketClient - Connected to WebSocket
+11:16:05.530 [JDA MainWS-WriteThread] DEBUG n.d.j.i.requests.WebSocketClient - Connected with gateway intents: 11011011001101
+11:16:05.531 [JDA MainWS-WriteThread] DEBUG n.d.j.i.requests.WebSocketClient - Sending Identify-packet...
+11:16:05.540 [JDA MainWS-ReadThread] DEBUG n.d.j.i.requests.WebSocketClient - Got HELLO packet (OP 10). Initializing keep-alive.
+11:16:05.921 [JDA MainWS-ReadThread] DEBUG n.d.j.i.handle.GuildSetupController - Setting incomplete count to 1
+11:16:05.922 [JDA MainWS-ReadThread] DEBUG n.d.j.i.handle.GuildSetupController - Starting 75 second timeout for 1 guilds
+11:16:06.014 [JDA MainWS-ReadThread] DEBUG n.d.j.i.entities.EntityBuilder - Finished setup for guild with a null owner. GuildId: 224848534669754368 OwnerId: 190168860261875712
+11:16:06.019 [JDA MainWS-ReadThread] INFO  net.dv8tion.jda.api.JDA - Finished Loading!
+11:16:06.020 [JDA MainWS-ReadThread] INFO  main.Listener - Bob the Bot#6068 is ready 
+
+11:16:06.021 [JDA MainWS-ReadThread] DEBUG n.d.j.i.handle.GuildSetupController - Finished setup for guild 224848534669754368 firing cached events 0
+11:16:06.306 [JDA RateLimit-Worker 2] DEBUG n.d.j.internal.requests.RateLimiter - Caching bucket hash POST/applications/{application_id}/guilds/{guild_id}/commands -> db18a1c09af2e1661654351fbf0faf15
+11:16:06.306 [JDA RateLimit-Worker 2] DEBUG n.d.jda.internal.requests.Requester - Received response with following cf-rays: [7829cf95793f7903-DME]
+11:16:06.540 [JDA RateLimit-Worker 1] DEBUG n.d.jda.internal.requests.Requester - Received response with following cf-rays: [7829cf972a4a7903-DME]
+11:16:06.757 [JDA RateLimit-Worker 1] DEBUG n.d.jda.internal.requests.Requester - Received response with following cf-rays: [7829cf989b617903-DME]
+11:16:06.977 [JDA RateLimit-Worker 1] DEBUG n.d.jda.internal.requests.Requester - Received response with following cf-rays: [7829cf99fc547903-DME]
+11:16:07.187 [JDA RateLimit-Worker 1] DEBUG n.d.jda.internal.requests.Requester - Received response with following cf-rays: [7829cf9b5d327903-DME]
+11:16:07.188 [JDA RateLimit-Worker 1] DEBUG n.d.j.internal.requests.RateLimiter - Backing off 19074 ms for bucket db18a1c09af2e1661654351fbf0faf15:guild_id=224848534669754368 on route POST/applications/{application_id}/guilds/{guild_id}/commands
+11:16:11.226 [JDA MainWS-ReadThread] DEBUG c.s.d.l.tools.io.TrustManagerBuilder - Certificate list /certificates/extended.txt not present in classpath.
+11:16:11.536 [lava-daemon-pool-info-loader-2-thread-1] DEBUG c.s.d.l.c.ogg.OggContainerProbe - Track D:\\Programs\\Bob\Sounds\\bob_join.ogg is an OGG stream.
+11:16:11.559 [lava-daemon-pool-info-loader-2-thread-1] DEBUG c.s.d.l.p.DefaultAudioPlayerManager - Loaded a track with identifier D:\\Programs\\Bob\Sounds\\bob_join.ogg using LocalAudioSourceManager.
+11:16:16.516 [lava-daemon-pool-info-loader-2-thread-1] DEBUG c.s.d.lavaplayer.player.AudioPlayer - Firing an event with class TrackStartEvent
+11:16:16.526 [lava-daemon-pool-playback-1-thread-1] DEBUG c.s.d.l.t.p.LocalAudioTrackExecutor - Starting to play track D:\\Programs\\Bob\Sounds\\bob_join.ogg locally with listener com.sedmelluq.discord.lavaplayer.player.DefaultAudioPlayer@1f017752
+11:16:18.734 [lava-daemon-pool-playback-1-thread-1] DEBUG c.s.d.l.container.ogg.OggAudioTrack - Starting to play an OGG stream track D:\\Programs\\Bob\Sounds\\bob_join.ogg
+11:16:18.734 [JDA Gateway-Worker 1] DEBUG n.d.j.i.requests.WebSocketClient - Sending voice request {"op":4,"d":{"self_deaf":false,"guild_id":224848534669754368,"channel_id":224848534669754370,"self_mute":false}}
+11:16:25.140 [JDA RateLimit-Worker 3] DEBUG n.d.jda.internal.requests.Requester - Received response with following cf-rays: [7829cfd709fd7903-DME]
+11:16:26.776 [JDA RateLimit-Worker 4] DEBUG n.d.j.internal.requests.RateLimiter - Caching bucket hash POST/channels/{channel_id}/messages -> 1d3c67957bcdccc6709861c232df8529
+11:16:26.778 [JDA RateLimit-Worker 4] DEBUG n.d.jda.internal.requests.Requester - Received response with following cf-rays: [7829cfd6f9ee7903-DME]
+11:16:28.645 [JDA RateLimit-Worker 2] DEBUG n.d.jda.internal.requests.Requester - Received response with following cf-rays: [7829d0196dec7903-DME]
+11:16:31.282 [JDA RateLimit-Worker 2] DEBUG n.d.jda.internal.requests.Requester - Received response with following cf-rays: [7829d02caada7903-DME]
+11:16:32.747 [ForkJoinPool.commonPool-worker-1] ERROR n.d.jda.api.requests.RestAction - RestAction queue returned failure
+net.dv8tion.jda.api.exceptions.ErrorResponseException: 10062: Unknown interaction
+	at net.dv8tion.jda.api.exceptions.ErrorResponseException.create(ErrorResponseException.java:185)
+	at net.dv8tion.jda.api.requests.Request.onFailure(Request.java:117)
+	at net.dv8tion.jda.internal.requests.RestActionImpl.handleResponse(RestActionImpl.java:270)
+	at net.dv8tion.jda.internal.requests.restaction.interactions.DeferrableCallbackActionImpl.handleResponse(DeferrableCallbackActionImpl.java:50)
+	at net.dv8tion.jda.api.requests.Request.handleResponse(Request.java:259)
+	at net.dv8tion.jda.internal.requests.Requester.execute(Requester.java:237)
+	at net.dv8tion.jda.internal.requests.Requester.execute(Requester.java:141)
+	at net.dv8tion.jda.internal.requests.Requester.execute(Requester.java:124)
+	at net.dv8tion.jda.internal.requests.ratelimit.BotRateLimiter$Bucket.run(BotRateLimiter.java:478)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:539)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:304)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+Caused by: net.dv8tion.jda.api.exceptions.ContextException: null
+	at net.dv8tion.jda.api.exceptions.ContextException.here(ContextException.java:54)
+	at net.dv8tion.jda.api.requests.Request.<init>(Request.java:71)
+	at net.dv8tion.jda.internal.requests.RestActionImpl.queue(RestActionImpl.java:197)
+	at net.dv8tion.jda.internal.requests.restaction.interactions.InteractionCallbackImpl.queue(InteractionCallbackImpl.java:94)
+	at net.dv8tion.jda.api.requests.RestAction.queue(RestAction.java:573)
+	at net.dv8tion.jda.api.requests.RestAction.queue(RestAction.java:539)
+	at commands.voicechat.Join.handle(Join.java:49)
+	at main.Listener.lambda$onSlashCommandInteraction$1(Listener.java:83)
+	at java.base/java.util.HashMap.forEach(HashMap.java:1421)
+	at main.Listener.onSlashCommandInteraction(Listener.java:69)
+	at net.dv8tion.jda.api.hooks.ListenerAdapter.onEvent(ListenerAdapter.java:359)
+	at net.dv8tion.jda.api.hooks.InterfacedEventManager.handle(InterfacedEventManager.java:96)
+	at net.dv8tion.jda.internal.hooks.EventManagerProxy.handleInternally(EventManagerProxy.java:88)
+	at net.dv8tion.jda.internal.hooks.EventManagerProxy.handle(EventManagerProxy.java:70)
+	at net.dv8tion.jda.internal.JDAImpl.handleEvent(JDAImpl.java:164)
+	at net.dv8tion.jda.internal.handle.InteractionCreateHandler.handleCommand(InteractionCreateHandler.java:90)
+	at net.dv8tion.jda.internal.handle.InteractionCreateHandler.handleInternally(InteractionCreateHandler.java:66)
+	at net.dv8tion.jda.internal.handle.SocketHandler.handle(SocketHandler.java:36)
+	at net.dv8tion.jda.internal.requests.WebSocketClient.onDispatch(WebSocketClient.java:952)
+	at net.dv8tion.jda.internal.requests.WebSocketClient.onEvent(WebSocketClient.java:839)
+	at net.dv8tion.jda.internal.requests.WebSocketClient.handleEvent(WebSocketClient.java:817)
+	at net.dv8tion.jda.internal.requests.WebSocketClient.onBinaryMessage(WebSocketClient.java:991)
+	at com.neovisionaries.ws.client.ListenerManager.callOnBinaryMessage(ListenerManager.java:385)
+	at com.neovisionaries.ws.client.ReadingThread.callOnBinaryMessage(ReadingThread.java:276)
+	at com.neovisionaries.ws.client.ReadingThread.handleBinaryFrame(ReadingThread.java:996)
+	at com.neovisionaries.ws.client.ReadingThread.handleFrame(ReadingThread.java:755)
+	at com.neovisionaries.ws.client.ReadingThread.main(ReadingThread.java:108)
+	at com.neovisionaries.ws.client.ReadingThread.runMain(ReadingThread.java:64)
+	at com.neovisionaries.ws.client.WebSocketThread.run(WebSocketThread.java:45)
+11:16:32.756 [lava-daemon-pool-playback-1-thread-1] INFO  c.s.l.c.natives.NativeLibraryLoader - Native library libmpg123-0: loading with filter com.sedmelluq.discord.lavaplayer.natives.ConnectorNativeLibLoader$$Lambda$303/0x0000000800e96238@fff37e5
+11:16:32.770 [lava-daemon-pool-playback-1-thread-1] DEBUG c.s.l.c.n.ResourceNativeLibraryBinaryProvider - Native library libmpg123-0: trying to find from resources at /natives/win-x86-64/libmpg123-0.dll with com.sedmelluq.discord.lavaplayer.natives.ConnectorNativeLibLoader as classloader reference
+11:16:32.772 [lava-daemon-pool-playback-1-thread-1] DEBUG c.s.l.c.natives.NativeLibraryLoader - Native library libmpg123-0: detected C:\Users\senio\AppData\Local\Temp\lava-jni-natives as base directory for extraction.
+11:16:32.777 [lava-daemon-pool-playback-1-thread-1] DEBUG c.s.l.c.natives.NativeLibraryLoader - Native library libmpg123-0: extraction directory C:\Users\senio\AppData\Local\Temp\lava-jni-natives\1672560992772 does not exist, creating.
+11:16:32.784 [lava-daemon-pool-playback-1-thread-1] DEBUG c.s.l.c.natives.NativeLibraryLoader - Native library libmpg123-0: attempting to load library at C:\Users\senio\AppData\Local\Temp\lava-jni-natives\1672560992772\libmpg123-0.dll
+11:16:32.801 [lava-daemon-pool-playback-1-thread-1] INFO  c.s.l.c.natives.NativeLibraryLoader - Native library libmpg123-0: successfully loaded.
+11:16:32.802 [lava-daemon-pool-playback-1-thread-1] INFO  c.s.l.c.natives.NativeLibraryLoader - Native library connector: loading with filter null
+11:16:32.802 [lava-daemon-pool-playback-1-thread-1] DEBUG c.s.l.c.n.ResourceNativeLibraryBinaryProvider - Native library connector: trying to find from resources at /natives/win-x86-64/connector.dll with com.sedmelluq.discord.lavaplayer.natives.ConnectorNativeLibLoader as classloader reference
+11:16:32.803 [lava-daemon-pool-playback-1-thread-1] DEBUG c.s.l.c.natives.NativeLibraryLoader - Native library connector: detected C:\Users\senio\AppData\Local\Temp\lava-jni-natives as base directory for extraction.
+11:16:32.803 [lava-daemon-pool-playback-1-thread-1] DEBUG c.s.l.c.natives.NativeLibraryLoader - Native library connector: extraction directory C:\Users\senio\AppData\Local\Temp\lava-jni-natives\1672560992803 does not exist, creating.
+11:16:32.821 [lava-daemon-pool-playback-1-thread-1] DEBUG c.s.l.c.natives.NativeLibraryLoader - Native library connector: attempting to load library at C:\Users\senio\AppData\Local\Temp\lava-jni-natives\1672560992803\connector.dll
+11:16:32.861 [lava-daemon-pool-playback-1-thread-1] INFO  c.s.l.c.natives.NativeLibraryLoader - Native library connector: successfully loaded.
+11:16:32.973 [JDA RateLimit-Worker 2] DEBUG n.d.jda.internal.requests.Requester - Received response with following cf-rays: [7829d03c6e597903-DME]
+11:16:33.024 [JDA AudioWS-ReadThread (guildId: 224848534669754368)] DEBUG n.d.j.internal.audio.AudioWebSocket - Using encryption mode xsalsa20_poly1305_lite
+11:16:33.084 [JDA AudioWS-ReadThread (guildId: 224848534669754368)] DEBUG n.d.j.internal.audio.AudioWebSocket - Audio connection has finished connecting!
+11:16:33.197 [JDA RateLimit-Worker 2] DEBUG n.d.jda.internal.requests.Requester - Received response with following cf-rays: [7829d03ddf497903-DME]
+11:16:33.405 [JDA RateLimit-Worker 2] DEBUG n.d.jda.internal.requests.Requester - Received response with following cf-rays: [7829d03f382b7903-DME]
+11:16:33.406 [JDA RateLimit-Worker 2] DEBUG n.d.j.internal.requests.RateLimiter - Backing off 13958 ms for bucket db18a1c09af2e1661654351fbf0faf15:guild_id=224848534669754368 on route POST/applications/{application_id}/guilds/{guild_id}/commands
+11:16:34.440 [JDA RateLimit-Worker 1] DEBUG n.d.j.internal.requests.RateLimiter - Removed 5 expired buckets
+11:16:35.319 [lava-daemon-pool-playback-1-thread-1] DEBUG c.s.d.l.t.p.LocalAudioTrackExecutor - Playing track D:\\Programs\\Bob\Sounds\\bob_join.ogg finished or was stopped.
+11:16:35.326 [JDA AudioConnection Guild: 224848534669754368 Sending Thread] DEBUG c.s.d.lavaplayer.player.AudioPlayer - Firing an event with class TrackEndEvent
+11:16:35.788 [JDA Gateway-Worker 1] DEBUG n.d.j.i.requests.WebSocketClient - Sending normal message {"op":3,"d":{"activities":[],"afk":false,"since":1672560995326,"status":"online"}}
+11:16:44.031 [lava-daemon-pool-info-loader-2-thread-1] DEBUG c.s.d.l.c.mp3.Mp3ContainerProbe - Track D:\\Programs\\Bob\\Music\\\Жирные Пердят - Перекати-поле EP - 02 В Миссисипи Купаются Хачи (Live).mp3 is an MP3 file.
+11:16:44.050 [lava-daemon-pool-info-loader-2-thread-1] DEBUG c.s.d.l.p.DefaultAudioPlayerManager - Loaded a track with identifier D:\\Programs\\Bob\\Music\\\Жирные Пердят - Перекати-поле EP - 02 В Миссисипи Купаются Хачи (Live).mp3 using LocalAudioSourceManager.
+11:16:47.070 [lava-daemon-pool-info-loader-2-thread-1] DEBUG c.s.d.lavaplayer.player.AudioPlayer - Firing an event with class TrackStartEvent
+11:16:47.071 [lava-daemon-pool-playback-1-thread-1] DEBUG c.s.d.l.t.p.LocalAudioTrackExecutor - Starting to play track D:\\Programs\\Bob\\Music\\\Жирные Пердят - Перекати-поле EP - 02 В Миссисипи Купаются Хачи (Live).mp3 locally with listener com.sedmelluq.discord.lavaplayer.player.DefaultAudioPlayer@1f017752
+11:17:01.888 [JDA AudioConnection Guild: 224848534669754368 Sending Thread] DEBUG c.s.d.lavaplayer.player.AudioPlayer - Firing an event with class TrackStuckEvent
+11:17:04.781 [JDA RateLimit-Worker 5] DEBUG n.d.j.internal.requests.RateLimiter - Removed 2 expired buckets
+11:17:04.782 [lava-daemon-pool-playback-1-thread-1] DEBUG c.s.d.l.container.mp3.Mp3AudioTrack - Starting to play MP3 track D:\\Programs\\Bob\\Music\\\Жирные Пердят - Перекати-поле EP - 02 В Миссисипи Купаются Хачи (Live).mp3
+11:17:05.316 [JDA RateLimit-Worker 3] DEBUG n.d.jda.internal.requests.Requester - Received response with following cf-rays: [7829d0fb1ca075af-DME]
+11:17:06.264 [ForkJoinPool.commonPool-worker-1] ERROR n.d.jda.api.requests.RestAction - RestAction queue returned failure
+net.dv8tion.jda.api.exceptions.ErrorResponseException: 10062: Unknown interaction
+	at net.dv8tion.jda.api.exceptions.ErrorResponseException.create(ErrorResponseException.java:185)
+	at net.dv8tion.jda.api.requests.Request.onFailure(Request.java:117)
+	at net.dv8tion.jda.internal.requests.RestActionImpl.handleResponse(RestActionImpl.java:270)
+	at net.dv8tion.jda.internal.requests.restaction.interactions.DeferrableCallbackActionImpl.handleResponse(DeferrableCallbackActionImpl.java:50)
+	at net.dv8tion.jda.api.requests.Request.handleResponse(Request.java:259)
+	at net.dv8tion.jda.internal.requests.Requester.execute(Requester.java:237)
+	at net.dv8tion.jda.internal.requests.Requester.execute(Requester.java:141)
+	at net.dv8tion.jda.internal.requests.Requester.execute(Requester.java:124)
+	at net.dv8tion.jda.internal.requests.ratelimit.BotRateLimiter$Bucket.run(BotRateLimiter.java:478)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:539)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:304)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+Caused by: net.dv8tion.jda.api.exceptions.ContextException: null
+	at net.dv8tion.jda.api.exceptions.ContextException.here(ContextException.java:54)
+	at net.dv8tion.jda.api.requests.Request.<init>(Request.java:71)
+	at net.dv8tion.jda.internal.requests.RestActionImpl.queue(RestActionImpl.java:197)
+	at net.dv8tion.jda.internal.requests.restaction.interactions.InteractionCallbackImpl.queue(InteractionCallbackImpl.java:94)
+	at net.dv8tion.jda.api.requests.RestAction.queue(RestAction.java:573)
+	at net.dv8tion.jda.api.requests.RestAction.queue(RestAction.java:539)
+	at commands.music.Play.handle(Play.java:85)
+	at main.Listener.lambda$onSlashCommandInteraction$1(Listener.java:83)
+	at java.base/java.util.HashMap.forEach(HashMap.java:1421)
+	at main.Listener.onSlashCommandInteraction(Listener.java:69)
+	at net.dv8tion.jda.api.hooks.ListenerAdapter.onEvent(ListenerAdapter.java:359)
+	at net.dv8tion.jda.api.hooks.InterfacedEventManager.handle(InterfacedEventManager.java:96)
+	at net.dv8tion.jda.internal.hooks.EventManagerProxy.handleInternally(EventManagerProxy.java:88)
+	at net.dv8tion.jda.internal.hooks.EventManagerProxy.handle(EventManagerProxy.java:70)
+	at net.dv8tion.jda.internal.JDAImpl.handleEvent(JDAImpl.java:164)
+	at net.dv8tion.jda.internal.handle.InteractionCreateHandler.handleCommand(InteractionCreateHandler.java:90)
+	at net.dv8tion.jda.internal.handle.InteractionCreateHandler.handleInternally(InteractionCreateHandler.java:66)
+	at net.dv8tion.jda.internal.handle.SocketHandler.handle(SocketHandler.java:36)
+	at net.dv8tion.jda.internal.requests.WebSocketClient.onDispatch(WebSocketClient.java:952)
+	at net.dv8tion.jda.internal.requests.WebSocketClient.onEvent(WebSocketClient.java:839)
+	at net.dv8tion.jda.internal.requests.WebSocketClient.handleEvent(WebSocketClient.java:817)
+	at net.dv8tion.jda.internal.requests.WebSocketClient.onBinaryMessage(WebSocketClient.java:991)
+	at com.neovisionaries.ws.client.ListenerManager.callOnBinaryMessage(ListenerManager.java:385)
+	at com.neovisionaries.ws.client.ReadingThread.callOnBinaryMessage(ReadingThread.java:276)
+	at com.neovisionaries.ws.client.ReadingThread.handleBinaryFrame(ReadingThread.java:996)
+	at com.neovisionaries.ws.client.ReadingThread.handleFrame(ReadingThread.java:755)
+	at com.neovisionaries.ws.client.ReadingThread.main(ReadingThread.java:108)
+	at com.neovisionaries.ws.client.ReadingThread.runMain(ReadingThread.java:64)
+	at com.neovisionaries.ws.client.WebSocketThread.run(WebSocketThread.java:45)
+11:17:06.266 [lava-daemon-pool-info-loader-2-thread-1] DEBUG c.s.d.l.c.ogg.OggContainerProbe - Track D:\\Programs\\Bob\Sounds\\bob_dynamite.ogg is an OGG stream.
+11:17:06.269 [lava-daemon-pool-info-loader-2-thread-1] DEBUG c.s.d.l.p.DefaultAudioPlayerManager - Loaded a track with identifier D:\\Programs\\Bob\Sounds\\bob_dynamite.ogg using LocalAudioSourceManager.
+11:17:20.554 [JDA RateLimit-Worker 5] DEBUG n.d.jda.internal.requests.Requester - Received response with following cf-rays: [7829d13bcfc375af-DME]
+11:17:24.799 [JDA Gateway-Worker 1] DEBUG n.d.j.i.requests.WebSocketClient - Sending normal message {"op":3,"d":{"activities":[{"name":"В Миссисипи Купаются Хачи (Live)","type":2}],"afk":false,"since":1672561043096,"status":"online"}}
+11:17:24.807 [JDA RateLimit-Worker 4] DEBUG n.d.jda.internal.requests.Requester - Received response with following cf-rays: [7829d1770f4175af-DME]
+11:17:26.670 [JDA RateLimit-Worker 2] DEBUG n.d.jda.internal.requests.Requester - Received response with following cf-rays: [7829d1772f5775af-DME]
+11:17:32.941 [JDA RateLimit-Worker 4] DEBUG n.d.jda.internal.requests.Requester - Received response with following cf-rays: [7829d1af996a75af-DME]
+11:17:34.527 [JDA RateLimit-Worker 1] DEBUG n.d.j.internal.requests.RateLimiter - Removed 2 expired buckets
+11:17:35.850 [JDA RateLimit-Worker 4] DEBUG n.d.jda.internal.requests.Requester - Received response with following cf-rays: [7829d1c0ab7575af-DME]
+11:17:37.440 [JDA RateLimit-Worker 4] DEBUG n.d.jda.internal.requests.Requester - Received response with following cf-rays: [7829d1cedb8b75af-DME]
+11:17:39.287 [JDA RateLimit-Worker 4] DEBUG n.d.jda.internal.requests.Requester - Received response with following cf-rays: [7829d1dabb9a75af-DME]
+11:17:39.288 [JDA RateLimit-Worker 4] DEBUG n.d.j.internal.requests.RateLimiter - Backing off 4033 ms for bucket db18a1c09af2e1661654351fbf0faf15:guild_id=224848534669754368 on route POST/applications/{application_id}/guilds/{guild_id}/commands
+11:17:43.552 [JDA RateLimit-Worker 4] DEBUG n.d.jda.internal.requests.Requester - Received response with following cf-rays: [7829d1f58ccd75af-DME]
+11:17:43.752 [JDA RateLimit-Worker 4] DEBUG n.d.jda.internal.requests.Requester - Received response with following cf-rays: [7829d1f6ed7275af-DME]
+11:17:43.998 [JDA RateLimit-Worker 4] DEBUG n.d.jda.internal.requests.Requester - Received response with following cf-rays: [7829d1f82e4475af-DME]
+11:17:44.229 [JDA RateLimit-Worker 4] DEBUG n.d.jda.internal.requests.Requester - Received response with following cf-rays: [7829d1f9bf2a75af-DME]
+11:18:04.432 [JDA RateLimit-Worker 2] DEBUG n.d.j.internal.requests.RateLimiter - Removed 1 expired buckets
+11:19:56.568 [JDA RateLimit-Worker 1] DEBUG n.d.jda.internal.requests.Requester - Received response with following cf-rays: [7829d534891c7a79-DME]
+11:20:04.438 [JDA RateLimit-Worker 5] DEBUG n.d.j.internal.requests.RateLimiter - Removed 1 expired buckets
+11:20:41.021 [JDA RateLimit-Worker 1] DEBUG n.d.jda.internal.requests.Requester - Received response with following cf-rays: [7829d64a0c271640-DME]
+11:21:04.439 [JDA RateLimit-Worker 5] DEBUG n.d.j.internal.requests.RateLimiter - Removed 1 expired buckets
+11:21:14.862 [JDA RateLimit-Worker 3] DEBUG n.d.jda.internal.requests.Requester - Received response with following cf-rays: [7829d71dccf87b63-DME]
+11:21:17.990 [JDA RateLimit-Worker 2] DEBUG n.d.jda.internal.requests.Requester - Received response with following cf-rays: [7829d72edaa87b63-DME]
+11:21:34.429 [JDA RateLimit-Worker 1] DEBUG n.d.j.internal.requests.RateLimiter - Removed 2 expired buckets
+11:21:43.800 [JDA RateLimit-Worker 3] DEBUG n.d.jda.internal.requests.Requester - Received response with following cf-rays: [7829d7d2df5575b7-DME]
+11:21:48.296 [JDA AudioConnection Guild: 224848534669754368 Sending Thread] DEBUG c.s.d.lavaplayer.player.AudioPlayer - Firing an event with class TrackEndEvent
+11:21:48.296 [lava-daemon-pool-playback-1-thread-1] DEBUG c.s.d.l.t.p.LocalAudioTrackExecutor - Playing track D:\\Programs\\Bob\\Music\\\Жирные Пердят - Перекати-поле EP - 02 В Миссисипи Купаются Хачи (Live).mp3 finished or was stopped.
+11:21:48.296 [JDA AudioConnection Guild: 224848534669754368 Sending Thread] DEBUG c.s.d.lavaplayer.player.AudioPlayer - Firing an event with class TrackStartEvent
+11:21:48.296 [lava-daemon-pool-playback-1-thread-1] DEBUG c.s.d.l.t.p.LocalAudioTrackExecutor - Starting to play track D:\\Programs\\Bob\Sounds\\bob_dynamite.ogg locally with listener com.sedmelluq.discord.lavaplayer.player.DefaultAudioPlayer@1f017752
+11:21:48.296 [lava-daemon-pool-playback-1-thread-1] DEBUG c.s.d.l.container.ogg.OggAudioTrack - Starting to play an OGG stream track D:\\Programs\\Bob\Sounds\\bob_dynamite.ogg
+11:21:48.393 [JDA Gateway-Worker 1] DEBUG n.d.j.i.requests.WebSocketClient - Sending normal message {"op":3,"d":{"activities":[],"afk":false,"since":1672561308296,"status":"online"}}
+11:21:48.405 [JDA Gateway-Worker 1] DEBUG n.d.j.i.requests.WebSocketClient - Sending normal message {"op":3,"d":{"activities":[{"name":"Unknown title","type":2}],"afk":false,"since":1672561308296,"status":"online"}}
+11:21:52.176 [lava-daemon-pool-playback-1-thread-1] DEBUG c.s.d.l.t.p.LocalAudioTrackExecutor - Playing track D:\\Programs\\Bob\Sounds\\bob_dynamite.ogg finished or was stopped.
+11:21:52.176 [JDA AudioConnection Guild: 224848534669754368 Sending Thread] DEBUG c.s.d.lavaplayer.player.AudioPlayer - Firing an event with class TrackEndEvent
+11:21:52.436 [JDA Gateway-Worker 1] DEBUG n.d.j.i.requests.WebSocketClient - Sending normal message {"op":3,"d":{"activities":[],"afk":false,"since":1672561312176,"status":"online"}}
+11:22:04.429 [JDA RateLimit-Worker 2] DEBUG n.d.j.internal.requests.RateLimiter - Removed 1 expired buckets
+11:29:03.053 [lava-daemon-pool-info-loader-2-thread-1] DEBUG c.s.d.l.c.ogg.OggContainerProbe - Track D:\\Programs\\Bob\Sounds\\bob_shutdown.ogg is an OGG stream.
+11:29:03.054 [lava-daemon-pool-info-loader-2-thread-1] DEBUG c.s.d.l.p.DefaultAudioPlayerManager - Loaded a track with identifier D:\\Programs\\Bob\Sounds\\bob_shutdown.ogg using LocalAudioSourceManager.
+11:29:09.404 [JDA RateLimit-Worker 2] DEBUG n.d.j.internal.requests.RateLimiter - Removed 2 expired buckets
+11:29:09.406 [lava-daemon-pool-info-loader-2-thread-1] DEBUG c.s.d.lavaplayer.player.AudioPlayer - Firing an event with class TrackStartEvent
+11:29:09.408 [lava-daemon-pool-playback-1-thread-1] DEBUG c.s.d.l.t.p.LocalAudioTrackExecutor - Starting to play track D:\\Programs\\Bob\Sounds\\bob_shutdown.ogg locally with listener com.sedmelluq.discord.lavaplayer.player.DefaultAudioPlayer@1f017752
+11:29:09.920 [lava-daemon-pool-playback-1-thread-1] DEBUG c.s.d.l.container.ogg.OggAudioTrack - Starting to play an OGG stream track D:\\Programs\\Bob\Sounds\\bob_shutdown.ogg
+11:29:13.251 [JDA Gateway-Worker 1] WARN  n.d.j.a.interactions.InteractionHook - Up to 1 Interaction Followup Messages Timed out! Did you forget to acknowledge the interaction?
+11:29:14.689 [JDA Gateway-Worker 1] DEBUG n.d.jda.api.requests.RestAction - Timed out waiting for interaction acknowledgement

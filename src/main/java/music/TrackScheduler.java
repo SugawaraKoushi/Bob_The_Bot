@@ -7,6 +7,7 @@ import com.sedmelluq.discord.lavaplayer.track.AudioTrackEndReason;
 import com.sedmelluq.discord.lavaplayer.track.AudioTrackInfo;
 import main.Main;
 import net.dv8tion.jda.api.entities.Activity;
+
 import java.util.concurrent.BlockingQueue;
 import java.util.concurrent.LinkedBlockingQueue;
 
@@ -38,7 +39,7 @@ public class TrackScheduler extends AudioEventAdapter {
         if (!player.startTrack(track, true)) {
             queue.offer(track);
 
-            if(player.getPlayingTrack() != null) {
+            if (player.getPlayingTrack() != null) {
                 AudioTrackInfo info = player.getPlayingTrack().getInfo();
                 Main.getJDA().getPresence().setActivity(Activity.listening(info.title));
             }
@@ -53,11 +54,10 @@ public class TrackScheduler extends AudioEventAdapter {
         // giving null to startTrack, which is a valid argument and will simply stop the player.
         player.startTrack(queue.poll(), false);
 
-        if(player.getPlayingTrack() != null) {
+        // Write in bot status info about playing song
+        if (player.getPlayingTrack() != null) {
             AudioTrackInfo info = player.getPlayingTrack().getInfo();
             Main.getJDA().getPresence().setActivity(Activity.listening(info.title));
-        } else {
-            Main.getJDA().getPresence().setActivity(null);
         }
     }
 
@@ -65,11 +65,13 @@ public class TrackScheduler extends AudioEventAdapter {
     public void onTrackEnd(AudioPlayer player, AudioTrack track, AudioTrackEndReason endReason) {
         // Only start the next track if the end reason is suitable for it (FINISHED or LOAD_FAILED)
         if (endReason.mayStartNext) {
-            if(repeat){
+            if (repeat) {
                 player.startTrack(track.makeClone(), false);
                 return;
             }
 
+            // Clear bot status
+            Main.getJDA().getPresence().setActivity(null);
             nextTrack();
         }
     }
@@ -86,7 +88,7 @@ public class TrackScheduler extends AudioEventAdapter {
         Main.getJDA().getPresence().setActivity(Activity.listening(activityContent));
     }
 
-    public BlockingQueue<AudioTrack> getQueue(){
+    public BlockingQueue<AudioTrack> getQueue() {
         return queue;
     }
 }

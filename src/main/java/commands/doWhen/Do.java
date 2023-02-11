@@ -66,7 +66,6 @@ public class Do implements ICommand {
         }
 
         if (actionsCount > 1 || conditionsCount > 1 || actionsCount == 0 || conditionsCount == 0) {
-            System.out.println(actionsCount + " - " + conditionsCount);
             message = String.format("**%d action(s), %d condition(s) have been set**", actionsCount, conditionsCount);
             event.replyEmbeds(getME()).queue();
             return;

@@ -20,6 +20,7 @@ import java.util.Map;
 
 public class Listener extends ListenerAdapter {
     private static final Logger LOGGER = LoggerFactory.getLogger(Listener.class);
+    private static Logger INPUT_LOGGER = LoggerFactory.getLogger("input");
 
     private final Map<String, ICommand> commands = new HashMap<>();
 

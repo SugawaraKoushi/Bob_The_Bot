@@ -13,7 +13,7 @@ public class Time implements Condition {
         Matcher matcher = TIME_PATTERN.matcher(condition);
 
         if (condition.matches(TIME_PATTERN.pattern())) {
-            if(!matcher.find()) {
+            if (!matcher.find()) {
                 conditionTime = null;
                 return;
             }
@@ -36,7 +36,7 @@ public class Time implements Condition {
 
     @Override
     public Boolean getTruth() {
-        if(conditionTime == null) {
+        if (conditionTime == null) {
             throw new NullPointerException("Error: condition time is not set");
         }
 
