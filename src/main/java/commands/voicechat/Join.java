@@ -6,6 +6,7 @@ import main.Config;
 import music.PlayerManager;
 import net.dv8tion.jda.api.Permission;
 import net.dv8tion.jda.api.entities.*;
+import net.dv8tion.jda.api.entities.channel.unions.AudioChannelUnion;
 import net.dv8tion.jda.api.events.interaction.command.SlashCommandInteractionEvent;
 import net.dv8tion.jda.api.managers.AudioManager;
 
@@ -17,7 +18,7 @@ public class Join implements ICommand {
         final PlayerManager playerManager = PlayerManager.getInstance();
         final AudioManager audioManager = event.getGuild().getAudioManager();
         final GuildVoiceState memberVoiceState = event.getMember().getVoiceState();
-        final AudioChannel voiceChannel = memberVoiceState.getChannel();
+        final AudioChannelUnion voiceChannel = memberVoiceState.getChannel();
         final Member selfMember = event.getGuild().getSelfMember();
 
         if(audioManager.isConnected()){
@@ -41,7 +42,7 @@ public class Join implements ICommand {
         }
 
         if(Config.get("USING_SOUNDS").equals("TRUE"))
-            playerManager.loadAndPlay(event.getTextChannel(), Config.get("JOIN_TRACK"));
+            playerManager.loadAndPlay(event.getChannel().asTextChannel(), Config.get("JOIN_TRACK"));
 
         Thread.sleep(100);
 

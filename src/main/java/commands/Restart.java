@@ -18,7 +18,7 @@ public class Restart implements ICommand{
 
         musicManager.scheduler.getQueue().clear();
         musicManager.player.stopTrack();
-        playerManager.loadAndPlay(event.getTextChannel(), Config.get("SHUTDOWN_TRACK"));
+        playerManager.loadAndPlay(event.getChannel().asTextChannel(), Config.get("SHUTDOWN_TRACK"));
         event.getGuild().getAudioManager().closeAudioConnection();
 
         TimeUnit.MILLISECONDS.sleep(500);

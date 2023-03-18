@@ -65,7 +65,7 @@ public class Play implements Action {
             musicManager.player.stopTrack();
         }
 
-        playerManager.loadAndPlay(event.getTextChannel(), url);
+        playerManager.loadAndPlay(event.getChannel().asTextChannel(), url);
 
         try {
             Thread.sleep(500);

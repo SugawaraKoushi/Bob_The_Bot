@@ -83,7 +83,7 @@ public class Play implements ICommand {
 
                         message = "**URL:** ".concat(Config.get("MUSIC_FOLDER"));
                         event.replyEmbeds(getME()).queue();
-                        playerManager.loadAndPlay(event.getTextChannel(), Config.get("MUSIC_FOLDER") + "\\" + songs[new Random().nextInt(songs.length - 1)]);
+                        playerManager.loadAndPlay(event.getChannel().asTextChannel(), Config.get("MUSIC_FOLDER") + "\\" + songs[new Random().nextInt(songs.length - 1)]);
                         break;
 
                     // Воспроизводит все треки из папки
@@ -105,7 +105,7 @@ public class Play implements ICommand {
                         event.replyEmbeds(getME()).queue();
 
                         for (String song : songs)
-                            playerManager.loadAndPlay(event.getTextChannel(), Config.get("MUSIC_FOLDER") + "\\" + song);
+                            playerManager.loadAndPlay(event.getChannel().asTextChannel(), Config.get("MUSIC_FOLDER") + "\\" + song);
 
                         break;
 
@@ -122,7 +122,7 @@ public class Play implements ICommand {
                         Arrays.asList(songs).forEach(System.out::println);
 
                         for (String song : songs) {
-                            playerManager.loadAndPlay(event.getTextChannel(), song);
+                            playerManager.loadAndPlay(event.getChannel().asTextChannel(), song);
                         }
 
                         is.close();
@@ -148,7 +148,7 @@ public class Play implements ICommand {
 
                         message = content;
                         event.reply(message).queue();
-                        playerManager.loadAndPlay(event.getTextChannel(), content);
+                        playerManager.loadAndPlay(event.getChannel().asTextChannel(), content);
                         break;
 
                     // Воспроизводит трек по ссылке
@@ -156,11 +156,9 @@ public class Play implements ICommand {
                         content = event.getOption("url").getAsString();
                         message = content;
                         event.reply(message).queue();
-                        playerManager.loadAndPlay(event.getTextChannel(), content);
+                        playerManager.loadAndPlay(event.getChannel().asTextChannel(), content);
                         break;
                 }
-
-
             }
 
             if (!Config.get("USING_SOUNDS").equals("TRUE") || !trackWasFound) {
@@ -182,7 +180,7 @@ public class Play implements ICommand {
             }
 
             tracks.forEach(musicManager.scheduler::queue);
-            playerManager.loadAndPlay(event.getTextChannel(), Config.get("END_OF_QUEUE_TRACK"));
+            playerManager.loadAndPlay(event.getChannel().asTextChannel(), Config.get("END_OF_QUEUE_TRACK"));
         }
     }
 

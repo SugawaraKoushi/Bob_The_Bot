@@ -1,8 +1,8 @@
 package commands.doWhen.conditions;
 
 import main.Main;
-import net.dv8tion.jda.api.entities.AudioChannel;
 import net.dv8tion.jda.api.entities.Member;
+import net.dv8tion.jda.api.entities.channel.unions.AudioChannelUnion;
 
 public class JoinUser implements Condition {
     private Member member;
@@ -19,8 +19,8 @@ public class JoinUser implements Condition {
             return false;
         }
 
-        AudioChannel botVoiceChannel = Main.getGuild().getSelfMember().getVoiceState().getChannel();
-        AudioChannel memberVoiceChannel = member.getVoiceState().getChannel();
+        AudioChannelUnion botVoiceChannel = Main.getGuild().getSelfMember().getVoiceState().getChannel();
+        AudioChannelUnion memberVoiceChannel = member.getVoiceState().getChannel();
 
         if (botVoiceChannel == null) {
             return member.getVoiceState().inAudioChannel();

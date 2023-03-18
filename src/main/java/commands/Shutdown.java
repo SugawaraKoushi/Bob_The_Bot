@@ -21,7 +21,7 @@ public class Shutdown implements ICommand {
         musicManager.player.stopTrack();
 
         if(Config.get("USING_SOUNDS").equals("TRUE"))
-            playerManager.loadAndPlay(event.getTextChannel(), Config.get("SHUTDOWN_TRACK"));
+            playerManager.loadAndPlay(event.getChannel().asTextChannel(), Config.get("SHUTDOWN_TRACK"));
 
         event.getHook().sendMessageEmbeds(getME()).queue();
 

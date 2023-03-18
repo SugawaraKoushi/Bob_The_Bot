@@ -33,7 +33,7 @@ public class Main {
             System.out.println("guild is null");
             return;
         }
-
+/*
         List<OptionData> actions = new ArrayList<>();
         actions.add(new OptionData(
                 OptionType.STRING,
@@ -69,10 +69,10 @@ public class Main {
                 .addOptions(actions)
                 .addOptions(conditions)
                 .queue();
+         */
+        jda.upsertCommand("clear-queue", "Clear the queue").queue();
 
-        guild.upsertCommand("clear-queue", "Clear the queue").queue();
-
-        guild.upsertCommand("delete", "Delete track with given number")
+        jda.upsertCommand("delete", "Delete track with given number")
                 .addOption(
                         OptionType.STRING,
                         "position",
@@ -80,7 +80,7 @@ public class Main {
                         true)
                 .queue();
 
-        guild.upsertCommand("fav-playlist", "Favourite playlist")
+        jda.upsertCommand("fav-playlist", "Favourite playlist")
                 .addOption(
                         OptionType.STRING,
                         "add",
@@ -88,9 +88,9 @@ public class Main {
                         true)
                 .queue();
 
-        guild.upsertCommand("now-playing", "Return info of playing track").queue();
+        jda.upsertCommand("now-playing", "Return info of playing track").queue();
 
-        guild.upsertCommand("pause", "Pause the track").queue();
+        jda.upsertCommand("pause", "Pause the track").queue();
 
         List<OptionData> options = new ArrayList<>();
         options.add(new OptionData(OptionType.STRING, "url", "play track"));
@@ -102,37 +102,37 @@ public class Main {
         options.add(new OptionData(OptionType.STRING, "fav-songs",
                 "play all favourite songs").addChoice("yes", "yes"));
 
-        guild.upsertCommand("play", "Play track")
+        jda.upsertCommand("play", "Play track")
                 .addOptions(options)
                 .queue();
 
-        guild.upsertCommand("play-next", "Play track the next")
+        jda.upsertCommand("play-next", "Play track the next")
                 .addOption(OptionType.STRING, "url", "play track", true).queue();
 
-        guild.upsertCommand("queue", "Get the queue").queue();
+        jda.upsertCommand("queue", "Get the queue").queue();
 
-        guild.upsertCommand("repeat", "Set repeat")
+        jda.upsertCommand("repeat", "Set repeat")
                 .addOption(OptionType.STRING, "times", "put number of repeats here", false)
                 .queue();
 
-        guild.upsertCommand("resume", "Resume the track").queue();
+        jda.upsertCommand("resume", "Resume the track").queue();
 
-        guild.upsertCommand("shuffle", "Shuffle the queue").queue();
+        jda.upsertCommand("shuffle", "Shuffle the queue").queue();
 
-        guild.upsertCommand("skip", "Skip the track").queue();
+        jda.upsertCommand("skip", "Skip the track").queue();
 
-        guild.upsertCommand("stop", "Stop playing").queue();
+        jda.upsertCommand("stop", "Stop playing").queue();
 
-        guild.upsertCommand("volume", "Set volume")
+        jda.upsertCommand("volume", "Set volume")
                 .addOption(OptionType.STRING, "level", "put number between 0 and 100 here")
                 .queue();
 
-        guild.upsertCommand("join", "Join the voicechat").queue();
+        jda.upsertCommand("join", "Join the voicechat").queue();
 
-        guild.upsertCommand("leave", "Leave the voicechat").queue();
+        jda.upsertCommand("leave", "Leave the voicechat").queue();
 
-        guild.upsertCommand("restart", "Restart Bob").queue();
+        jda.upsertCommand("restart", "Restart Bob").queue();
 
-        guild.upsertCommand("shutdown", "Turn off Bob").queue();
+        jda.upsertCommand("shutdown", "Turn off Bob").queue();
     }
 }

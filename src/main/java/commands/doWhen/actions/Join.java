@@ -4,9 +4,9 @@ import commands.Output;
 import commands.doWhen.conditions.Condition;
 import main.Main;
 import net.dv8tion.jda.api.Permission;
-import net.dv8tion.jda.api.entities.AudioChannel;
 import net.dv8tion.jda.api.entities.GuildVoiceState;
 import net.dv8tion.jda.api.entities.Member;
+import net.dv8tion.jda.api.entities.channel.unions.AudioChannelUnion;
 import net.dv8tion.jda.api.events.interaction.command.SlashCommandInteractionEvent;
 import net.dv8tion.jda.api.managers.AudioManager;
 
@@ -32,7 +32,7 @@ public class Join implements Action {
     public void handle(SlashCommandInteractionEvent event) {
         final AudioManager audioManager = event.getGuild().getAudioManager();
         final GuildVoiceState memberVoiceState = member.getVoiceState();
-        final AudioChannel audioChannel = memberVoiceState.getChannel();
+        final AudioChannelUnion audioChannel = memberVoiceState.getChannel();
         final Member selfMember = event.getGuild().getSelfMember();
 
         if (member == null || !member.getVoiceState().inAudioChannel()) {

@@ -51,8 +51,8 @@ public class Queue implements ICommand {
                 if (count > 19)
                     break;
 
-            builder.append("**").append(count).append("**").append(".\t")
-                    .append(String.format("%s", track.getInfo().title))
+            builder.append("**").append(count).append("**.\t")
+                    .append(String.format("%s\t-\t", track.getInfo().title))
                     .append(formatTime(track.getDuration()))
                     .append("\n");
             count++;

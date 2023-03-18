@@ -50,7 +50,7 @@ public class PlayNext implements ICommand {
             e.printStackTrace();
         }
 
-        playerManager.loadAndPlay(event.getTextChannel(), content);
+        playerManager.loadAndPlay(event.getChannel().asTextChannel(), content);
 
         TimeUnit.SECONDS.sleep(1);
 

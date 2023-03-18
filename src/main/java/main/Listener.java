@@ -4,17 +4,15 @@ import commands.ICommand;
 import commands.Output;
 import commands.Restart;
 import commands.Shutdown;
-import commands.doWhen.Do;
 import commands.music.*;
 import commands.voicechat.Join;
 import commands.voicechat.Leave;
-import net.dv8tion.jda.api.events.ReadyEvent;
 import net.dv8tion.jda.api.events.interaction.command.SlashCommandInteractionEvent;
+import net.dv8tion.jda.api.events.session.ReadyEvent;
 import net.dv8tion.jda.api.hooks.ListenerAdapter;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
-import javax.annotation.Nonnull;
 import java.util.HashMap;
 import java.util.Map;
 
@@ -25,7 +23,7 @@ public class Listener extends ListenerAdapter {
     private final Map<String, ICommand> commands = new HashMap<>();
 
     public Listener() {
-        addCommand(new Do());
+        //addCommand(new Do());
 
         addCommand(new ClearQueue());
         addCommand(new Delete());
@@ -54,8 +52,9 @@ public class Listener extends ListenerAdapter {
             commands.put(cmd.getName(), cmd);
     }
 
+
     @Override
-    public void onReady(@Nonnull ReadyEvent event) {
+    public void onReady(ReadyEvent event) {
         LOGGER.info("{} is ready \n", event.getJDA().getSelfUser().getAsTag());
     }
 
