@@ -27,26 +27,30 @@ public class FavouriteSongs implements ICommand {
 
         if (!isUTubeURL(url)) {
             message = String.format("**URL: %s is not YouTube link**", url);
-            event.replyEmbeds(getME()).queue();
+            event.deferReply().queue();
+            event.getHook().sendMessageEmbeds(getME()).queue();
             return;
         }
 
         switch (isAlreadyAdded(url)) {
             case -1:
                 message = "File has no found";
-                event.replyEmbeds(getME()).queue();
+                event.deferReply().queue();
+                event.getHook().sendMessageEmbeds(getME()).queue();
                 break;
 
             case 0:
                 byte[] bytes = "\n".concat(url).getBytes(StandardCharsets.UTF_8);
                 os.write(bytes);
                 message = String.format("**URL: %s has been added**", url);
-                event.replyEmbeds(getME()).queue();
+                event.deferReply().queue();
+                event.getHook().sendMessageEmbeds(getME()).queue();
                 break;
 
             case 1:
                 message = String.format("**URL: %s is already added**", url);
-                event.replyEmbeds(getME()).queue();
+                event.deferReply().queue();
+                event.getHook().sendMessageEmbeds(getME()).queue();
                 break;
         }
     }

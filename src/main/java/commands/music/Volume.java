@@ -20,10 +20,11 @@ public class Volume implements ICommand {
         String content = "";
         int volume;
 
-        if(memberVoiceState != null) {
-            if(!memberVoiceState.inAudioChannel()){
+        if (memberVoiceState != null) {
+            if (!memberVoiceState.inAudioChannel()) {
                 message = "**You are not in voice channel to do this**";
-                event.replyEmbeds(getME()).queue();
+                event.deferReply().queue();
+                event.getHook().sendMessageEmbeds(getME()).queue();
                 return;
             }
         }
@@ -37,8 +38,8 @@ public class Volume implements ICommand {
             } else {
                 message = "**Error**: given query is not integer";
             }
-            event.replyEmbeds(getME()).queue();
-            e.printStackTrace();
+            event.deferReply().queue();
+            event.getHook().sendMessageEmbeds(getME()).queue();
             return;
         }
 
@@ -50,7 +51,8 @@ public class Volume implements ICommand {
 
         musicManager.player.setVolume(volume);
         message = String.format("**Volume:** %d", volume);
-        event.replyEmbeds(getME()).queue();
+        event.deferReply().queue();
+        event.getHook().sendMessageEmbeds(getME()).queue();
     }
 
     @Override

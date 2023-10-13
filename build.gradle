@@ -3,10 +3,10 @@ plugins {
     id 'application'
 }
 
-version = '2.1'
+version = '2.1.1'
 mainClassName = 'main.Main'
 
-sourceCompatibility = 1.8
+sourceCompatibility = 1.9
 
 repositories {
     mavenCentral()
@@ -20,10 +20,10 @@ repositories {
 
 dependencies {
     implementation "net.dv8tion:JDA:5.0.0-beta.5"
-    implementation "ch.qos.logback:logback-classic:1.2.11"
+    implementation 'ch.qos.logback:logback-classic:1.4.7'
     implementation "io.github.cdimascio:java-dotenv:5.2.2"
-    implementation 'org.jsoup:jsoup:1.15.3'
-    implementation 'com.github.walkyst:lavaplayer-fork:1.4.0'
+    implementation 'org.jsoup:jsoup:1.15.4'
+    implementation 'com.github.walkyst:lavaplayer-fork:1.4.3'
 }
 
 jar {
@@ -40,3 +40,4 @@ jar {
         configurations.runtimeClasspath.collect { it.isDirectory() ? it : zipTree(it) }
     }
 }
+targetCompatibility = JavaVersion.VERSION_1_9

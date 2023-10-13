@@ -21,10 +21,11 @@ public class Repeat implements ICommand {
         final GuildMusicManager musicManager = PlayerManager.getInstance().getGuildMusicManager(event.getGuild());
         final GuildVoiceState memberVoiceState = event.getMember().getVoiceState();
 
-        if(memberVoiceState != null) {
-            if(!memberVoiceState.inAudioChannel()){
+        if (memberVoiceState != null) {
+            if (!memberVoiceState.inAudioChannel()) {
                 message = "**You are not in voice channel to do this**";
-                event.replyEmbeds(getME()).queue();
+                event.deferReply().queue();
+                event.getHook().sendMessageEmbeds(getME()).queue();
                 return;
             }
         }
@@ -34,31 +35,35 @@ public class Repeat implements ICommand {
 
         boolean repeat = !musicManager.scheduler.repeat;
 
-        try{
+        try {
             content = event.getOption("query").getAsString();
             count = Integer.parseInt(content);
 
-            if(count > 0){
+            if (count > 0) {
                 final BlockingQueue<AudioTrack> queue = musicManager.scheduler.getQueue();
                 List<AudioTrack> tracks = new ArrayList<>();
 
-                while(!queue.isEmpty())
+                while (!queue.isEmpty())
                     tracks.add(queue.take());
 
-                for(int i = 0; i < count - 1; i++)
+                for (int i = 0; i < count - 1; i++)
                     queue.add(musicManager.player.getPlayingTrack().makeClone());
 
                 message = String.format("**Repeat:** %d **times**", count);
                 queue.addAll(tracks);
-                event.replyEmbeds(getME()).queue();
+                event.deferReply().queue();
+                event.getHook().sendMessageEmbeds(getME()).queue();
             }
-        } catch(NullPointerException e){
+        } catch (NullPointerException e) {
             musicManager.scheduler.repeat = repeat;
 
-            if(repeat) message = "**Repeat:** on";
-            else message = "**Repeat:** off";
+            if (repeat)
+                message = "**Repeat:** on";
+            else
+                message = "**Repeat:** off";
 
-            event.replyEmbeds(getME()).queue();
+            event.deferReply().queue();
+            event.getHook().sendMessageEmbeds(getME()).queue();
         }
     }
 

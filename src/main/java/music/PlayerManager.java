@@ -45,7 +45,10 @@ public class PlayerManager {
         playerManager.loadItemOrdered(musicManager, url, new AudioLoadResultHandler() {
             @Override
             public void trackLoaded(AudioTrack track) {
-                channel.sendMessageEmbeds(new Output(String.format("**Adding to queue:**\n%s - %s", track.getInfo().author, track.getInfo().title)).getME()).queue();
+                channel.sendMessageEmbeds(
+                        new Output(String.format("**Adding to queue:**\n%s - %s", track.getInfo().author, track.getInfo().title))
+                                .getME()
+                        ).queue();
                 play(musicManager, track);
             }
 

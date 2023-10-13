@@ -59,7 +59,8 @@ public class Play implements ICommand {
 
         if (!memberVoiceState.inAudioChannel()) {
             message = "**You are not in voice channel to do this**";
-            event.replyEmbeds(getME()).queue();
+            event.deferReply().queue();
+            event.getHook().sendMessageEmbeds(getME()).queue();
             return;
         }
 
@@ -72,17 +73,20 @@ public class Play implements ICommand {
 
                         if (!event.getOption("random-song").getAsString().equals("yes")) {
                             message = "**Something goes wrong**";
-                            event.replyEmbeds(getME()).queue();
+                            event.deferReply().queue();
+                            event.getHook().sendMessageEmbeds(getME()).queue();
                         }
 
                         if (songs == null) {
                             message = "**Nothing to play**";
-                            event.replyEmbeds(getME()).queue();
+                            event.deferReply().queue();
+                            event.getHook().sendMessageEmbeds(getME()).queue();
                             return;
                         }
 
                         message = "**URL:** ".concat(Config.get("MUSIC_FOLDER"));
-                        event.replyEmbeds(getME()).queue();
+                        event.deferReply().queue();
+                        event.getHook().sendMessageEmbeds(getME()).queue();
                         playerManager.loadAndPlay(event.getChannel().asTextChannel(), Config.get("MUSIC_FOLDER") + "\\" + songs[new Random().nextInt(songs.length - 1)]);
                         break;
 
@@ -92,17 +96,20 @@ public class Play implements ICommand {
 
                         if (!event.getOption("all-songs").getAsString().equals("yes")) {
                             message = "**Something goes wrong**";
-                            event.replyEmbeds(getME()).queue();
+                            event.deferReply().queue();
+                            event.getHook().sendMessageEmbeds(getME()).queue();
                         }
 
                         if (songs == null) {
                             message = "**Nothing to play**";
-                            event.replyEmbeds(getME()).queue();
+                            event.deferReply().queue();
+                            event.getHook().sendMessageEmbeds(getME()).queue();
                             return;
                         }
 
                         message = "**URL:** ".concat(Config.get("MUSIC_FOLDER"));
-                        event.replyEmbeds(getME()).queue();
+                        event.deferReply().queue();
+                        event.getHook().sendMessageEmbeds(getME()).queue();
 
                         for (String song : songs)
                             playerManager.loadAndPlay(event.getChannel().asTextChannel(), Config.get("MUSIC_FOLDER") + "\\" + song);
@@ -117,7 +124,8 @@ public class Play implements ICommand {
                         songs = buf.split("\n");
 
                         message = "**URL: favourite songs**";
-                        event.replyEmbeds(getME()).queue();
+                        event.deferReply().queue();
+                        event.getHook().sendMessageEmbeds(getME()).queue();
 
                         Arrays.asList(songs).forEach(System.out::println);
 
@@ -136,18 +144,15 @@ public class Play implements ICommand {
 
                         if (content.isEmpty()) {
                             message = "**Track was not found**";
-
-                            if (System.currentTimeMillis() - start > 2000) {
-                                event.deferReply().queue();
-                            }
-
-                            event.replyEmbeds(getME()).queue();
+                            event.deferReply().queue();
+                            event.getHook().sendMessageEmbeds(getME()).queue();
                             trackWasFound = false;
                             break;
                         }
 
                         message = content;
-                        event.reply(message).queue();
+                        event.deferReply().queue();
+                        event.getHook().sendMessage(message).queue();
                         playerManager.loadAndPlay(event.getChannel().asTextChannel(), content);
                         break;
 
@@ -155,7 +160,8 @@ public class Play implements ICommand {
                     case "url":
                         content = event.getOption("url").getAsString();
                         message = content;
-                        event.reply(message).queue();
+                        event.deferReply().queue();
+                        event.getHook().sendMessage(message).queue();
                         playerManager.loadAndPlay(event.getChannel().asTextChannel(), content);
                         break;
                 }

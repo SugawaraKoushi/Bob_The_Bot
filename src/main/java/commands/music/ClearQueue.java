@@ -20,14 +20,16 @@ public class ClearQueue implements ICommand {
         if(memberVoiceState != null) {
             if(!memberVoiceState.inAudioChannel()){
                 message = "**You are not in voice channel to do this**";
-                event.replyEmbeds(getME()).queue();
+                event.deferReply().queue();
+                event.getHook().sendMessageEmbeds(getME()).queue();
                 return;
             }
         }
 
         musicManager.scheduler.getQueue().clear();
         message = "**Bob cleaned the queue**";
-        event.replyEmbeds(getME()).queue();
+        event.deferReply().queue();
+        event.getHook().sendMessageEmbeds(getME()).queue();
     }
 
     @Override

@@ -27,14 +27,16 @@ public class Queue implements ICommand {
         if(memberVoiceState != null) {
             if(!memberVoiceState.inAudioChannel()){
                 message = "**You are not in voice channel to do this**";
-                event.replyEmbeds(getME()).queue();
+                event.deferReply().queue();
+                event.getHook().sendMessageEmbeds(getME()).queue();
                 return;
             }
         }
 
         if (queue.isEmpty()) {
             message = "**Queue is empty**";
-            event.replyEmbeds(getME()).queue();
+            event.deferReply().queue();
+            event.getHook().sendMessageEmbeds(getME()).queue();
             return;
         }
 
@@ -59,7 +61,8 @@ public class Queue implements ICommand {
         }
 
         message = builder.toString();
-        event.replyEmbeds(getME()).queue();
+        event.deferReply().queue();
+        event.getHook().sendMessageEmbeds(getME()).queue();
     }
 
     @Override

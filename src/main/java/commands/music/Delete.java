@@ -25,7 +25,8 @@ public class Delete implements ICommand {
         if(memberVoiceState != null) {
             if(!memberVoiceState.inAudioChannel()){
                 message = "**You are not in voice channel to do this**";
-                event.replyEmbeds(getME()).queue();
+                event.deferReply().queue();
+                event.getHook().sendMessageEmbeds(getME()).queue();
                 return;
             }
         }
@@ -49,7 +50,8 @@ public class Delete implements ICommand {
                 queue.put(track);
 
             message = "**Bob has deleted the track**";
-            event.replyEmbeds(getME()).queue();
+            event.deferReply().queue();
+            event.getHook().sendMessageEmbeds(getME()).queue();
         } catch (NullPointerException e){
             e.printStackTrace();
         }

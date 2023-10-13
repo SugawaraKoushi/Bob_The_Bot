@@ -29,13 +29,15 @@ public class NowPlaying implements ICommand {
 
         if(!memberVoiceState.inAudioChannel()){
             message = "**You are not in voice channel to do this**";
-            event.replyEmbeds(getME()).queue();
+            event.deferReply().queue();
+            event.getHook().sendMessageEmbeds(getME()).queue();
             return;
         }
 
         if(musicManager.player.getPlayingTrack() == null){
             message = "**Bob is not playing anything**";
-            event.replyEmbeds(getME()).queue();
+            event.deferReply().queue();
+            event.getHook().sendMessageEmbeds(getME()).queue();
             return;
         }
 
@@ -45,7 +47,8 @@ public class NowPlaying implements ICommand {
                 info.title,
                 formatTime(musicManager.player.getPlayingTrack().getPosition()),
                 formatTime(musicManager.player.getPlayingTrack().getDuration()));
-        event.replyEmbeds(getME()).queue();
+        event.deferReply().queue();
+        event.getHook().sendMessageEmbeds(getME()).queue();
     }
 
     @Override

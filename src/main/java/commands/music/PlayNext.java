@@ -30,7 +30,8 @@ public class PlayNext implements ICommand {
         if(memberVoiceState != null) {
             if(!memberVoiceState.inAudioChannel()){
                 message = "**You are not in voice channel to do this**";
-                event.replyEmbeds(getME()).queue();
+                event.deferReply().queue();
+                event.getHook().sendMessageEmbeds(getME()).queue();
                 return;
             }
         }
@@ -58,7 +59,8 @@ public class PlayNext implements ICommand {
             musicManager.scheduler.queue(track);
         }
         message = content;
-        event.reply(message).queue();
+        event.deferReply().queue();
+        event.getHook().sendMessage(message).queue();
     }
 
     @Override

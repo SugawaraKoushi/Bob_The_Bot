@@ -18,10 +18,11 @@ public class Stop implements ICommand {
         final GuildVoiceState memberVoiceState = event.getMember().getVoiceState();
         final GuildMusicManager musicManager = playerManager.getGuildMusicManager(event.getGuild());
 
-        if(memberVoiceState != null) {
-            if(!memberVoiceState.inAudioChannel()){
+        if (memberVoiceState != null) {
+            if (!memberVoiceState.inAudioChannel()) {
                 message = "**You are not in voice channel to do this**";
-                event.replyEmbeds(getME()).queue();
+                event.deferReply().queue();
+                event.getHook().sendMessageEmbeds(getME()).queue();
                 return;
             }
         }
@@ -33,7 +34,8 @@ public class Stop implements ICommand {
 
         Main.getJDA().getPresence().setActivity(null);
 
-        event.replyEmbeds(getME()).queue();
+        event.deferReply().queue();
+        event.getHook().sendMessageEmbeds(getME()).queue();
     }
 
     @Override

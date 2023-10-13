@@ -22,20 +22,23 @@ public class Pause implements ICommand {
         if(memberVoiceState != null) {
             if(!memberVoiceState.inAudioChannel()){
                 message = "**You are not in voice channel to do this**";
-                event.replyEmbeds(getME()).queue();
+                event.deferReply().queue();
+                event.getHook().sendMessageEmbeds(getME()).queue();
                 return;
             }
         }
 
         if(musicManager.player.getPlayingTrack() == null){
             message = "**Bob is not playing anything**";
-            event.replyEmbeds(getME()).queue();
+            event.deferReply().queue();
+            event.getHook().sendMessageEmbeds(getME()).queue();
             return;
         }
 
         playerManager.getGuildMusicManager(event.getGuild()).player.setPaused(true);
         message = "**Pause:** on";
-        event.replyEmbeds(getME()).queue();
+        event.deferReply().queue();
+        event.getHook().sendMessageEmbeds(getME()).queue();
     }
 
     @Override

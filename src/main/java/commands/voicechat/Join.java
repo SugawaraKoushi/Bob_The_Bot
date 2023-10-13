@@ -23,21 +23,22 @@ public class Join implements ICommand {
 
         if(audioManager.isConnected()){
             message = "**Bob is already connected**";
-            event.replyEmbeds(getME()).queue();
+            event.deferReply().queue();
+            event.getHook().sendMessageEmbeds(getME()).queue();
             return;
         }
 
-        if(memberVoiceState != null) {
-            if(!memberVoiceState.inAudioChannel()){
-                message = "**You are not in voice channel to do this**";
-                event.replyEmbeds(getME()).queue();
-                return;
-            }
+        if (!memberVoiceState.inAudioChannel()) {
+            message = "**You are not in voice channel to do this**";
+            event.deferReply().queue();
+            event.getHook().sendMessageEmbeds(getME()).queue();
+            return;
         }
 
         if(!selfMember.hasPermission(voiceChannel, Permission.VOICE_CONNECT)){
             message = "**Bob has no permission to join in**";
-            event.replyEmbeds(getME()).queue();
+            event.deferReply().queue();
+            event.getHook().sendMessageEmbeds(getME()).queue();
             return;
         }
 
@@ -47,7 +48,8 @@ public class Join implements ICommand {
         Thread.sleep(100);
 
         message = String.format("**Joining:** %s", voiceChannel.getName());
-        event.replyEmbeds(getME()).queue();
+        event.deferReply().queue();
+        event.getHook().sendMessageEmbeds(getME()).queue();
         audioManager.openAudioConnection(voiceChannel);
     }
 
